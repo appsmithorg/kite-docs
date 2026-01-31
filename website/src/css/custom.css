@@ -1,0 +1,49 @@
+/**
+ * Kite Documentation - Brand Colors
+ * Based on kite.ai
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Kite orange */
+  --ifm-color-primary: #FF6D2D;
+  --ifm-color-primary-dark: #e55a1a;
+  --ifm-color-primary-darker: #d65118;
+  --ifm-color-primary-darkest: #b04314;
+  --ifm-color-primary-light: #ff8650;
+  --ifm-color-primary-lighter: #ff9361;
+  --ifm-color-primary-lightest: #ffb08a;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode - default for Kite */
+[data-theme='dark'] {
+  --ifm-background-color: #181818;
+  --ifm-background-surface-color: #0E0E0E;
+
+  --ifm-color-primary: #FF6D2D;
+  --ifm-color-primary-dark: #ff5a14;
+  --ifm-color-primary-darker: #fa5009;
+  --ifm-color-primary-darkest: #cf4207;
+  --ifm-color-primary-light: #ff8046;
+  --ifm-color-primary-lighter: #ff8b56;
+  --ifm-color-primary-lightest: #ffab83;
+
+  --ifm-navbar-background-color: #0E0E0E;
+  --ifm-footer-background-color: #0E0E0E;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer--dark {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
