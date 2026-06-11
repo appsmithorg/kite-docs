@@ -11,7 +11,22 @@ When you publish, Kite gives your site a free web address that looks like `<name
 
 - Every published site gets a `<name>.kite.space` address automatically.
 - The address is assigned the **first time** you publish your project. See [How to Publish Your Site](/publishing/how-to-publish).
-- You can share this link right away — no setup or domain purchase required.
+- You can share this link right away. No setup or domain purchase required.
+
+## Choose your site domain (first publish only)
+
+The first time you publish, Kite asks you to pick a **Site Domain** in the publish panel.
+
+1. Find the **Site Domain** field.
+2. Type the name you want. For example, typing `mybusiness` gives you `mybusiness.kite.space`.
+3. Wait until you see **Available**, then click **Publish**.
+4. When the status shows **Published**, your site is live at that address.
+
+![Publish panel with Site Domain field](/img/docs/publish-popover-site-domain.png)
+
+If the name is taken, try a different one. Your site domain must be 3 to 63 characters, using lowercase letters, numbers, and hyphens only.
+
+On later publishes, Kite updates your live site without asking for a new site domain.
 
 ## It stays as a fallback
 
@@ -39,4 +54,4 @@ If you're starting fresh for a new client, you may prefer to duplicate your proj
 ## Troubleshooting
 
 - **My kite.space site looks out of date.** You may need to publish again. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
-- **I want a different name in my address.** Connect a custom domain — see [Connect a custom domain](/custom-domains/connect-a-custom-domain).
+- **I want a different name in my address.** Connect a custom domain. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).

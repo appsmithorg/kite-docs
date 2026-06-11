@@ -5,29 +5,63 @@ description: Step-by-step guide to connecting your own domain to your Kite site 
 
 # Connect a Custom Domain
 
-This article shows you how to point your own domain (like `yourbusiness.com`) at your published Kite site. There are two ways to do it: a fast one-click flow called **Entri** that does the setup for you, and a manual option where you add DNS records yourself.
+This article shows you how to point your own domain (like `yourbusiness.com`) at your published Kite site. You can connect a domain you already own or buy one directly through Kite.
 
 ## Before you start
 
-- **Publish your site first.** You can only connect a domain to a live site. See [How to publish](/publishing/how-to-publish).
-- **A paid plan is required** to connect a custom domain. <!-- TODO: verify -->  See [Plans & trial](/pricing-credits/plans-and-trial).
-- Have your domain handy. It's fine if you bought it anywhere — see [Connect a domain from your registrar](/custom-domains/registrar-guides).
+- **Publish your site first.** You can only connect a domain to a live site. The **Add custom domain** button stays disabled until you publish. See [How to publish](/publishing/how-to-publish).
+- **Custom domains require a paid Kite plan.** See [Plans & trial](/pricing-credits/plans-and-trial) or [kite.ai](https://kite.ai/) for current plan options.
+- Have your domain handy if you already own one. It does not matter where you bought it. See [Connect a domain from your registrar](/custom-domains/registrar-guides).
 
-## Start connecting your domain
-
-These first steps are the same for both methods.
+## Open the publish panel
 
 1. Open your site in Kite.
 2. Click **Publish** in the top-right corner.
-3. Click **Add Custom Domain**.
-4. Type your domain (for example, `yourbusiness.com`) and click **Connect Domain**.
-5. The **Entri** modal opens. This is the tool Kite uses to set up your DNS. Continue with one of the two methods below.
+3. Click **Add custom domain**.
+
+If the button is grayed out, publish your site first. You will see the hint: *"Publish your website to add a custom domain"*.
+
+If Kite asks you to upgrade, follow the on-screen steps to choose a plan that includes custom domains.
+
+![Add custom domain button after publish](/img/docs/add-custom-domain-enabled.png)
+
+## Choose how to add your domain
+
+Kite gives you two options:
+
+- **Connect a domain you own** for domains from GoDaddy, Cloudflare, or any DNS provider.
+- **Buy a new domain** to search for and purchase a domain directly in Kite.
+
+![Add custom domain options screen](/img/docs/add-custom-domain-options.png)
+
+## Connect a domain you own
+
+### Enter your domain
+
+1. Click **Connect a domain you own**.
+2. Type your domain name (for example, `example.com`).
+3. Optional: check **I want to use a subdomain** if you want an address like `www.example.com` or `shop.example.com`.
+4. Click **Connect domain**.
+
+![Connect your domain form](/img/docs/connect-your-domain.png)
+
+:::tip You do not need to move your domain to Kite
+You only add a few settings at the company where you bought your domain. Kite walks you through this step by step.
+:::
+
+### Set up DNS with Entri
+
+After you click **Connect domain**, the **Entri** modal opens. This is the tool Kite uses to set up your DNS.
 
 :::note What is Entri?
 **Entri** is a service that connects to your domain provider and adds the right DNS records automatically, so you usually don't have to touch any technical settings yourself.
 :::
 
-## Method A: One-click setup with Entri (recommended)
+![DNS setup guide](/img/docs/dns-setup-modal.png)
+
+You can finish setup in one of two ways:
+
+#### Method A: One-click setup with Entri (recommended)
 
 This is the easiest path and works with most popular domain providers.
 
@@ -38,10 +72,10 @@ This is the easiest path and works with most popular domain providers.
 5. Back in Kite, you may need to **republish** your site for the domain to go fully live. See [How to publish](/publishing/how-to-publish).
 
 :::tip
-If your provider is in the list, always try this method first — it avoids typing DNS records by hand and reduces mistakes.
+If your provider is in the list, always try this method first. It avoids typing DNS records by hand and reduces mistakes.
 :::
 
-## Method B: Manual DNS setup
+#### Method B: Manual DNS setup
 
 Use this if your provider isn't listed in Entri, or if someone else manages your DNS.
 
@@ -50,9 +84,10 @@ Use this if your provider isn't listed in Entri, or if someone else manages your
 3. Entri shows you all the DNS records you need to add. Keep this screen open.
 4. Add those records in your domain provider's DNS settings (see [Connect a domain from your registrar](/custom-domains/registrar-guides) for where to find them).
 5. Save the records at your provider.
-6. Back in Kite, **republish** your site if prompted.
+6. When you have finished at your provider, confirm in Kite.
+7. Back in Kite, **republish** your site if prompted.
 
-### Handing the records to someone else
+##### Handing the records to someone else
 
 If a colleague, web person, or IT contact manages your DNS, you don't have to do it yourself:
 
@@ -60,9 +95,9 @@ If a colleague, web person, or IT contact manages your DNS, you don't have to do
 2. This generates a link that contains all the DNS records.
 3. Send that link to whoever manages your DNS, and they can add the records for you.
 
-### DNS records you'll typically add
+##### DNS records you'll typically add
 
-If you're adding records by hand, these are the values seen in real setups: <!-- TODO: verify current values -->
+If you're adding records by hand, these are the values seen in real setups:
 
 | Type | Host / Name | Value / Points to |
 |------|-------------|-------------------|
@@ -75,19 +110,57 @@ If you're adding records by hand, these are the values seen in real setups: <!--
 :::
 
 :::caution Always confirm the exact values in Entri
-Use the records that **Entri shows you** for your specific domain rather than copying these from memory — values can change. The table above is a reference for what they tend to look like.
+Use the records that **Entri shows you** for your specific domain rather than copying these from memory. Values can change. The table above is a reference for what they tend to look like.
+:::
+
+## Buy a domain through Kite
+
+If you do not own a domain yet, you can buy one directly in Kite:
+
+1. Under **Buy a new domain**, search for the name you want.
+2. Pick an option marked **Available** and review the price and renewal cost.
+3. Click **Confirm purchase**.
+
+![Confirm domain purchase](/img/docs/buy-domain-confirm.png)
+
+:::warning Domain purchases
+Domain purchases are non-refundable. You are charged right away for the registration price and each year for renewal. Your domain is usually ready to use immediately after purchase.
 :::
 
 ## After you connect
 
+After you connect or buy a domain, Kite shows a **Setting up** status while your new address spreads across the internet.
+
+![Domain setting up status](/img/docs/domain-setting-up.png)
+
+- This usually takes a few minutes.
+- In some cases it can take up to 24 hours.
+- Try opening your domain in a browser to see if it is live.
+
+> This domain is being set up across the internet. It usually takes a few minutes, but can take up to 24 hours. You can try opening the domain to see if it's live.
+
+When setup is complete, the status changes to **Connected** and your custom domain becomes your site's main address.
+
 - **Republish if prompted.** After connecting, your site may need a fresh publish for the domain to serve the latest version.
-- **DNS changes take time to spread.** This is called propagation. It can be just a few minutes, but it can take up to about 48 hours for the change to reach everyone on the internet. If your domain isn't working right away, give it some time before assuming something is wrong.
 
 :::info
 Want to set up `www` and the root domain correctly, and avoid security warnings? See [www vs. Root Domain (and SSL)](/custom-domains/www-vs-root).
 :::
 
+## Disconnect a custom domain
+
+To remove a custom domain from your site, go to your site's **Settings** and click **Disconnect custom domain**. Your site will go back to using its `yoursite.kite.space` address.
+
+To move a domain to a different site, see [Move, switch, or reuse a domain](/custom-domains/switch-or-reuse-domain).
+
 ## Troubleshooting
+
+| Issue | What to do |
+| --- | --- |
+| **Add custom domain** is disabled | Publish your site first |
+| Upgrade prompt appears | Follow the upgrade steps shown in Kite, or see [Plans & trial](/pricing-credits/plans-and-trial) |
+| Setup was cancelled | Click **Connect domain** and start again |
+| Domain not loading after 24 hours | Double-check that the settings at your domain provider match what Kite showed |
 
 - **Domain still shows the old `.kite.space` address or a 404.** Try republishing, then wait for DNS to propagate. See [Troubleshoot a connected domain](/custom-domains/troubleshooting).
 - **"Domain already connected to another website."** The domain is attached to a different Kite app. Disconnect it there first, or contact support. See [Move, switch, or reuse a domain](/custom-domains/switch-or-reuse-domain).

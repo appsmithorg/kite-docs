@@ -10,15 +10,19 @@ Publishing makes the site you've built visible to the world. Here's how to do it
 ## Publish your site
 
 1. Open the project you want to publish in the Kite editor.
-2. Click **Publish** in the top-right corner. <!-- TODO: verify exact button location with product -->
-3. Wait a few moments while Kite deploys your site. <!-- TODO: verify typical deploy time -->
-4. When it's done, Kite shows you the live link to your site.
+2. Click **Publish** in the top-right corner.
+
+![Publish button in the top bar](/img/docs/publish-button.png)
+
+3. The **first time** you publish, pick a **Site Domain** for your free `kite.space` address, then click **Publish**. See [Your free kite.space URL](/publishing/your-kite-url) for how that works.
+4. Wait a few moments while Kite deploys your site.
+5. When it's done, Kite shows you the live link to your site.
 
 ## What happens when you publish
 
 - Kite takes the **latest changes** from your editor and deploys them to the live web.
 - Anything you've edited but not yet published stays in the editor until your next publish.
-- The **first time** you publish, Kite assigns your free `<name>.kite.space` web address. That address stays with your project.
+- The **first time** you publish, Kite assigns your free `<name>.kite.space` web address. That address stays with your project. See [Your free kite.space URL](/publishing/your-kite-url).
 
 :::info
 Only published changes are visible to visitors. The editor and preview show your work-in-progress; the live site shows your most recent publish. Learn more in [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
