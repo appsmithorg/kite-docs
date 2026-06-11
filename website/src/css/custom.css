@@ -47,3 +47,29 @@
 .footer--dark {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Doc screenshots: center and never upscale past native size.
+   Docusaurus wraps markdown images in <p> and rewrites src to /assets/images/… */
+.theme-doc-markdown p:has(> img) {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.theme-doc-markdown img {
+  width: auto;
+  max-width: min(100%, 587px);
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.theme-doc-markdown img[src*='publish-button'] {
+  max-width: min(100%, 196px);
+}
+
+[data-theme='light'] .theme-doc-markdown img {
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
