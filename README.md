@@ -15,3 +15,7 @@ npm start
 ```bash
 npm run build
 ```
+
+## Deployment
+
+App is deployed via Vercel integration
