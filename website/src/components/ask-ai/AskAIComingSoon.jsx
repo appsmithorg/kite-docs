@@ -1,0 +1,116 @@
+import React, { useState, useCallback, useEffect, useRef } from 'react';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import './css/AskAI.css';
+
+// Inlined so `fill="currentColor"` inherits the surrounding text color. An
+// external SVG referenced via <img> is an isolated document and would NOT
+// inherit `color`, rendering near-invisible in Kite's dark default theme.
+const RobotIcon = ({ className }) => (
+  <svg
+    className={className}
+    width="16"
+    height="15"
+    viewBox="0 0 16 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path
+      d="M9 1.09756C9 1.42262 8.87127 1.71468 8.66667 1.91565V3.29268H12C13.1046 3.29268 14 4.27548 14 5.4878V12.8049C14 14.0172 13.1046 15 12 15H4C2.89543 15 2 14.0172 2 12.8049V5.4878C2 4.27548 2.89543 3.29268 4 3.29268H7.33333V1.91565C7.12873 1.71468 7 1.42262 7 1.09756C7 0.491393 7.44773 0 8 0C8.55227 0 9 0.491393 9 1.09756ZM4 4.7561C3.63181 4.7561 3.33333 5.0837 3.33333 5.4878V12.8049C3.33333 13.209 3.63181 13.5366 4 13.5366H12C12.3682 13.5366 12.6667 13.209 12.6667 12.8049V5.4878C12.6667 5.0837 12.3682 4.7561 12 4.7561H8.66667H7.33333H4ZM1.33333 6.95122H0V11.3415H1.33333V6.95122ZM14.6667 6.95122H16V11.3415H14.6667V6.95122ZM6 10.2439C6.55229 10.2439 7 9.75249 7 9.14634C7 8.5402 6.55229 8.04878 6 8.04878C5.44771 8.04878 5 8.5402 5 9.14634C5 9.75249 5.44771 10.2439 6 10.2439ZM10 10.2439C10.5523 10.2439 11 9.75249 11 9.14634C11 8.5402 10.5523 8.04878 10 8.04878C9.44773 8.04878 9 8.5402 9 9.14634C9 9.75249 9.44773 10.2439 10 10.2439Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+// "Ask AI" entry point. The assistant is not built yet, so clicking opens a
+// lightweight "coming soon" dialog rather than performing a query.
+const AskAIComingSoon = () => {
+  const [open, setOpen] = useState(false);
+  const dialogRef = useRef(null);
+  const triggerRef = useRef(null);
+  const closeBtnRef = useRef(null);
+  const wasOpen = useRef(false);
+
+  const close = useCallback(() => setOpen(false), []);
+
+  // Close on Escape or click outside; only listen while the dialog is open.
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM || !open) return undefined;
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') close();
+    };
+    const handleClickOutside = (e) => {
+      if (dialogRef.current && !dialogRef.current.contains(e.target)) {
+        close();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [open, close]);
+
+  // Move focus into the dialog on open and restore it to the trigger on close,
+  // so the aria-modal contract holds. (A full focus trap is deferred to the
+  // real Ask AI modal.)
+  useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) return;
+    if (open) {
+      closeBtnRef.current?.focus();
+    } else if (wasOpen.current) {
+      triggerRef.current?.focus();
+    }
+    wasOpen.current = open;
+  }, [open]);
+
+  return (
+    <>
+      <button
+        ref={triggerRef}
+        type="button"
+        className="kite-ask-ai-option"
+        onClick={() => setOpen(true)}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+      >
+        <RobotIcon className="kite-ask-ai-icon" />
+        <span>Ask AI</span>
+        <span className="kite-ask-ai-badge">Soon</span>
+      </button>
+
+      <div className={`kite-ask-ai-modal ${open ? 'show' : ''}`} role="presentation">
+        <div
+          className="kite-ask-ai-modal-content"
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="kite-ask-ai-title"
+        >
+          <RobotIcon className="kite-ask-ai-modal-icon" />
+          <h2 id="kite-ask-ai-title" className="kite-ask-ai-modal-title">
+            Ask AI is coming soon
+          </h2>
+          <p className="kite-ask-ai-modal-text">
+            We&apos;re building an AI assistant that answers questions straight
+            from the Kite documentation. In the meantime, use Search to find
+            what you need.
+          </p>
+          <button
+            ref={closeBtnRef}
+            type="button"
+            className="kite-ask-ai-modal-close"
+            onClick={close}
+          >
+            Got it
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AskAIComingSoon;

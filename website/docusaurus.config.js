@@ -25,7 +25,24 @@ const config = {
     mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      // Offline/local search: builds the search index from Markdown at build
+      // time. No external service or credentials required.
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        indexDocs: true,
+        indexBlog: false,
+        // Docs are served at the site root (see routeBasePath below).
+        docsRouteBasePath: '/',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -55,6 +72,10 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
+          {
+            type: 'search',
+            position: 'right',
+          },
           {
             href: 'https://kite.ai',
             label: 'Kite',

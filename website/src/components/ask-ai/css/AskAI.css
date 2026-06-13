@@ -1,0 +1,102 @@
+/* "Ask AI" chip inside the segmented search control. */
+.kite-ask-ai-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0 12px;
+  border: 0;
+  background-color: transparent;
+  color: var(--ifm-navbar-link-color);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.kite-ask-ai-option:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.kite-ask-ai-icon {
+  width: 16px;
+  height: 15px;
+  display: block;
+}
+
+.kite-ask-ai-badge {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 6px;
+  border-radius: 999px;
+  /* Muted neutral so it reads as "not yet available" (not a feature
+     highlight) and clears WCAG AA contrast in both color modes. */
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Coming-soon dialog. */
+.kite-ask-ai-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+}
+
+.kite-ask-ai-modal.show {
+  display: flex;
+}
+
+.kite-ask-ai-modal-content {
+  margin-top: 12vh;
+  width: 90%;
+  max-width: 440px;
+  padding: 32px 28px;
+  text-align: center;
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.kite-ask-ai-modal-icon {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  color: var(--ifm-color-primary);
+  margin-bottom: 12px;
+}
+
+.kite-ask-ai-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.kite-ask-ai-modal-text {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 20px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.kite-ask-ai-modal-close {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.kite-ask-ai-modal-close:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
