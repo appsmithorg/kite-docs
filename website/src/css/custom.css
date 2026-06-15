@@ -44,6 +44,31 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* "Try Kite" CTA. order:1 places it after the color-mode toggle,
+   which Docusaurus renders inside .navbar__items--right. */
+.navbar-try-button {
+  background-color: var(--ifm-color-primary);
+  color: #fff !important;
+  border-radius: 0.25em;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+  order: 1;
+}
+
+/* Drop the auto-added external-link icon on the CTA. */
+.navbar-try-button svg {
+  display: none;
+}
+
+.navbar-try-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: #fff !important;
+  text-decoration: none;
+}
+
 .footer--dark {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
