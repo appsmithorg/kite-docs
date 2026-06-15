@@ -27,3 +27,6 @@ locally, run a production build and serve it:
 npm run build
 npm run serve
 ```
+## Deployment
+
+App is deployed via Vercel integration
