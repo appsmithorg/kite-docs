@@ -16,6 +16,17 @@ npm start
 npm run build
 ```
 
+## Search
+
+Search is powered by the offline [`@easyops-cn/docusaurus-search-local`](https://github.com/easyops-cn/docusaurus-search-local)
+plugin, which builds the index from Markdown at build time. The index is **only
+generated during `npm run build`, not during `npm start`** — so to test search
+locally, run a production build and serve it:
+
+```bash
+npm run build
+npm run serve
+```
 ## Deployment
 
 App is deployed via Vercel integration

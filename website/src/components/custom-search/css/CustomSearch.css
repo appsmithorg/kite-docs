@@ -1,0 +1,49 @@
+/* Segmented "Ask AI | Search" control in the navbar. Uses Infima theme
+   variables so it adapts to both light and dark color modes. */
+.kite-segmented-search {
+  display: flex;
+  align-items: stretch;
+  height: 36px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--ifm-navbar-search-input-background-color);
+}
+
+/* The Search half wraps the original theme search bar. Flatten the inner
+   input so it blends into the segmented control instead of drawing its own
+   pill/border. */
+.kite-search-slot {
+  display: flex;
+  align-items: center;
+}
+
+.kite-search-slot .navbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.kite-search-slot .navbar__search-input {
+  height: 34px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+/* Keep the two halves visually divided. */
+.kite-segmented-search .kite-ask-ai-option {
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+}
+
+@media (max-width: 996px) {
+  /* On narrow screens the navbar collapses; let the control shrink with it. */
+  .kite-segmented-search {
+    width: 100%;
+  }
+  .kite-search-slot,
+  .kite-search-slot .navbar__search,
+  .kite-search-slot .navbar__search-input {
+    width: 100%;
+  }
+}
