@@ -66,7 +66,6 @@ const config = {
     ({
       image: 'img/social-card.png',
       navbar: {
-        title: 'Kite',
         logo: {
           alt: 'Kite Logo',
           src: 'img/logo.png',
@@ -78,8 +77,9 @@ const config = {
           },
           {
             href: 'https://kite.ai',
-            label: 'Kite',
+            label: 'Try Kite',
             position: 'right',
+            className: 'navbar-try-button',
           },
         ],
       },
