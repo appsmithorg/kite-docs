@@ -6,7 +6,7 @@ description: Kite is your AI marketer in Slack. It researches your business, bui
 
 # Welcome to Kite
 
-Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers. Building and hosting your website is one of the ways it executes that strategy, and nothing goes live without your approval.
+Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers.
 
 This help center explains how to add Kite to your Slack workspace, how to work with it day to day, what it can do for your growth, and how to manage your plan and account.
 
