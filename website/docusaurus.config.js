@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kite',
-  tagline: 'Kite Documentation',
+  tagline: 'Help center for Kite, your AI marketer in Slack',
   favicon: 'img/favicon.png',
 
   url: 'https://docs.kite.ai',
@@ -64,6 +64,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Site-wide metadata. Page-level frontmatter `description` overrides the
+      // description tag on individual docs pages; this is the default for every
+      // page and the value crawlers see on the homepage.
+      metadata: [
+        {
+          name: 'description',
+          content:
+            'Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers.',
+        },
+      ],
       image: 'img/social-card.png',
       navbar: {
         logo: {
