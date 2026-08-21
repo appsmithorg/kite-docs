@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/troubleshooting/database-ssl",
+      "destination": "/troubleshooting",
+      "permanent": true
+    }
+  ]
 }
