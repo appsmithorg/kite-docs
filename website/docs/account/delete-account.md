@@ -15,8 +15,8 @@ Deleting your account removes your account and its data, including your sites. T
 
 These two actions are easy to mix up, but they do very different things:
 
-- **Delete your account** — removes your account and your data, including your sites. You're choosing to leave Kite entirely.
-- **Cancel your subscription** — stops future billing, but your account and sites stay in place. You're still a Kite user; you've just stopped (or changed) your paid plan.
+- **Delete your account**: removes your account and your data, including your sites. You're choosing to leave Kite entirely.
+- **Cancel your subscription**: stops future billing, but your account and sites stay in place. You're still a Kite user; you've just stopped (or changed) your paid plan.
 
 If your goal is simply to stop being charged, you probably want to **cancel your subscription**, not delete your account. See [Manage Your Subscription](/pricing-credits/manage-subscription).
 
@@ -51,7 +51,7 @@ If you've paid for a plan or credits, deleting your account doesn't automaticall
 
 ### I only wanted to stop paying
 
-You don't need to delete your account to stop being billed. Cancel your subscription instead — your account and sites stay intact. See [Manage Your Subscription](/pricing-credits/manage-subscription).
+You don't need to delete your account to stop being billed. Cancel your subscription instead, and your account and sites stay intact. See [Manage Your Subscription](/pricing-credits/manage-subscription).
 
 ### I can't find a delete option
 
@@ -59,10 +59,10 @@ Account deletion may be handled by the support team rather than a button in your
 
 ### I deleted by mistake
 
-Because deletion is permanent, recovery may not be possible. Contact support as soon as possible with your account email — but treat deletion as final.
+Because deletion is permanent, recovery may not be possible. Contact support as soon as possible with your account email, but treat deletion as final.
 
 ## Related help
 
-- [Manage Your Subscription](/pricing-credits/manage-subscription) — cancel billing while keeping your account.
-- [Export or Download Your Site](/account/export-your-site) — get a copy before you go.
-- [Account & Settings](/account/) — overview of your account and data options.
+- [Manage Your Subscription](/pricing-credits/manage-subscription): cancel billing while keeping your account.
+- [Export or Download Your Site](/account/export-your-site): get a copy before you go.
+- [Account & Settings](/account/): overview of your account and data options.

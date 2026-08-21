@@ -8,7 +8,7 @@ description: Find your DNS settings at popular domain registrars so you can poin
 It doesn't matter where you bought your domain. What matters is that its DNS points to Kite. This article shows you where the DNS settings live at the most common registrars so you can add the records Kite needs.
 
 :::note Registrar vs. DNS
-Your **registrar** is the company you bought the domain from. **DNS** is the set of records that tell browsers where to send visitors. You don't move the domain anywhere — you just edit its DNS records to point at Kite.
+Your **registrar** is the company you bought the domain from. **DNS** is the set of records that tell browsers where to send visitors. You don't move the domain anywhere. You just edit its DNS records to point at Kite.
 :::
 
 ## The general process
@@ -64,7 +64,7 @@ Google Domains was migrated to **Squarespace**, so if you bought a domain throug
 3. Add the records from Entri.
 
 :::caution Common mistake: editing the wrong place when Cloudflare is in the middle
-If your domain's **nameservers** are pointed (delegated) to Cloudflare, then Cloudflare is in charge of your DNS — not the registrar you originally bought the domain from. In that case you must edit the records **inside Cloudflare**, not at the original registrar. Records added at the old registrar will be ignored.
+If your domain's **nameservers** are pointed (delegated) to Cloudflare, then Cloudflare is in charge of your DNS, not the registrar you originally bought the domain from. In that case you must edit the records **inside Cloudflare**, not at the original registrar. Records added at the old registrar will be ignored.
 
 A **nameserver** is the server that answers DNS questions for your domain. Whichever service your nameservers point to is the one you edit.
 :::

@@ -14,13 +14,13 @@ Made a change you regret? Kite keeps **checkpoints** of your project as you work
 
 ## Cause
 
-Each time Kite makes a change for you, it can save a checkpoint — a snapshot of your project at that moment. That's what lets you undo a bad edit by returning to an earlier point.
+Each time Kite makes a change for you, it can save a checkpoint, a snapshot of your project at that moment. That's what lets you undo a bad edit by returning to an earlier point.
 
-## Fix — preview and revert to a checkpoint
+## Fix: preview and revert to a checkpoint
 
-1. **Open the chat or highlights view** where you've been giving Kite instructions. Each of the assistant's responses corresponds to a change it made.
-2. **Look below the assistant's responses** for the **checkpoint preview** and **revert** controls. <!-- TODO: verify with product -->
-3. **Use checkpoint preview** to see what your site looked like at that earlier point — before you commit to anything.
+1. **Open the chat or highlights view** where you've been giving Kite instructions. Each of Kite's responses corresponds to a change it made.
+2. **Look below Kite's responses** for the **checkpoint preview** and **revert** controls. <!-- TODO: verify with product -->
+3. **Use checkpoint preview** to see what your site looked like at that earlier point, before you commit to anything.
 4. **Use revert** to roll your project back to that checkpoint once you've found the version you want.
 5. **Review your site** in the preview pane to confirm it's back the way you want it.
 
@@ -36,7 +36,7 @@ Version history and revert rely on the checkpoints feature. For sites whose chan
 
 If you don't see the checkpoint preview or revert options, or the version you need isn't there:
 
-1. **Refresh the page** and reopen the chat or highlights view — the controls may not have loaded.
+1. **Refresh the page** and reopen the chat or highlights view. The controls may not have loaded.
 2. **Reopen the project** for a fresh session.
 3. **Contact support.** [Reach out](/troubleshooting/) with your **app URL** and a description of the version you're trying to get back to. The more detail you can give about when the change happened, the better we can help.
 

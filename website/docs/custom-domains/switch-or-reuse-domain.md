@@ -5,7 +5,7 @@ description: Change which Kite site a domain points to, reconnect a domain after
 
 # Move, Switch, or Reuse a Domain Across Sites
 
-Sometimes you need to move a domain you already connected — maybe you rebuilt your site as a new app, or you want one domain to point at a different site. This article covers changing a domain, reconnecting it after deleting the original app, and what to do when Kite says the domain is "already connected to another website."
+Sometimes you need to move a domain you already connected. Maybe you rebuilt your site as a new app, or you want one domain to point at a different site. This article covers changing a domain, reconnecting it after deleting the original app, and what to do when Kite says the domain is "already connected to another website."
 
 ## Change the domain on a site
 

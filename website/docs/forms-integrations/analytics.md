@@ -9,7 +9,7 @@ Analytics tell you how many people visit your site, which pages they look at, an
 
 ## Kite's built-in analytics
 
-Kite tracks basic visitor activity on your published site so you can see how it's performing — typically things like visits, page views, and top pages. <!-- TODO: verify exactly which metrics built-in analytics measures and where the dashboard lives in the UI -->
+Kite tracks basic visitor activity on your published site so you can see how it's performing, typically things like visits, page views, and top pages. <!-- TODO: verify exactly which metrics built-in analytics measures and where the dashboard lives in the UI -->
 
 1. Open your project in Kite.
 2. Find the **Analytics** area for your site.
@@ -36,12 +36,12 @@ Commonly requested tools:
 To connect one:
 
 1. Create your property/project in the analytics tool and copy its **tracking snippet** or measurement ID.
-2. In the Kite editor, ask Kite to add the snippet — for example, "Add this Google Analytics tag to every page," and paste it.
+2. In the Kite editor, ask Kite to add the snippet, for example, "Add this Google Analytics tag to every page," and paste it.
 3. [Publish your site](/publishing/how-to-publish).
 4. In the analytics tool, use its real-time view to confirm your visit is being recorded.
 
 :::note Adding scripts
-External analytics are added the same way as any embed script. If the tracker doesn't load, it may be blocked by your site's Content Security Policy — see [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts).
+External analytics are added the same way as any embed script. If the tracker doesn't load, it may be blocked by your site's Content Security Policy. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts).
 :::
 
 ## "My visitor count looks wrong or too low"
@@ -51,11 +51,11 @@ A lower-than-expected number is usually normal, not a bug. Common reasons:
 - **You only just published.** It can take time before visits show up, and a brand-new site simply has few visitors. <!-- TODO: verify any data delay/processing window for built-in analytics -->
 - **Your own visits may not count.** Some analytics filter out repeat visits from you, the owner.
 - **Preview views don't count.** Only your published site is tracked.
-- **Ad blockers and privacy tools** stop some visitors from being counted — so real traffic is often a bit higher than analytics show. This affects every analytics tool, not just Kite.
+- **Ad blockers and privacy tools** stop some visitors from being counted, so real traffic is often a bit higher than analytics show. This affects every analytics tool, not just Kite.
 - **Two tools won't match exactly.** Kite's built-in numbers and Google Analytics use different methods, so their totals will differ. That's expected.
 
 :::tip Compare trends, not single numbers
-Don't obsess over one day's count. Watch the trend over weeks — is traffic growing, steady, or dropping? That's the useful signal.
+Don't obsess over one day's count. Watch the trend over weeks. Is traffic growing, steady, or dropping? That's the useful signal.
 :::
 
 ## Troubleshooting

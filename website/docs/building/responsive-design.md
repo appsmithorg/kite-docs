@@ -5,7 +5,7 @@ description: See how your Kite site adapts to phones and tablets, preview the mo
 
 # Mobile & Responsive Design
 
-Most of your visitors will see your site on a phone, so it needs to look great at every size. Kite builds responsive sites that adapt to phones, tablets, and desktops automatically — and when something doesn't look right on one size, you can ask Kite to fix just that.
+Most of your visitors will see your site on a phone, so it needs to look great at every size. Kite builds responsive sites that adapt to phones, tablets, and desktops automatically, and when something doesn't look right on one size, you can ask Kite to fix just that.
 
 ## How your site adapts
 
@@ -47,5 +47,5 @@ When you report a mobile issue, name the screen size (mobile, tablet, or desktop
 - **Images crop or cut off on mobile:** Ask Kite to show the full image on mobile, or to change how the image fits on small screens.
 - **Hamburger menu appears on desktop:** Ask Kite to show the full menu on desktop and only collapse to a hamburger on mobile.
 - **Text overflows or buttons run off the edge on phones:** Tell Kite which page and section, and that it's happening on mobile.
-- **Mobile looks fine in preview but wrong when published:** Publish again and refresh on your phone — see [Changes Not Showing](/publishing/changes-not-showing).
+- **Mobile looks fine in preview but wrong when published:** Publish again and refresh on your phone. See [Changes Not Showing](/publishing/changes-not-showing).
 - **The preview itself won't load:** See [Preview Not Loading](/troubleshooting/preview-not-loading).

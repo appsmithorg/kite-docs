@@ -13,15 +13,15 @@ Most of the time publishing just works, but occasionally a publish doesn't compl
 
 Behind the scenes, Kite builds your site before it goes live. If that build hits an error, publishing stops. In support cases this often shows up as a step like `pnpm install` or the build exiting with a non-zero status (for example, exit code `1`). <!-- TODO: verify which build messages are surfaced to users -->
 
-**What to do:** Ask Kite to retry or fix the build — describe what you changed just before the failure, since recent edits are the usual trigger.
+**What to do:** Ask Kite to retry or fix the build, and describe what you changed just before the failure, since recent edits are the usual trigger.
 
 ### An invalid redirects file
 
 If your site uses redirect rules, an invalid rule can block a publish. A common mistake is giving a redirect a **200** status instead of a **301** or **302**:
 
-- **301** — permanent redirect
-- **302** — temporary redirect
-- **200** — not a redirect status; using it here is usually invalid <!-- TODO: verify Kite's exact redirect format and accepted statuses -->
+- **301**: permanent redirect
+- **302**: temporary redirect
+- **200**: not a redirect status; using it here is usually invalid <!-- TODO: verify Kite's exact redirect format and accepted statuses -->
 
 **What to do:** Remove or correct any redirect rows that use a `200` status, then publish again.
 
@@ -33,7 +33,7 @@ A missing or malformed site configuration can also stop a publish. <!-- TODO: ve
 
 ## How to recover
 
-1. Ask Kite to **retry the publish** — some failures are transient.
+1. Ask Kite to **retry the publish**. Some failures are transient.
 2. If it fails again, ask Kite to **fix the build** and describe your most recent changes.
 3. Check for and remove any **invalid redirect rules** (especially `200` statuses).
 4. Publish again.

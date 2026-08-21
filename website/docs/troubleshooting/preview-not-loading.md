@@ -5,7 +5,7 @@ description: Fix a Kite preview that spins forever, times out, shows up blank, o
 
 # Preview Won't Load
 
-The preview pane is where you see your site as you build it. When it won't load, it's usually a temporary glitch — not a problem with your actual website. This is the most common issue people run into, and the fixes below clear it up in most cases.
+The preview pane is where you see your site as you build it. When it won't load, it's usually a temporary glitch, not a problem with your actual website. This is the most common issue people run into, and the fixes below clear it up in most cases.
 
 ## Symptoms
 
@@ -16,13 +16,13 @@ The preview pane is where you see your site as you build it. When it won't load,
 
 ## Cause
 
-Almost always, this is a temporary loading problem — a slow connection, a momentary server hiccup, a browser extension getting in the way, or a stale browser session. The underlying site and its data are still there and safe. The preview just couldn't draw itself this time.
+Almost always, this is a temporary loading problem: a slow connection, a momentary server hiccup, a browser extension getting in the way, or a stale browser session. The underlying site and its data are still there and safe. The preview just couldn't draw itself this time.
 
 :::info Your site is safe
 A preview that won't load does **not** mean you've lost your work. Your project, content, and any data behind it are stored separately from the preview window.
 :::
 
-## Fixes — try these in order
+## Fixes to try in order
 
 1. **Refresh the page.** This is the single most effective fix. Reload your browser tab and give the preview a moment to rebuild.
 2. **Wait a minute, then retry.** If a server was briefly busy, a short wait often clears it. Refresh again after waiting.
@@ -37,4 +37,4 @@ If only your *design options* won't render but the rest of the preview works, a 
 
 ## Still stuck?
 
-If the editor itself seems unresponsive — not just the preview — see [Editor Frozen or White Screen](/troubleshooting/editor-frozen).
+If the editor itself seems unresponsive (not just the preview), see [Editor Frozen or White Screen](/troubleshooting/editor-frozen).

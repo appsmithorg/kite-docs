@@ -20,8 +20,8 @@ DNS (Domain Name System) is like the internet's phone book. It tells browsers wh
 A few things need to be true before you can connect a custom domain:
 
 1. **You must publish your site first.** A custom domain points to a published site, so there has to be something live to point at. See [How to publish](/publishing/how-to-publish).
-2. **Connecting a custom domain requires a paid plan.** <!-- TODO: verify -->  Free sites use the `.kite.space` address only. See [Plans & trial](/pricing-credits/plans-and-trial).
-3. **You need access to your domain's DNS settings** — either through the one-click flow or by logging in to your registrar.
+2. **Connecting a custom domain may depend on your plan.** <!-- TODO: verify whether custom domains are available on the Free plan under the current Free / Growth / Business plans --> See [Plans & Pricing](/pricing-credits/plans-and-trial).
+3. **You need access to your domain's DNS settings**: either through the one-click flow or by logging in to your registrar.
 
 :::tip You don't have to buy your domain from Kite
 It doesn't matter where you bought your domain. What matters is that its DNS points to Kite. See [Connect a domain from your registrar](/custom-domains/registrar-guides).
@@ -29,9 +29,9 @@ It doesn't matter where you bought your domain. What matters is that its DNS poi
 
 ## Articles in this section
 
-- [Connect a Custom Domain](/custom-domains/connect-a-custom-domain) — the core how-to, covering both the one-click Entri flow and manual DNS setup.
-- [Connect a Domain from Your Registrar](/custom-domains/registrar-guides) — where to find DNS settings at Squarespace, GoDaddy, Namecheap, OVH, Google Domains, Cloudflare, and more.
-- [www vs. Root Domain (and SSL)](/custom-domains/www-vs-root) — choosing a primary address and avoiding "Connection Not Private" warnings.
-- [Transferring a Domain & Keeping Your Email](/custom-domains/transfer-and-email) — what happens to your registrar and your email when you connect to Kite.
-- [Move, Switch, or Reuse a Domain Across Sites](/custom-domains/switch-or-reuse-domain) — changing which site a domain points to.
-- [Troubleshoot a Connected Domain](/custom-domains/troubleshooting) — fixes for 404s, old sites showing, SSL errors, and more.
+- [Connect a Custom Domain](/custom-domains/connect-a-custom-domain): the core how-to, covering both the one-click Entri flow and manual DNS setup.
+- [Connect a Domain from Your Registrar](/custom-domains/registrar-guides): where to find DNS settings at Squarespace, GoDaddy, Namecheap, OVH, Google Domains, Cloudflare, and more.
+- [www vs. Root Domain (and SSL)](/custom-domains/www-vs-root): choosing a primary address and avoiding "Connection Not Private" warnings.
+- [Transferring a Domain & Keeping Your Email](/custom-domains/transfer-and-email): what happens to your registrar and your email when you connect to Kite.
+- [Move, Switch, or Reuse a Domain Across Sites](/custom-domains/switch-or-reuse-domain): changing which site a domain points to.
+- [Troubleshoot a Connected Domain](/custom-domains/troubleshooting): fixes for 404s, old sites showing, SSL errors, and more.

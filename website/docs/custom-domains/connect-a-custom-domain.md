@@ -10,7 +10,7 @@ This article shows you how to point your own domain (like `yourbusiness.com`) at
 ## Before you start
 
 - **Publish your site first.** You can only connect a domain to a live site. The **Add custom domain** button stays disabled until you publish. See [How to publish](/publishing/how-to-publish).
-- **Custom domains require a paid Kite plan.** See [Plans & trial](/pricing-credits/plans-and-trial) or [kite.ai](https://kite.ai/) for current plan options.
+- **Custom domains may depend on your plan.** <!-- TODO: verify whether custom domains are available on the Free plan --> See [Plans & Pricing](/pricing-credits/plans-and-trial) or [kite.ai/pricing](https://kite.ai/pricing) for current plan options.
 - Have your domain handy if you already own one. It does not matter where you bought it. See [Connect a domain from your registrar](/custom-domains/registrar-guides).
 
 ## Open the publish panel
@@ -158,7 +158,7 @@ To move a domain to a different site, see [Move, switch, or reuse a domain](/cus
 | Issue | What to do |
 | --- | --- |
 | **Add custom domain** is disabled | Publish your site first |
-| Upgrade prompt appears | Follow the upgrade steps shown in Kite, or see [Plans & trial](/pricing-credits/plans-and-trial) |
+| Upgrade prompt appears | Follow the upgrade steps shown in Kite, or see [Plans & Pricing](/pricing-credits/plans-and-trial) |
 | Setup was cancelled | Click **Connect domain** and start again |
 | Domain not loading after 24 hours | Double-check that the settings at your domain provider match what Kite showed |
 

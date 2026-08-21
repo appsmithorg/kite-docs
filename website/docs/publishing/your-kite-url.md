@@ -48,7 +48,7 @@ To get a clean, branded web address, **connect a custom domain**. Your custom do
 - [Switch or reuse a domain](/custom-domains/switch-or-reuse-domain)
 
 :::note
-If you're starting fresh for a new client, you may prefer to duplicate your project as a new one rather than reuse an existing project. See [Templates and duplicating](/building/templates-and-duplicating).
+If you are starting fresh for a new product or brand, you may prefer to duplicate your project as a new one rather than reuse an existing project. See [Starting designs and duplicating](/building/templates-and-duplicating).
 :::
 
 ## Troubleshooting

@@ -5,7 +5,7 @@ description: Need to take your live Kite site down for a while? Here's how to ta
 
 # Unpublish or Take Your Site Offline
 
-Sometimes you want your site offline for a bit — for example, while you rework your content and don't want visitors seeing a half-finished version.
+Sometimes you want your site offline for a bit, for example, while you rework your content and don't want visitors seeing a half-finished version.
 
 ## Take your site offline
 
@@ -18,7 +18,7 @@ Sometimes you want your site offline for a bit — for example, while you rework
 If you don't see a self-serve option to unpublish, contact Kite support and ask them to take your site offline temporarily. <!-- TODO: confirm support is the correct path -->
 
 :::note
-Taking your site offline doesn't delete your work. Your project and all your edits stay safe in the editor — you're only changing whether visitors can reach the live site.
+Taking your site offline doesn't delete your work. Your project and all your edits stay safe in the editor. You're only changing whether visitors can reach the live site.
 :::
 
 :::caution
@@ -31,5 +31,5 @@ When you're ready, simply [publish your site](/publishing/how-to-publish) again 
 
 ## Troubleshooting
 
-- **I just want to update content without going offline.** You don't need to unpublish — edits stay private in the editor until you publish. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
+- **I just want to update content without going offline.** You don't need to unpublish. Edits stay private in the editor until you publish. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
 - **I want to remove the site permanently.** That's different from taking it offline. See [Delete your account](/account/delete-account) or [Export your site](/account/export-your-site), and contact support if you need a project removed.

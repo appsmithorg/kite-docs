@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot a Connected Domain
-description: Fix common custom-domain problems on Kite — 404 errors, an old site showing, SSL warnings, "already connected," and changes not appearing.
+description: Fix common custom-domain problems on Kite, 404 errors, an old site showing, SSL warnings, "already connected," and changes not appearing.
 ---
 
 # Troubleshoot a Connected Domain
@@ -8,7 +8,7 @@ description: Fix common custom-domain problems on Kite — 404 errors, an old si
 If your domain is connected but something isn't right, this article maps the symptom you're seeing to a fix. Most domain issues come down to one of three things: the domain needs reattaching to the current deployment, an old DNS record is still in place, or DNS just hasn't finished propagating.
 
 :::note DNS takes time
-**Propagation** is how long DNS changes take to spread across the internet — usually minutes, but sometimes up to about 48 hours. Before assuming something is broken, give a recent change time to settle.
+**Propagation** is how long DNS changes take to spread across the internet, usually minutes, but sometimes up to about 48 hours. Before assuming something is broken, give a recent change time to settle.
 :::
 
 ## Symptom → fix
@@ -54,7 +54,7 @@ The padlock is missing or the browser warns the connection isn't private.
 
 ## "Domain already connected to another website"
 
-The domain is still attached to a different Kite app — often one you deleted without disconnecting the domain first.
+The domain is still attached to a different Kite app, often one you deleted without disconnecting the domain first.
 
 1. If the old app still exists, open it and disconnect the domain there.
 2. If you deleted the old app, contact support to release the domain.

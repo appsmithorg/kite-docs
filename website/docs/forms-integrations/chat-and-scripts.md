@@ -5,7 +5,7 @@ description: Add a live chat widget like Tawk.to, embed third-party scripts like
 
 # Chat Widgets & Custom Scripts
 
-Want a live chat bubble in the corner of your site, or a marketing tool's tracking snippet? You can add third-party widgets and scripts to your Kite site. Here's how — and how to clean them up if one sticks around.
+Want a live chat bubble in the corner of your site, or a marketing tool's tracking snippet? You can add third-party widgets and scripts to your Kite site. Here's how to add them, and how to clean them up if one sticks around.
 
 ## Add a chat widget (for example, Tawk.to)
 
@@ -13,7 +13,7 @@ Most chat tools give you a small snippet of code to paste into your website.
 
 1. Create an account with your chat provider (for example, [Tawk.to](https://www.tawk.to/)) and set up your chat widget there.
 2. Copy the **embed code** (a `<script>` snippet) the provider gives you.
-3. In the Kite editor, ask Kite to add it — for example, "Add this Tawk.to chat widget script to my site," and paste the snippet.
+3. In the Kite editor, ask Kite to add it, for example, "Add this Tawk.to chat widget script to my site," and paste the snippet.
 4. [Publish your site](/publishing/how-to-publish).
 5. Open your live site and confirm the chat bubble appears.
 
@@ -23,7 +23,7 @@ A chat widget usually belongs on every page. When you ask Kite to add it, mentio
 
 ## Add other embed scripts (for example, HubSpot)
 
-The same approach works for other third-party tools — HubSpot tracking, a booking widget, a marketing pixel, and so on.
+The same approach works for other third-party tools: HubSpot tracking, a booking widget, a marketing pixel, and so on.
 
 1. Get the embed or tracking snippet from the tool's dashboard.
 2. In the Kite editor, ask Kite to add the script, and paste the snippet.
@@ -36,7 +36,7 @@ Third-party scripts frequently do nothing in the editor preview. Always check on
 
 ## If a script is blocked (Content Security Policy)
 
-For security, your site may use a **Content Security Policy (CSP)** — a rule that only allows scripts from approved sources to run. If a widget you added doesn't appear, a CSP rule may be blocking it.
+For security, your site may use a **Content Security Policy (CSP)**, a rule that only allows scripts from approved sources to run. If a widget you added doesn't appear, a CSP rule may be blocking it.
 
 How to tell:
 
@@ -45,9 +45,9 @@ How to tell:
 
 What to do:
 
-- Ask Kite to allow the script's source — for example, "Please allow scripts from `embed.tawk.to` so my chat widget can load." Provide the exact domain shown in the console error.
+- Ask Kite to allow the script's source, for example, "Please allow scripts from `embed.tawk.to` so my chat widget can load." Provide the exact domain shown in the console error.
 
-<!-- TODO: verify how CSP/script allowlisting is exposed to users — confirm whether users self-serve this or must ask Kite, and the exact phrasing/flow -->
+<!-- TODO: verify how CSP/script allowlisting is exposed to users, confirm whether users self-serve this or must ask Kite, and the exact phrasing/flow -->
 
 :::warning Only add scripts you trust
 Custom scripts run on your visitors' browsers. Only add embed code from services you trust, and never paste a snippet you don't recognize.
@@ -57,7 +57,7 @@ Custom scripts run on your visitors' browsers. Only add embed code from services
 
 Sometimes you remove a widget but it still shows up on the live site. To remove it for good:
 
-1. In the editor, ask Kite to **remove the chat widget and its script** by name — for example, "Remove the Tawk.to chat widget and any related script from my entire site."
+1. In the editor, ask Kite to **remove the chat widget and its script** by name, for example, "Remove the Tawk.to chat widget and any related script from my entire site."
 2. [Publish your site](/publishing/how-to-publish) so the removal goes live.
 3. Open your live site in a **private/incognito window** (or do a hard refresh) and confirm the widget is gone.
 

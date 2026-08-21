@@ -15,11 +15,11 @@ You can publish as many times as you like. Each publish pushes your most recent 
 
 ## In this section
 
-- [How to Publish Your Site](/publishing/how-to-publish) — the step-by-step for going live.
-- [Your Free kite.space URL](/publishing/your-kite-url) — what your free address is and how it works.
-- [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing) — fix the most common "I edited it but the live site looks the same" problem.
-- [Unpublish or Take Your Site Offline](/publishing/unpublish) — how to take a live site down temporarily.
-- [Why Did Publishing Fail?](/publishing/publish-failures) — common reasons a publish doesn't go through and how to fix them.
+- [How to Publish Your Site](/publishing/how-to-publish): the step-by-step for going live.
+- [Your Free kite.space URL](/publishing/your-kite-url): what your free address is and how it works.
+- [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing): fix the most common "I edited it but the live site looks the same" problem.
+- [Unpublish or Take Your Site Offline](/publishing/unpublish): how to take a live site down temporarily.
+- [Why Did Publishing Fail?](/publishing/publish-failures): common reasons a publish doesn't go through and how to fix them.
 
 ## Related
 

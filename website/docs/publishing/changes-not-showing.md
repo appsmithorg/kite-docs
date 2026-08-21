@@ -31,7 +31,7 @@ Think of it like a document with a "draft" and a "published" copy. Editing the d
 5. Try an incognito/private window or a different device to rule out caching entirely.
 
 :::tip
-Browsers aggressively cache websites. A normal refresh may still show the old version — a hard refresh or private window is the reliable test.
+Browsers aggressively cache websites. A normal refresh may still show the old version. A hard refresh or private window is the reliable test.
 :::
 
 ## Multi-page sites: a subpage shows the homepage
@@ -44,4 +44,4 @@ On multi-page sites, sometimes a subpage serves the homepage content instead of 
 
 - **The preview won't load at all.** See [Preview not loading](/troubleshooting/preview-not-loading).
 - **Publishing throws an error.** See [Why Did Publishing Fail?](/publishing/publish-failures).
-- **It's still stale after publishing and hard-refreshing.** Check that you're viewing the correct address — your custom domain may point somewhere different from your `kite.space` URL. See [Custom domain troubleshooting](/custom-domains/troubleshooting).
+- **It's still stale after publishing and hard-refreshing.** Check that you're viewing the correct address. Your custom domain may point somewhere different from your `kite.space` URL. See [Custom domain troubleshooting](/custom-domains/troubleshooting).

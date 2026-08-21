@@ -30,7 +30,7 @@ When you add, rename, or remove pages, your sitemap should be refreshed so searc
 3. Publish your changes. See [How to publish](/publishing/how-to-publish).
 
 :::tip
-Mention what changed — added pages, removed pages, or renamed URLs — so Kite knows exactly what to put in the sitemap.
+Mention what changed (added pages, removed pages, or renamed URLs) so Kite knows exactly what to put in the sitemap.
 :::
 
 ## Issue 1: "Kite said the sitemap updated, but it still looks old"
@@ -39,7 +39,7 @@ This is almost always about **timing and caching**, not a failed update. After a
 
 Work through these steps:
 
-1. **Check the live URL, not a preview.** Open your published sitemap directly in your browser — for example, `yourdomain.com/sitemap.xml`. This is the version search engines actually see.
+1. **Check the live URL, not a preview.** Open your published sitemap directly in your browser, for example, `yourdomain.com/sitemap.xml`. This is the version search engines actually see.
 2. **Hard-refresh the page.** A normal refresh can serve a cached copy. Do a hard refresh (on most browsers, hold **Shift** and click reload) to force a fresh load.
 3. **Allow some time to propagate.** Changes can take a little while to appear everywhere. Wait a bit and check again before assuming something is wrong.
 4. **Remember Google is on its own schedule.** Even once your sitemap is correct, Google won't re-crawl it instantly. Updates in search results can take days or weeks.
@@ -51,7 +51,7 @@ See also [Changes not showing](/publishing/changes-not-showing) for the general 
 If you've connected a custom domain but your sitemap (or your [canonical tags](/seo/seo-basics)) still list the free `yourname.kite.space` address, search engines may index the wrong address. You want everything pointing at your real domain.
 
 1. First, confirm your custom domain is fully connected and live. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).
-2. Ask Kite to update the addresses, for example: "My sitemap and canonical URLs still use my-site.kite.space — please update them to use mybusiness.com."
+2. Ask Kite to update the addresses, for example: "My sitemap and canonical URLs still use my-site.kite.space. Please update them to use mybusiness.com."
 3. Publish, then verify by opening `yourdomain.com/sitemap.xml` and checking that the links use your custom domain.
 
 :::note Why this matters

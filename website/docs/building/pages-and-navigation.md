@@ -5,7 +5,7 @@ description: Add pages like About, Contact, and Pricing to your Kite site, link 
 
 # Pages & Navigation
 
-As your site grows, you'll want more than one page — an About page, a Contact page, maybe Pricing. Kite can add pages, link them in your menu, and keep your URLs clean, all from chat.
+As your site grows, you'll want more than one page: an About page, a Contact page, maybe Pricing. Kite can add pages, link them in your menu, and keep your URLs clean, all from chat.
 
 ## Adding a page
 
@@ -18,10 +18,10 @@ As your site grows, you'll want more than one page — an About page, a Contact 
 
 Common pages people add:
 
-- **About** — `/about`
-- **Contact** — `/contact`
-- **Pricing** — `/pricing`
-- **Services** — `/services`
+- **About**: `/about`
+- **Contact**: `/contact`
+- **Pricing**: `/pricing`
+- **Services**: `/services`
 
 :::tip
 Add one page at a time and review it before moving on. It's easier to get each page right than to fix several at once.
@@ -39,7 +39,7 @@ You can also ask Kite to rename, reorder, or remove menu links:
 
 ## Clean URLs
 
-Clean URLs are short and readable — like `yoursite.com/about` instead of something long and cluttered. Kite generally creates clean URLs for your pages. If a page URL isn't what you want, ask:
+Clean URLs are short and readable, like `yoursite.com/about` instead of something long and cluttered. Kite generally creates clean URLs for your pages. If a page URL isn't what you want, ask:
 
 > Change the URL of the About page to /about.
 
@@ -47,24 +47,24 @@ Clean URLs are short and readable — like `yoursite.com/about` instead of somet
 
 ## Common issue: a subpage shows the homepage on the live site
 
-A frequent problem is this: in the editor your **About** (or other) page looks correct, but on your **published** site, visiting `/about` shows your homepage content instead of the About content. This is usually a **routing** issue — the URL isn't pointing to the right page on the live site.
+A frequent problem is this: in the editor your **About** (or other) page looks correct, but on your **published** site, visiting `/about` shows your homepage content instead of the About content. This is usually a **routing** issue: the URL isn't pointing to the right page on the live site.
 
 To fix it:
 
 1. Confirm the page exists and looks right in the editor.
-2. Ask Kite to fix the routing — for example:
+2. Ask Kite to fix the routing, for example:
 
 > On the live site, /about is showing the homepage instead of the About page. Please fix the routing so /about loads the About page content.
 
 3. Publish again, then visit the page in a fresh browser tab (or hard-refresh).
 
 :::caution
-This often looks like "my edit didn't save," but the content is usually fine — the live URL just isn't routing to it. Publish and refresh first, then ask Kite to fix routing if the wrong page still loads. See [Changes Not Showing](/publishing/changes-not-showing).
+This often looks like "my edit didn't save," but the content is usually fine. The live URL just isn't routing to it. Publish and refresh first, then ask Kite to fix routing if the wrong page still loads. See [Changes Not Showing](/publishing/changes-not-showing).
 :::
 
 ## Troubleshooting
 
 - **New page isn't in the menu:** Ask Kite to add a nav link to it, and say where in the order it should go.
-- **A subpage shows the homepage when published:** Ask Kite to fix the routing for that URL, then publish and refresh — see [Changes Not Showing](/publishing/changes-not-showing).
+- **A subpage shows the homepage when published:** Ask Kite to fix the routing for that URL, then publish and refresh. See [Changes Not Showing](/publishing/changes-not-showing).
 - **Wrong or messy URL:** Ask Kite to set the page's URL to the clean path you want. <!-- TODO: verify URL editing -->
 - **Menu link goes to the wrong page:** Tell Kite which link and which page it should point to.

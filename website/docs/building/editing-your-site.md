@@ -1,6 +1,6 @@
 ---
 title: Editing Your Site
-description: Make changes to your Kite site by describing them in chat or using Point & Edit to click an element directly — plus prompt tips and what to do when an edit doesn't show up.
+description: Make changes to your Kite site by describing them in chat or using Point & Edit to click an element directly, plus prompt tips and what to do when an edit doesn't show up.
 ---
 
 # Editing Your Site
@@ -20,7 +20,7 @@ Tell Kite what to change in plain language. The more specific you are, the more 
 > Make the heading bigger and change the color.
 
 **Specific (better):**
-> On the **Home** page, in the hero section, change the heading to "Fresh Bread, Baked Daily" and make it dark brown (#3B2417).
+> On the **Home** page, in the hero section, change the heading to "Scheduling that saves your front desk an hour a day" and make it navy (#1B2A4A).
 
 ## Option 2: Point & Edit
 
@@ -53,7 +53,7 @@ This is one of the most common frustrations, and it's usually one of a few thing
 
 1. **You're looking at the live site, not the latest edit.** Edits in the editor don't appear on your published site until you publish again. Check that you've published.
 2. **Your browser is showing a cached version.** Refresh the page, or do a hard refresh, and try again.
-3. **Kite changed a different page or section than you expected.** Ask Kite to confirm exactly which page, section, or file it changed — for example, "Which page and section did you just edit?" If it edited the wrong place, point it to the right one (using **Point & Edit** helps here).
+3. **Kite changed a different page or section than you expected.** Ask Kite to confirm exactly which page, section, or file it changed, for example, "Which page and section did you just edit?" If it edited the wrong place, point it to the right one (using **Point & Edit** helps here).
 
 :::caution
 If you keep editing without publishing, your changes pile up in the editor but never reach visitors. When something looks "stuck," confirming publish status is almost always the first thing to check.
