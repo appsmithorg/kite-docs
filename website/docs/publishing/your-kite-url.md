@@ -1,57 +1,41 @@
 ---
 title: Your Free kite.space URL
-description: Every published Kite site gets a free kite.space address. Here's how it works and its current limits.
+description: Every published Kite site gets a free kite.space address. Choose it at first publish, rename it any time with Edit domain, and keep it as a fallback alongside a custom domain.
 ---
 
 # Your Free kite.space URL
 
-When you publish, Kite gives your site a free web address that looks like `<name>.kite.space`. This is your site's home on the internet until (and even after) you connect your own domain.
+When you publish, Kite gives your site a free web address that looks like `<name>.kite.space`. It is your site's home on the internet until you connect your own domain, and it keeps working afterwards.
 
 ## How your free address works
 
-- Every published site gets a `<name>.kite.space` address automatically.
-- The address is assigned the **first time** you publish your project. See [How to Publish Your Site](/publishing/how-to-publish).
-- You can share this link right away. No setup or domain purchase required.
+- Every published site gets a `<name>.kite.space` address.
+- You choose the name the **first time** you publish, and you can change it later.
+- You can share the link right away. No setup or domain purchase required.
 
-## Choose your site domain (first publish only)
+## Choose your site domain (first publish)
 
-The first time you publish, Kite asks you to pick a **Site Domain** in the publish panel.
-
-1. Find the **Site Domain** field.
-2. Type the name you want. For example, typing `mybusiness` gives you `mybusiness.kite.space`.
+1. In the publish panel, find the **Site Domain** field.
+2. Type the name you want. For example, typing `northstar` gives you `northstar.kite.space`.
 3. Wait until you see **Available**, then click **Publish**.
-4. When the status shows **Published**, your site is live at that address.
 
 ![Publish panel with Site Domain field](/img/docs/publish-popover-site-domain.png)
 
-If the name is taken, try a different one. Your site domain must be 3 to 63 characters, using lowercase letters, numbers, and hyphens only.
+If the name is taken, try a different one. A site domain must be 3 to 63 characters, using lowercase letters, numbers, and hyphens only.
 
-On later publishes, Kite updates your live site without asking for a new site domain.
+## Rename your kite.space address
+
+After your site is published, the publish panel shows your address with an **Edit domain** control next to it. Click it, type the new name, wait for **Available**, and save. The old address stops working, so update any links you have shared.
 
 ## It stays as a fallback
 
-When you connect a custom domain, your `kite.space` address doesn't go away. It stays active as a fallback, so links you've already shared keep working.
+When you connect a custom domain, your `kite.space` address does not go away. It stays active, so links you have already shared keep working.
 
 :::tip
-If your custom domain ever has a configuration problem, your `kite.space` address is a handy way to confirm your site itself is fine. See [Custom domain troubleshooting](/custom-domains/troubleshooting).
-:::
-
-## Current limitation: renaming the subdomain
-
-Right now, you can't freely rename the auto-generated `<name>.kite.space` subdomain on its own. <!-- TODO: verify with product -->
-
-This matters most when you reuse a project for a new client or purpose: the project keeps the subdomain it was first given, even if that name no longer fits.
-
-To get a clean, branded web address, **connect a custom domain**. Your custom domain becomes the primary address visitors see, regardless of the auto-generated subdomain.
-
-- [Connect a custom domain](/custom-domains/connect-a-custom-domain)
-- [Switch or reuse a domain](/custom-domains/switch-or-reuse-domain)
-
-:::note
-If you are starting fresh for a new product or brand, you may prefer to duplicate your project as a new one rather than reuse an existing project. See [Starting designs and duplicating](/building/templates-and-duplicating).
+If your custom domain ever has a configuration problem, your `kite.space` address is a handy way to confirm the site itself is fine. See [Custom domain troubleshooting](/custom-domains/troubleshooting).
 :::
 
 ## Troubleshooting
 
-- **My kite.space site looks out of date.** You may need to publish again. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
-- **I want a different name in my address.** Connect a custom domain. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).
+- **My kite.space site looks out of date.** Publish again after making an edit. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
+- **The name I want is taken.** Names are unique across all Kite sites. Try a variation, or connect a custom domain for a fully branded address. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).

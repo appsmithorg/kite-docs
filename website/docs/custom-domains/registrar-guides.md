@@ -18,7 +18,7 @@ No matter which registrar you use, the steps are the same:
 1. Connect your domain in Kite first. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).
 2. If the one-click **Entri** flow supports your provider, sign in and let it do the work.
 3. If you're doing it manually, log in to your registrar, open its DNS settings, and add the records Entri shows you.
-4. Save, then return to Kite and **republish** if prompted.
+4. Save. Kite republishes your site for you once the connection succeeds.
 
 :::tip Use Entri's one-click flow when you can
 Most of the registrars below are supported in Entri, which adds the records for you. Only dig into the menus below if your provider isn't listed or someone else manages your DNS.
@@ -75,7 +75,7 @@ If you're not sure, look at your domain's nameservers at your registrar. If they
 
 ## My registrar isn't listed
 
-You can still connect manually. Log in to your registrar, find its DNS or "DNS zone" settings, and add the records that Entri shows you. The record types are standard (`A` and `CNAME`), so any registrar can host them. See the record reference in [Connect a custom domain](/custom-domains/connect-a-custom-domain#dns-records-youll-typically-add).
+You can still connect manually. Log in to your registrar, find its DNS or "DNS zone" settings, and add the records that Entri shows you. The record types are standard (`A`, `CNAME`, `MX`, and `TXT`), so any registrar can host them. See the record reference in [Connect a custom domain](/custom-domains/connect-a-custom-domain#the-records-you-will-see).
 
 ## Troubleshooting
 

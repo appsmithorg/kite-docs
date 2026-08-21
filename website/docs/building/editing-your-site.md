@@ -44,7 +44,7 @@ Use **Point & Edit** when an element is hard to describe in words, or when there
 - **Say what to keep.** If you only want one thing changed, you can add "leave everything else the same."
 
 :::note
-If a change comes out wrong, you can ask Kite to undo or revert it. You can also review earlier states of your site in [Version History](/troubleshooting/version-history).
+If a change comes out wrong, restore an earlier version with **Restore to this point** beneath Kite's earlier response. See [Version History](/troubleshooting/version-history).
 :::
 
 ## "Kite said it's done, but I don't see the change"
@@ -64,4 +64,4 @@ If you keep editing without publishing, your changes pile up in the editor but n
 - **Edit reported done but not visible on the live site:** Publish again, then refresh your browser. See [Changes Not Showing](/publishing/changes-not-showing).
 - **Kite edited the wrong section:** Ask it which page/section it changed, then redirect it with **Point & Edit**.
 - **You want to go back to an earlier version:** See [Version History](/troubleshooting/version-history).
-- **The editor seems frozen or unresponsive:** See [Editor Frozen](/troubleshooting/editor-frozen).
+- **A chat turn is stuck:** Press **Stop**, then see [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen).

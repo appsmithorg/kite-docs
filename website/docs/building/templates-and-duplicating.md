@@ -16,7 +16,7 @@ When you describe your site, Kite generates a starting design based on your requ
 > Build a clean, modern site for Northstar, scheduling software for multi-location clinics. Use a calm blue palette, lots of white space, and a demo request button in the header.
 
 2. Review the design Kite generates.
-3. Refine it with chat edits or **Point & Edit**. See [Editing Your Site](/building/editing-your-site). <!-- TODO: verify that "Point & Edit" is still the feature name -->
+3. Refine it with chat edits or **Point & Edit**. See [Editing Your Site](/building/editing-your-site).
 
 :::tip
 Mention your style, colors, and mood in your first request. "Bold and colorful" versus "calm and minimal" leads to very different starting designs.
@@ -24,7 +24,7 @@ Mention your style, colors, and mood in your first request. "Bold and colorful" 
 
 ## Choosing among generated design options
 
-Kite may show you more than one design option to choose from. <!-- TODO: verify how many options Kite presents and how selection works -->
+Kite shows you three design options. Above them are chips to restyle the **Colors** or **Fonts**, **Combine** elements you like from different options, or **Generate more options**.
 
 1. Look over each option.
 2. Pick the one closest to what you want. You do not need the perfect one, just the best starting point.
@@ -46,21 +46,20 @@ Give Kite direction on what to change (colors, layout, mood, fonts) so the next 
 
 If you have built a site you love and want to use its design for another product line or a second brand, you have a couple of routes.
 
-- **If a one-click duplicate exists:** Look for a **Duplicate** option on your site or project. <!-- TODO: confirm whether a one-click "duplicate site" feature exists in Kite -->
-- **Workaround if there is no duplicate:** Describe the existing design to Kite as the starting point for the new project. For example:
+- **Duplicate the site.** In your websites list, open the row menu for the site and choose **Duplicate website**. Kite creates a new, unpublished copy with a fresh chat, and you swap in the new content from there.
+- **Or describe the design.** Ask Kite to use an existing site as the starting point for a new one. For example:
 
 > Build a new site that uses the same layout, fonts, and color style as our "Northstar" site, but for our new product, "Northstar Payments."
 
   Then swap in the new content, images, and copy.
 
 :::caution
-Reusing a design for a different project usually still happens as a separate site, so each project stays independent. Confirm in Kite how new projects are created and billed. <!-- TODO: confirm project/site separation and any credit implications -->
+A duplicated site is a separate project with its own chat, versions, and publish state. Building on it uses credits like any other site.
 :::
 
 ## Troubleshooting
 
 - **The starting design is far from what you want:** Give Kite a more detailed request about style, colors, and mood, and ask for new options.
-- **You cannot find a duplicate option:** Use the workaround above and describe the existing design as the starting point for the new site. <!-- TODO: confirm duplicate feature -->
 - **The reused design does not match the original:** Point Kite to specifics (the exact fonts, colors, and layout) rather than asking it to "make it like the other site."
 
 ## Related

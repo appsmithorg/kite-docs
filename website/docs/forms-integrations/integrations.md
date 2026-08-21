@@ -1,55 +1,50 @@
 ---
 title: Integrations
-description: Connect Kite to the services your team uses, including GitHub for launch monitoring, Resend for email campaigns, and more than 3,000 integrations, plus embed scripts for your site.
+description: The Integrations page in your Kite workspace, with GitHub sync, social networks, email services, external CMS connections, a catalog of more than 3,000 integrations, and a form to bring your own MCP server.
 ---
 
 # Integrations
 
-Integrations let Kite work with the services your team already uses. Kite's pricing page states that every plan, including Free, can connect with more than 3,000 integrations. This page covers the integrations that matter most for Kite's work and how to add others.
-
-:::info Availability changes often
-The set of integrations is growing. If you do not see what you need, ask Kite directly in Slack. <!-- TODO: verify the current, authoritative list of supported integrations and where it is published -->
-:::
+Kite publishes through the services you connect and reads from the ones you give it access to. The **Integrations** page in your browser workspace is where you connect them. It lists 47 recommended marketing tools, a catalog of more than 3,000 integrations, and a form to bring your own MCP server.
 
 ## GitHub
 
-Connecting GitHub lets Kite watch your commits, pull requests, and merges so it can prepare launch marketing while code is still in review. See [Product marketing and launches](/capabilities/product-marketing). GitHub also gives you a copy of your website project's code outside Kite, which is useful if you or a developer you work with want it.
+Connect GitHub to work with your website's code outside Kite:
 
-1. In your Kite project, look for the **GitHub** or **integrations** option. <!-- TODO: verify whether GitHub is connected from the browser workspace, from Slack, or both -->
-2. Authorize Kite to connect to your GitHub account when prompted.
-3. Choose or create the repository to connect.
+- **Deploy from your repositories.** Import an existing site from a repo and host it on Kite.
+- **Sync code changes.** Kite pushes the changes it makes to the repo and picks up changes your developers push, in both directions.
 
-<!-- TODO: verify exact GitHub connection flow, what syncs (one-way export vs. two-way), and any plan requirements -->
+Connect it from the Integrations page, authorise Kite, and choose the repository. There is no plan requirement. Connecting GitHub is optional; if nobody on your team works with code, skip it.
 
-:::tip You do not need to be a developer
-Connecting GitHub is optional. If your team does not ship code changes you want marketed, you can skip it.
-:::
+## Social networks
 
-## Resend
+Kite drafts posts for any network and publishes only through the networks your team has connected on the Integrations page. Connect the ones you use and Kite can post for you when you give the word. See [Content, outreach, and channels](/capabilities/content-and-outreach).
 
-Kite sends broadcast email campaigns, such as launch announcements, through [Resend](https://resend.com). Connect your Resend account so that approved campaigns go out from your own sending domain. <!-- TODO: verify the Resend connection steps and whether Kite can provide sending without a customer Resend account -->
+## Email
 
-## Other services
+Kite sends email on its own, from your team's `teamslug@kite.space` address, with no setup. If you prefer to send from your own email service (for example, Resend), connect it on the Integrations page. Contact form notifications always come from `notifications@kite.space` and need no integration. See [Form emails](/troubleshooting/email-sending).
 
-Beyond GitHub and Resend, you can connect services in one of two ways:
+## External CMS
 
-- **Built-in integrations.** Direct connections Kite offers. Ask Kite in Slack whether the service you need is supported, for example, "Can you connect to our HubSpot account?" <!-- TODO: verify how the 3,000+ integrations are browsed or enabled -->
-- **Embed scripts on your website.** Many services (chat widgets, analytics, marketing pixels, booking widgets) are added to your site by pasting a snippet. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts) and [Site Analytics](/forms-integrations/analytics).
+If your content lives in Contentful, Sanity, Storyblok, Webflow, or Payload, connect it and Kite can read and edit content there. Writing into an external CMS is one of the two actions that always wait for a signed-in team member to confirm. See [Approvals and autonomy](/slack/approvals).
+
+## Everything else
+
+The Integrations page lists a catalog of more than 3,000 services. Browse it to connect the ones your team uses. If you run your own MCP server, add it with the bring-your-own form and Kite can use its tools. <!-- TODO: verify the labels for the catalog and the MCP server form -->
+
+## Scripts on your website
+
+Chat widgets, analytics trackers, and marketing pixels are added to your site as embed scripts rather than through the Integrations page. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts).
 
 ## Troubleshooting
 
 **I connected an integration but nothing happens.**
-Confirm any setup steps in the other service are complete, and that you [published](/publishing/how-to-publish) your site if the integration affects the live site.
+Confirm any setup steps in the other service are complete, then ask Kite in Slack to use it for a specific task.
 
-**The integration I want is not listed.**
-Ask Kite directly in Slack to confirm its current status. It may be available, addable as a script, or on the way.
-
-**A connected script will not load.**
-It may be blocked by your site's Content Security Policy. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts).
+**The service I want is not in the catalog.**
+If it has an MCP server, add it with the bring-your-own form. Otherwise ask Kite in Slack whether it can reach the service another way.
 
 ## Related
 
-- [Product marketing and launches](/capabilities/product-marketing)
-- [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts)
-- [Site Analytics](/forms-integrations/analytics)
+- [Content, outreach, and channels](/capabilities/content-and-outreach)
 - [Export your site](/account/export-your-site)

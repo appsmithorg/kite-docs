@@ -1,55 +1,44 @@
 ---
 title: Manage, Cancel, or Downgrade Your Subscription
-description: Update your payment method, change between the Free, Growth, and Business plans, or cancel your Kite subscription from your billing settings.
+description: Update your payment method, move between the Free, Growth, and Business plans, view invoices, or cancel, as a team owner, from your Billing page.
 ---
 
 # Manage, Cancel, or Downgrade Your Subscription
 
-You can manage your own subscription at any time. This page shows where to go and explains the difference between canceling and downgrading.
+Team owners manage the subscription from the Billing page. This page shows where to go and what changes when you move between plans.
 
 ## Where to manage your subscription
 
-1. Sign in to the browser workspace and open **Billing**. <!-- TODO: verify exact path -->
-2. Select **Manage**. This opens the secure billing portal (powered by Stripe). <!-- TODO: verify exact label and that the Stripe portal is used -->
-3. From the portal you can:
-   - Update your **payment method** or card details.
-   - **Change your plan** (upgrade to Growth, or move back to Free).
-   - **Cancel** your subscription.
-   - View past invoices and receipts.
-
-The Billing page also shows the cost of each conversation and task Kite has run, so you can see where your credits went.
+1. Sign in to the browser workspace as a team owner and open **Billing**.
+2. On the plan cards, click **Upgrade** or **Downgrade**. For an active paid plan, this opens the secure Stripe billing portal, where you can change the plan, update your card, or cancel.
+3. Click **View invoices** to see past invoices and receipts.
 
 :::info
-The billing portal is handled by Stripe, a trusted payment provider. Your card details are stored securely there, not in Kite.
+Billing is handled by Stripe, a trusted payment provider. Your card details are stored securely there, not in Kite. Only team owners can change the plan, buy credits, or view invoices. See [Team access](/slack/team-access).
 :::
 
 ## Canceling versus downgrading
 
-These sound similar but do different things:
+- **Canceling** ends your paid subscription. You keep paid usage until the end of the period you have already paid for, then your team moves to the Free plan. <!-- TODO: verify end-of-period behaviour -->
+- **Downgrading** to Free keeps your account active with the Free allowance. You lose the monthly credits and the paid features below.
 
-- **Canceling** ends your paid subscription. You usually keep paid usage until the end of the period you have already paid for, then your account moves to the Free plan. <!-- TODO: verify end-of-period behavior -->
-- **Downgrading** switches you to a lower plan (including Free) while keeping your account active. You do not lose your account. You lose the higher plan's monthly credits.
+## What changes when you move to Free
 
-:::warning
-When you move to the Free plan, your usage allowance changes to the Free allowance. Your content is not deleted, but Kite may pause new work until you upgrade again or buy more usage. <!-- TODO: verify exact downgrade limits and behavior -->
-:::
-
-## What changes after canceling or downgrading
-
-- **Your monthly credits** change to match your new plan. See [How Credits Work](/pricing-credits/how-credits-work).
-- **Custom domains** may be affected if they depend on a paid plan. See [Custom Domains](/custom-domains/). <!-- TODO: verify whether custom domains depend on plan -->
-- **The "Built with Kite" badge** may reappear on your site. See [Remove the "Built with Kite" Badge](/pricing-credits/remove-kite-badge). <!-- TODO: verify -->
+- **Custom domains are disconnected** automatically, and your sites return to their `kite.space` address. See [Custom Domains](/custom-domains/).
+- **The "Built with Kite" badge** returns on your published sites. See [Remove the "Built with Kite" Badge](/pricing-credits/remove-kite-badge).
+- **Credit packs** can no longer be purchased. Any purchased credits you already have stay on the account. <!-- TODO: verify that purchased credits remain usable on Free -->
+- **Monthly credits** stop. Kite pauses new work when your remaining credits run out; your live site, hosting, analytics, and leads keep working.
 
 ## Common questions
 
 **Will I lose my site if I cancel?**
-Your site content is not deleted, but anything that depends on a paid plan may stop working, and your account returns to the Free plan. <!-- TODO: verify -->
+No. Your site content is not deleted, and your published site stays up.
 
 **Can I get a refund?**
-Refunds are handled by support and depend on the situation. Reach out and explain what happened.
+Refunds are handled by support and depend on the situation. Open **Chat with us** in Kite and explain what happened.
 
 **I canceled by mistake. Can I undo it?**
-Open **Billing** again and re-subscribe, or restart your plan from the **Manage** portal. If you are stuck, contact support.
+Open **Billing** and click **Upgrade** to start the plan again.
 
 **How do I delete my account entirely?**
 Canceling a subscription is not the same as deleting your account. See [Delete Account](/account/delete-account).

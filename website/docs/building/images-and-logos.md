@@ -1,6 +1,6 @@
 ---
 title: Images & Logos
-description: Upload and replace images, add your logo, get a transparent background, manage Kite's auto-applied image frame, and fix image replacements that fail or lose quality.
+description: Upload and replace images, add your logo, generate or edit images, get a transparent background, and manage the image frame.
 ---
 
 # Images & Logos
@@ -31,12 +31,20 @@ Prompt example:
 
 > Replace the logo in the header with the file I'm uploading, and keep it the same size.
 
+## Generate or edit an image
+
+Kite can generate images, edit existing ones, and remove backgrounds. Ask in chat:
+
+> Generate a hero image of a calm clinic front desk, soft morning light, no people.
+
+> Remove the background from the logo I just uploaded.
+
 ## Getting a transparent background
 
 A transparent background lets your logo sit cleanly over any color or photo, without a white box around it.
 
-1. Upload a logo that already has a transparent background (usually a `.png` file). <!-- TODO: verify supported transparent formats with product -->
-2. If your logo has a solid background you want removed, ask Kite to help, for example:
+1. Upload a logo that already has a transparent background (a `.png`, `.svg`, or `.webp` file).
+2. If your logo has a solid background you want removed, ask Kite to remove it, for example:
 
 > Can you remove the white background from my logo so it's transparent?
 
@@ -65,7 +73,7 @@ You can also ask Kite to change the frame rather than remove it:
 
 ## Troubleshooting
 
-- **Upload didn't work:** Try a different file or a smaller file size, and make sure it's a common image format.
+- **Upload did not work:** Check the file is under 10 MB and in a supported format (PNG, JPG, WebP, GIF, HEIC, SVG, TIFF, BMP, ICO, or AVIF).
 - **Wrong image got replaced:** Use **Point & Edit** to target the exact image, then ask Kite to confirm which one it changed.
 - **Logo has an unwanted white box:** Use a transparent file, or ask Kite to remove the background.
 - **Image looks great in the editor but not when published:** See [Changes Not Showing](/publishing/changes-not-showing).

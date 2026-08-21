@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-description: Quick fixes for the most common Kite issues, including a stuck preview, a frozen editor, undoing a bad change, and connection or email errors.
+description: Quick fixes for the most common Kite issues, including a preview that will not start, a stuck chat turn, restoring an earlier version, and form emails that do not arrive, plus how to reach support.
 ---
 
 # Troubleshooting
@@ -9,28 +9,29 @@ Something not working? Most Kite hiccups are temporary and easy to fix. This sec
 
 ## In this section
 
-- [Preview Won't Load](/troubleshooting/preview-not-loading): the preview pane spins, times out, or shows up blank.
-- [Editor Frozen or White Screen](/troubleshooting/editor-frozen): the editor stops responding, the chat box is locked, or you see a white screen.
-- [Undo Changes & Version History](/troubleshooting/version-history): recover your site after an edit you did not want.
-- [Database Connection Errors (SSL Required)](/troubleshooting/database-ssl): your site cannot connect to its database.
-- [Emails Aren't Sending](/troubleshooting/email-sending): form notifications or other emails fail to go out.
+- [Preview Won't Start](/troubleshooting/preview-not-loading): the preview shows "Preview couldn't start" or stays blank.
+- [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen): a turn that never finishes, a stream error, or the "Something went wrong" screen.
+- [Undo Changes & Version History](/troubleshooting/version-history): restore your site to an earlier version.
+- [Form Emails Aren't Arriving](/troubleshooting/email-sending): contact form notifications do not reach you.
 
 ## Problems in Slack
 
-- **Kite is not posting or responding.** Make sure Kite has been invited to the channel, then mention it directly with a question. See [Add Kite to Slack](/get-started/add-kite-to-slack).
-- **Kite is not shipping anything.** Check for drafts waiting for approval. Kite does not ship until someone on your team approves. See [How approvals work](/slack/approvals).
+- **Kite is not responding.** Make sure Kite has been invited to the channel, then mention it directly. If the channel is set to respond only when tagged, Kite waits to be tagged. See [Add Kite to Slack](/get-started/add-kite-to-slack).
+- **Kite is waiting on you.** With the propose-first setting, Kite asks before work that changes public messaging or spends money. Read its last message in the thread and reply. See [Approvals and autonomy](/slack/approvals).
 - **Kite keeps repeating the same failed step.** Stop, rephrase, and if it continues, contact support. See [When Kite loops](/pricing-credits/how-credits-work#when-kite-loops-or-repeats-failed-actions).
 
-## Before you contact support
+## Older sites are read-only
 
-A few quick steps fix most problems: refreshing the page, waiting a moment and retrying, or reopening your project. Try those first (each article below walks you through them).
+Sites built on Kite's earlier HTML stack can no longer be edited. They stay published, and the editor shows an **Upgrade to Next.js** offer that rebuilds the site on the current stack so you can edit it again.
 
-If you still need help, reaching out with the right details gets you a faster answer. When you contact support, please include:
+## How to contact support
+
+Open the **Chat with us** button inside Kite (it is also on kite.ai). There is no support email address. When you write, include:
 
 - **Your Slack workspace name and the channel** where you were working with Kite, if the problem involves Slack.
 - **Your site URL or project link,** so the team can find the project.
 - **What you were trying to do** and what happened instead. For example, "I asked Kite to change my homepage header and the preview went blank."
 - **What you already tried,** such as refreshing, reopening, or a different browser.
 - **Any error message** you saw, copied exactly or as a screenshot.
-- **A screenshot** of the issue whenever possible. It is often the fastest way for the team to understand what you are seeing.
+- **A screenshot** of the issue whenever possible.
 - **Your browser and device,** for example, "Chrome on a Windows laptop."

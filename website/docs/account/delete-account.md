@@ -1,68 +1,55 @@
 ---
 title: Delete Your Account & Data
-description: How to request deletion of your Kite account and data, how it differs from canceling your subscription, and what to expect about refunds.
+description: How to request deletion of your Kite account, what it removes, why you must cancel any subscription first, and what happens to shared teams.
 ---
 
 # Delete Your Account & Data
 
 If you want to remove your Kite account and the data tied to it, this guide explains how to request it and what happens afterward. It also clears up a common point of confusion: deleting your account is not the same as canceling your subscription.
 
-:::caution Deleting is permanent
-Deleting your account removes your account and its data, including your sites. This generally can't be undone. If you only want to stop paying, cancel your subscription instead (see below).
+:::caution Deleting is permanent and immediate
+Deletion removes your sign-in identity right away, and it cannot be undone. It also deletes your personal teams and every website in them, which takes those published sites offline.
 :::
 
-## Account deletion vs. canceling your subscription
+## Account deletion versus canceling your subscription
 
-These two actions are easy to mix up, but they do very different things:
+- **Delete your account** removes your identity, your personal teams, and their websites. You are leaving Kite entirely.
+- **Cancel your subscription** stops future billing and keeps your account and sites in place. See [Manage Your Subscription](/pricing-credits/manage-subscription).
 
-- **Delete your account**: removes your account and your data, including your sites. You're choosing to leave Kite entirely.
-- **Cancel your subscription**: stops future billing, but your account and sites stay in place. You're still a Kite user; you've just stopped (or changed) your paid plan.
-
-If your goal is simply to stop being charged, you probably want to **cancel your subscription**, not delete your account. See [Manage Your Subscription](/pricing-credits/manage-subscription).
-
-## How to request account and data deletion
-
-<!-- TODO: confirm self-serve path vs support request -->
-
-1. First decide whether you really want deletion or just want to stop billing (see the comparison above).
-2. If you're sure you want everything removed, request account and data deletion.
-3. Provide the email address on your account so the team can locate and confirm it.
-4. Confirm the request when asked, since deletion is permanent.
-
-:::note
-We're confirming whether account deletion is fully self-serve from your settings or handled as a support request. If you don't see a clear delete option in your account, contact support and ask them to delete your account and data. <!-- TODO: confirm self-serve path vs support request -->
-:::
+If your goal is simply to stop being charged, cancel your subscription instead.
 
 ## Before you delete
 
-A few things worth doing first:
+1. **Cancel any active subscription first.** Deletion is refused while a personal team still has an active paid plan. See [Manage Your Subscription](/pricing-credits/manage-subscription).
+2. **Export any site you want to keep.** Download the source code from each site's Settings. See [Export or Download Your Site](/account/export-your-site).
+3. **Disconnect any custom domain** you want to use elsewhere. See [Custom Domains](/custom-domains/).
 
-- **Cancel your subscription** if you haven't already, so billing stops cleanly. See [Manage Your Subscription](/pricing-credits/manage-subscription).
-- **Save anything you need.** Once your account is deleted, your sites and data go with it. If you want a copy of your site, see [Export or Download Your Site](/account/export-your-site) first.
-- **Disconnect or move any custom domain** you want to keep using elsewhere. See [Custom Domains](/custom-domains/).
+## How to request deletion
+
+Account deletion is handled by the Kite team rather than by a button in your settings.
+
+1. Open **Chat with us** in Kite (or on kite.ai) and ask for your account and data to be deleted.
+2. Give the email address you sign in with so the team can locate the account.
+3. Confirm the request when asked. Once confirmed, deletion is immediate.
+
+## What happens to shared teams
+
+If you belong to a team with other owners, that team is preserved. Your websites in it are reassigned to another owner, and the team carries on without you.
 
 ## Refunds
 
-<!-- TODO: verify refund policy -->
-
-If you've paid for a plan or credits, deleting your account doesn't automatically guarantee a refund. Refund eligibility depends on Kite's billing policy, which we're confirming. If you believe you're owed a refund, contact support with your account email and the details of your purchase.
+Deleting your account does not by itself trigger a refund. If you believe you are owed one, mention it in the same conversation with support. <!-- TODO: verify refund policy -->
 
 ## Troubleshooting
 
-### I only wanted to stop paying
+**I only wanted to stop paying.** Cancel your subscription instead. Your account and sites stay intact.
 
-You don't need to delete your account to stop being billed. Cancel your subscription instead, and your account and sites stay intact. See [Manage Your Subscription](/pricing-credits/manage-subscription).
+**Support says deletion was refused.** A personal team still has an active subscription. Cancel it, then ask again.
 
-### I can't find a delete option
-
-Account deletion may be handled by the support team rather than a button in your settings. Contact support, include your account email, and ask them to delete your account and data. <!-- TODO: confirm self-serve path vs support request -->
-
-### I deleted by mistake
-
-Because deletion is permanent, recovery may not be possible. Contact support as soon as possible with your account email, but treat deletion as final.
+**I deleted by mistake.** Deletion is immediate and cannot be reversed. You can create a new account with the same email, but your previous teams and sites are gone.
 
 ## Related help
 
-- [Manage Your Subscription](/pricing-credits/manage-subscription): cancel billing while keeping your account.
-- [Export or Download Your Site](/account/export-your-site): get a copy before you go.
-- [Account & Settings](/account/): overview of your account and data options.
+- [Manage Your Subscription](/pricing-credits/manage-subscription)
+- [Export or Download Your Site](/account/export-your-site)
+- [Account & Settings](/account/)

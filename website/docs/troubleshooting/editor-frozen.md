@@ -1,37 +1,37 @@
 ---
-title: Editor Frozen or White Screen
-description: What to do when the Kite editor stops responding, shows a white screen, gets stuck thinking, or locks the chat box.
+title: Chat Stuck or Page Crashed
+description: What to do when a Kite chat turn never finishes, you see a stream error, or the page shows "Something went wrong."
 ---
 
-# Editor Frozen or White Screen
+# Chat Stuck or Page Crashed
 
-Sometimes the Kite editor stops responding partway through a task. It's usually waiting on a request that hasn't finished, or your browser session needs a quick reset. Your work is saved separately, so these steps are safe to try.
+Sometimes a turn in the website editor runs much longer than expected, or the page errors out. Your work is saved separately, so the steps below are safe to try.
 
 ## Symptoms
 
-- The editor shows a **white or blank screen**.
-- Kite is stuck **"thinking"** and never finishes.
-- The chat or command box is **frozen** and won't accept input.
-- You see a message like **"Please wait for the current request to finish."**
-- You see a **stream error** or an **"app crashed"** message.
+- Kite has been working on one request for a long time with no result.
+- You see a **Stream error**.
+- The page shows **Something went wrong** with a **Reload page** button.
 
-## Cause
+## How the editor handles a busy Kite
 
-Most often the editor is mid-request. It is still processing your last instruction and has locked the input until that finishes. Other times it's a temporary connection drop or a stale browser session. In rare cases a request gets stuck and the project needs to be unlocked on our end.
+While Kite is working, the chat box keeps accepting messages. Anything you send goes into a visible **queue** and runs when the current turn finishes. There is also a **Stop** button that cancels the running turn. The editor never locks you out, and there is no per-project lock that support needs to release; a run that gets stuck is cleaned up automatically.
 
 ## Fixes to try in order
 
-1. **Wait for the current request to finish.** If you just asked Kite to make a change, give it time to complete. Large edits can take a little while, and the box unlocks on its own when it's done.
-2. **Refresh the page.** If nothing is moving, reload the browser tab. This usually clears a white screen or a stuck "thinking" state.
-3. **Reopen the project.** Return to your dashboard and open the project again for a fresh session.
-4. **Check your internet connection.** A dropped connection can cause stream errors and freezes. Reconnect to a stable network and refresh.
-5. **Try a different browser or disable extensions.** A private/incognito window rules out extension conflicts.
-6. **Contact support to reset.** If the editor stays **locked** (for example, it keeps saying "please wait for the current request" even after refreshing and reopening), [contact support](/troubleshooting/) so we can reset it for you. Include your **app URL**, what you were doing, and a screenshot.
+1. **Give it a moment.** Large builds and multi-page changes take time.
+2. **Press Stop.** If a turn has clearly stalled, stop it, then send a shorter or clearer version of the request.
+3. **Refresh the page.** This clears a stream error or a stale session.
+4. **Reload when asked.** If you see **Something went wrong**, click **Reload page**.
+5. **Reopen the project** from your websites list for a fresh session.
+6. **Check your internet connection.** A dropped connection causes stream errors.
+7. **Try a different browser or disable extensions.**
+8. **Contact support.** If the problem repeats, open **Chat with us** with your site URL, what you were doing, and a screenshot.
 
 :::info Your work is safe
-A frozen editor or a crash message doesn't delete your site. Your project is stored separately from the editor window, so refreshing or reopening won't lose your progress.
+A stalled turn or an error screen does not delete your site. Your project is stored separately from the editor window, so refreshing or reopening does not lose your progress.
 :::
 
 ## Recover after a bad edit
 
-If the editor froze right after a change you didn't want (or you want to roll back to how things were before), see [Undo Changes & Version History](/troubleshooting/version-history).
+If a turn changed something you did not want, restore an earlier version. See [Undo Changes & Version History](/troubleshooting/version-history).

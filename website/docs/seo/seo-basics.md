@@ -57,9 +57,7 @@ See also [Images & logos](/building/images-and-logos).
 
 ## Canonical tags
 
-A **canonical tag** tells search engines which version of a page is the "official" one when similar content could be reached at more than one address. This prevents Google from getting confused or splitting your ranking between duplicate URLs. Kite generally sets this for you, but it's worth knowing the term, especially when you connect a custom domain, where the canonical address should point to your real domain. <!-- TODO: verify Kite's default canonical behavior with product -->
-
-If your canonical tag points at your `.kite.space` address instead of your custom domain, see [Sitemap & robots.txt](/seo/sitemap-and-robots), which covers how to ask Kite to fix it.
+A **canonical tag** tells search engines which version of a page is the "official" one when similar content could be reached at more than one address. This prevents Google from getting confused or splitting your ranking between duplicate URLs. Kite sets this for you, and when you connect a custom domain the canonical address switches to your real domain automatically.
 
 ## When will changes show up in Google?
 

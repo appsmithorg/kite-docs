@@ -18,7 +18,7 @@ You don't have to design three separate sites. You design once, and Kite adapts 
 Before you publish, check how your site looks on a phone.
 
 1. Open the preview.
-2. Switch to the mobile (or tablet) view to see how the layout changes. <!-- TODO: verify exact location/label of the mobile preview toggle -->
+2. Click the viewport button in the preview bar. It cycles through Desktop, Tablet (768 px wide), and Mobile (375 px wide).
 3. Scroll through every page and check headings, images, buttons, and the menu.
 
 :::tip
@@ -48,4 +48,4 @@ When you report a mobile issue, name the screen size (mobile, tablet, or desktop
 - **Hamburger menu appears on desktop:** Ask Kite to show the full menu on desktop and only collapse to a hamburger on mobile.
 - **Text overflows or buttons run off the edge on phones:** Tell Kite which page and section, and that it's happening on mobile.
 - **Mobile looks fine in preview but wrong when published:** Publish again and refresh on your phone. See [Changes Not Showing](/publishing/changes-not-showing).
-- **The preview itself won't load:** See [Preview Not Loading](/troubleshooting/preview-not-loading).
+- **The preview itself won't load:** See [Preview Won't Start](/troubleshooting/preview-not-loading).

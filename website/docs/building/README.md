@@ -10,11 +10,11 @@ Building and hosting your website is one of the ways Kite executes your growth s
 ## How building with Kite works
 
 1. **Describe your site.** Tell Kite what you need (for example, "a site for our clinic scheduling product with a homepage, a pricing page, a comparison page against Acme Scheduling, and a demo request form").
-2. **Review what Kite generates.** Kite creates a full site you can preview right away.
-3. **Refine it.** Ask for changes in chat, or use **Point & Edit** to click an element and change it directly. <!-- TODO: verify that "Point & Edit" is still the feature name -->
-4. **Publish.** When you are happy, publish the site so visitors can see it. Kite handles hosting, security, and updates.
+2. **Pick a design.** Kite shows three design options, with chips to restyle the colors or fonts, combine options, or generate more.
+3. **Refine it.** Ask for changes in chat, or use **Point & Edit** to click an element and change it directly.
+4. **Publish.** When you are happy, publish the site so visitors can see it. Kite handles hosting, security, and deploys.
 
-You do not need to write code, manage files, or know design software. You describe the outcome you want, and Kite handles the build.
+You do not need to write code, manage files, or know design software.
 
 :::tip
 The clearer and more specific your request, the better Kite's result. Name the page, the section, the exact text, and the exact color whenever you can.
@@ -22,13 +22,13 @@ The clearer and more specific your request, the better Kite's result. Name the p
 
 ## Site work from Slack
 
-Kite also proposes site changes on its own as part of your growth plan: a new comparison page, a conversion fix on the pricing page, a missing sign-up prompt. Those arrive in Slack with a preview and are published only after your team approves. See [How approvals work](/slack/approvals) and [Conversion fixes](/capabilities/conversion-fixes).
+You can also ask for pages and changes in Slack. Kite builds them as drafts and posts a card with **Preview** and **Review** buttons. Reply "publish it" and Kite deploys, or open the editor and publish yourself. See [Website building](/capabilities/website-building).
 
 ## In this section
 
 - [Editing Your Site](/building/editing-your-site): the two ways to make changes, plus request tips and what to check when an edit does not appear.
-- [Images & Logos](/building/images-and-logos): upload and replace images, add a logo, handle transparent backgrounds, and manage the image frame.
-- [Fonts & Media](/building/fonts-and-media): use brand fonts, upload custom font files, and add other media.
+- [Images & Logos](/building/images-and-logos): upload and replace images, add a logo, generate or edit images, and manage the image frame.
+- [Fonts & Media](/building/fonts-and-media): choose fonts by name, and add video and other media.
 - [Mobile & Responsive Design](/building/responsive-design): how your site adapts to phones and tablets, and how to fix mobile-specific issues.
 - [Pages & Navigation](/building/pages-and-navigation): add pages, link them in your menu, and keep clean URLs.
-- [Starting Designs & Duplicating a Site](/building/templates-and-duplicating): start from a generated design, choose among options, and reuse a design for another project.
+- [Starting Designs & Duplicating a Site](/building/templates-and-duplicating): the three design options, restyling, and duplicating a site.

@@ -1,74 +1,55 @@
 ---
 title: Login & Sign Up
-description: Get started with Kite by adding it to Slack, sign in to the browser workspace to manage billing and your site, and fix common login problems.
+description: Sign in to Kite with Google or an email one-time code, add Kite to Slack, connect your Slack identity to your team, and fix common sign-in problems.
 ---
 
 # Login & Sign Up
 
-Most teams start with Kite by adding it to Slack. The browser workspace is where you sign in to manage billing, open the website editor, and review your account. This guide covers both, plus what to do when a login or email step does not go as planned.
+You sign in to Kite with Google or with a one-time code sent to your email. There is no password to remember and no "sign in with Slack." This page covers creating your account, adding Kite to Slack, linking a teammate's Slack identity, and what to do when a sign-in step does not go as planned.
 
-## Start by adding Kite to Slack
+## Create your account and sign in
 
-1. Go to [kite.ai](https://kite.ai) and click **Add me to Slack**.
-2. Choose your workspace and allow the permissions Slack shows you.
-3. Invite Kite to the channel where you want it to work.
-
-Kite begins its discovery research right away. See [Add Kite to Slack](/get-started/add-kite-to-slack) for the full walkthrough.
-
-<!-- TODO: verify how the Kite account is created during the Slack install (for example, whether it is tied to the installer's Slack identity or to an email address) -->
-
-## Sign in to the browser workspace
-
-1. Go to [kite.ai](https://kite.ai) and select **Login**, which takes you to `auth.kite.ai`.
-2. Sign in with the method you used when you set up Kite. <!-- TODO: verify the sign-in methods offered (email and password, Slack, other providers) -->
-3. Once signed in, you can open your site in the editor, view **Billing**, and manage your account.
+1. Go to [kite.ai](https://kite.ai) and select **Get started** or **Login**.
+2. Choose **Continue with Google**, or enter your email and type the one-time code Kite sends you.
+3. You land in the browser workspace, and a 5-day Growth trial starts automatically. See [Plans & Pricing](/pricing-credits/plans-and-trial).
 
 :::tip Use the same identity every time
-Always sign in with the exact email address or account you used when you set up Kite. A different email (even a small typo or a different provider) looks like a brand-new account.
+Sign in with the same Google account or email address each time. A different email (even a small typo or a different provider) looks like a brand-new account and a brand-new team.
 :::
+
+## Add Kite to Slack
+
+Once you are signed in, click **Add me to Slack** and follow the steps in [Add Kite to Slack](/get-started/add-kite-to-slack). The install is done by a signed-in team member; it does not create the account.
+
+## Connect a teammate's Slack identity
+
+Anyone in the channel can talk to Kite. To give a teammate access to the browser workspace as well, they click the **Connect Kite account** button Kite offers in Slack, or a team owner or admin adds them to the team. See [Team access](/slack/team-access).
 
 ## Troubleshooting
 
-### Verification link failing
+### The one-time code did not arrive
 
-If you receive a verification email and the link does not work or says it is expired:
-
-- **Try again from the same browser and tab** you used to sign up. Opening the link in a different browser or device can cause it to fail.
-- **Do not sign up again.** Repeated sign-ups can create duplicate accounts under the same email and make things harder to fix.
-- If it still will not verify, **contact support** and let them know the email you used so they can help confirm your account.
-
-### Password-reset email not arriving
-
-If you requested a password reset and the email has not shown up:
-
-- **Check your spam or junk folder.** Automated emails sometimes land there.
-- **Wait a few minutes.** Delivery can take a little time. Avoid requesting it over and over.
-- **Make sure you entered the correct email,** the one you actually used to set up Kite.
-- If nothing arrives after several minutes and a spam check, contact support.
-
-:::note
-If reset emails (or other Kite emails) consistently do not reach you, your mail provider may be filtering them. See [Email sending troubleshooting](/troubleshooting/email-sending).
-:::
+- **Check your spam or junk folder.**
+- **Wait a minute before requesting another.** Codes can take a moment to arrive, and each new request replaces the last code.
+- **Make sure you typed the right email.**
+- If nothing arrives after a few minutes, open **Chat with us** on kite.ai.
 
 ### "Session has already ended" or login errors when you return
 
-If you come back later and see a "session has already ended" message or another login error:
-
 - **Start the login again from kite.ai** rather than reloading an old page.
-- **Close any stale tabs** left open from a previous session. They can hold an expired session and cause errors.
-- Try signing in fresh in a single, new tab.
+- **Close any stale tabs** left open from a previous session.
+- Sign in fresh in a single, new tab.
 
-### Kite is in Slack but you cannot find the browser login
+### Kite is in Slack but you cannot open the browser workspace
 
-The Slack install and the browser workspace are two doors to the same account. Go to [kite.ai](https://kite.ai), select **Login**, and sign in with the identity used during the Slack install. If you are not sure which identity that was, contact support with your Slack workspace name.
+Click the **Connect Kite account** button in Slack to link your Slack identity to the team, or ask a team owner or admin to add you. If you are not sure who that is, open **Chat with us** with your Slack workspace name.
 
 ### Still cannot get in?
 
-If none of the above works, contact support and include the email address on your account and your Slack workspace name so the team can locate it.
+Open **Chat with us** on kite.ai and include the email address you sign in with and your Slack workspace name.
 
 ## Related help
 
 - [Add Kite to Slack](/get-started/add-kite-to-slack)
-- [Account & Settings](/account/): overview of your account and data options.
-- [Email sending troubleshooting](/troubleshooting/email-sending): when Kite emails do not arrive.
-- [Delete Your Account & Data](/account/delete-account): if you need to remove your account.
+- [Team access](/slack/team-access)
+- [Delete Your Account & Data](/account/delete-account)
