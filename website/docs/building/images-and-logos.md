@@ -1,11 +1,11 @@
 ---
 title: Images & Logos
-description: Upload and replace images, add your logo, get a transparent background, manage Kite's auto-applied image frame, and fix image replacements that fail or lose quality.
+description: Upload and replace images, add your logo, generate or edit images, get a transparent background, and manage the image frame.
 ---
 
 # Images & Logos
 
-Images and logos give your site its personality. With Kite you can upload your own pictures, swap out the ones Kite generated, and adjust how images are framed and presented — all from chat or **Point & Edit**.
+Images and logos give your site its personality. With Kite you can upload your own pictures, swap out the ones Kite generated, and adjust how images are framed and presented, all from chat or **Point & Edit**.
 
 ## Upload and replace an image
 
@@ -13,7 +13,7 @@ Images and logos give your site its personality. With Kite you can upload your o
 2. Choose to upload a new image, and pick the file from your device.
 3. Confirm, then preview the result.
 
-You can also ask in chat — for example:
+You can also ask in chat, for example:
 
 > Replace the photo in the hero section on the **Home** page with the image I'm uploading.
 
@@ -25,18 +25,26 @@ Upload images at a good size and resolution. Large, clear images look sharp; tin
 
 1. Use **Point & Edit** to click your current logo (often in the header), or ask Kite where your logo lives.
 2. Upload your logo file.
-3. Check it on both desktop and mobile — see [Mobile & Responsive Design](/building/responsive-design).
+3. Check it on both desktop and mobile. See [Mobile & Responsive Design](/building/responsive-design).
 
 Prompt example:
 
 > Replace the logo in the header with the file I'm uploading, and keep it the same size.
 
+## Generate or edit an image
+
+Kite can generate images, edit existing ones, and remove backgrounds. Ask in chat:
+
+> Generate a hero image of a calm clinic front desk, soft morning light, no people.
+
+> Remove the background from the logo I just uploaded.
+
 ## Getting a transparent background
 
 A transparent background lets your logo sit cleanly over any color or photo, without a white box around it.
 
-1. Upload a logo that already has a transparent background (usually a `.png` file). <!-- TODO: verify supported transparent formats with product -->
-2. If your logo has a solid background you want removed, ask Kite to help — for example:
+1. Upload a logo that already has a transparent background (a `.png`, `.svg`, or `.webp` file).
+2. If your logo has a solid background you want removed, ask Kite to remove it, for example:
 
 > Can you remove the white background from my logo so it's transparent?
 
@@ -46,7 +54,7 @@ The cleanest results come from a logo file that's already transparent. If you ha
 
 ## The image frame (and how to remove it)
 
-Kite often applies a **frame** to images automatically — for example a border, rounded corners, or a shadow — to make them look polished. If you want a plain, edge-to-edge image instead, just ask:
+Kite often applies a **frame** to images automatically (for example a border, rounded corners, or a shadow) to make them look polished. If you want a plain, edge-to-edge image instead, just ask:
 
 > Remove the frame from the image in the hero section so it has no border, no rounded corners, and no shadow.
 
@@ -61,11 +69,11 @@ You can also ask Kite to change the frame rather than remove it:
 - **The replacement didn't take:** Try again with **Point & Edit** so Kite knows exactly which image you mean, then confirm which image it changed.
 - **The new image looks blurry or pixelated:** Upload a higher-resolution source file. Kite can't add detail that isn't in the original.
 - **The image looks stretched or squished:** Ask Kite to keep the original aspect ratio, or to fit the image without distorting it.
-- **The change isn't showing on your live site:** Publish again and refresh — see [Changes Not Showing](/publishing/changes-not-showing).
+- **The change isn't showing on your live site:** Publish again and refresh. See [Changes Not Showing](/publishing/changes-not-showing).
 
 ## Troubleshooting
 
-- **Upload didn't work:** Try a different file or a smaller file size, and make sure it's a common image format.
+- **Upload did not work:** Check the file is under 10 MB and in a supported format (PNG, JPG, WebP, GIF, HEIC, SVG, TIFF, BMP, ICO, or AVIF).
 - **Wrong image got replaced:** Use **Point & Edit** to target the exact image, then ask Kite to confirm which one it changed.
 - **Logo has an unwanted white box:** Use a transparent file, or ask Kite to remove the background.
 - **Image looks great in the editor but not when published:** See [Changes Not Showing](/publishing/changes-not-showing).

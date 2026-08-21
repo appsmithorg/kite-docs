@@ -1,11 +1,11 @@
 ---
 title: How to Publish Your Site
-description: Take your Kite site live in one click and get your free kite.space address.
+description: Take your Kite site live in one click, get your free kite.space address, and see what the publish panel shows you.
 ---
 
 # How to Publish Your Site
 
-Publishing makes the site you've built visible to the world. Here's how to do it and what happens behind the scenes.
+Publishing makes the site you have built visible to the world. Here is how to do it and what happens behind the scenes.
 
 ## Publish your site
 
@@ -14,28 +14,33 @@ Publishing makes the site you've built visible to the world. Here's how to do it
 
 ![Publish button in the top bar](/img/docs/publish-button.png)
 
-3. The **first time** you publish, pick a **Site Domain** for your free `kite.space` address, then click **Publish**. See [Your free kite.space URL](/publishing/your-kite-url) for how that works.
-4. Wait a few moments while Kite deploys your site.
-5. When it's done, Kite shows you the live link to your site.
+3. The **first time** you publish, pick a **Site Domain** for your free `kite.space` address, then click **Publish**. See [Your free kite.space URL](/publishing/your-kite-url).
+4. Wait about 40 seconds while Kite deploys your site. The panel shows progress and then **Published · just now**.
+5. The panel shows your live link and a QR code you can scan to open the site on your phone.
 
 ## What happens when you publish
 
 - Kite takes the **latest changes** from your editor and deploys them to the live web.
-- Anything you've edited but not yet published stays in the editor until your next publish.
-- The **first time** you publish, Kite assigns your free `<name>.kite.space` web address. That address stays with your project. See [Your free kite.space URL](/publishing/your-kite-url).
+- Anything you have edited but not yet published stays in the editor until your next publish.
+- The **first time** you publish, Kite assigns your free `<name>.kite.space` address. You can rename it later from the same panel.
+- On paid plans, Kite verifies your domain with Google Search Console and submits your sitemap, and the panel shows the status. See [Sitemap & robots.txt](/seo/sitemap-and-robots).
 
 :::info
-Only published changes are visible to visitors. The editor and preview show your work-in-progress; the live site shows your most recent publish. Learn more in [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
+Only published changes are visible to visitors. The editor and preview show your draft; the live site shows your most recent publish. If there are no new edits since the last publish, the button is disabled with the note **No changes to update**.
 :::
+
+## Publishing from Slack
+
+When Kite builds a site change from a Slack thread, reply "publish it" and Kite merges the draft and deploys it, then posts the live link. Or click **Review** on the card to open the editor and publish yourself.
 
 ## Next step
 
-Want to use your own web address instead of `kite.space`? Once your site is published, you can connect a custom domain.
+Want to use your own web address instead of `kite.space`? Once your site is published, and your team is on Growth or Business (or in the trial), you can connect a custom domain.
 
 - [Connect a custom domain](/custom-domains/connect-a-custom-domain)
 
 ## Troubleshooting
 
-- **The Publish button does nothing or shows no changes.** You may have already published your latest edits. See [My Changes Aren't Showing on the Live Site](/publishing/changes-not-showing).
+- **The Publish button is disabled with "No changes to update."** You have already published your latest edits. Make an edit to publish again. See [My Changes Aren't Showing](/publishing/changes-not-showing).
 - **Publishing failed or showed an error.** See [Why Did Publishing Fail?](/publishing/publish-failures).
-- **The editor is frozen and you can't click Publish.** See [Editor frozen](/troubleshooting/editor-frozen).
+- **The chat is stuck and you cannot reach Publish.** See [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen).

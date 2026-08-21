@@ -1,55 +1,37 @@
 ---
 title: Export or Download Your Site
-description: What you can get a copy of from your Kite site today, the current limits on code export, and how to request it.
+description: Download your website's source code as a ZIP from your site's Settings, on any plan, and learn what the export contains.
 ---
 
 # Export or Download Your Site
 
-Want a copy of your site or its code? Here's an honest look at what's possible today on Kite, what isn't, and how to ask for what you need.
+You can download your website's source code at any time, on any plan. This page shows where the button is and what you get.
 
-:::note Export is currently a request, not an instant download
-Right now, exporting or downloading your site's code is **limited** and handled as a **request** — you may be routed to talk to the team rather than getting an instant self-serve download. The steps below explain how to ask. <!-- TODO: verify current export availability and process -->
-:::
+## Download your site's code
 
-## What you can and can't get today
+1. Open your site in the browser workspace and go to **Settings**.
+2. In the **Export** section ("Download your website's source code"), click **Export code**.
+3. The first time, a short feedback form appears. Fill it in and the download starts. After that, the button downloads directly.
 
-<!-- TODO: verify current export availability and process -->
+Your browser receives a ZIP file named `<site-name>-frontend.zip`.
 
-What's available may change, but here's the current picture:
+## What the export contains
 
-- **You can** keep your site live and hosted on Kite, and you can connect your own custom domain so it's reachable at your address. See [Custom Domains](/custom-domains/).
-- **You can** request a copy of your site or its code by contacting the team.
-- **You may not** be able to instantly download a full code bundle yourself the way you would from some other tools — full code export/download is limited today and isn't a one-click self-serve feature yet.
+The ZIP holds your site's source tree: the pages, components, styles, and content. It leaves out git history, environment files, and build output. A developer can run it or host it anywhere that runs a Next.js site.
 
-If your main goal is to have your site at your own web address, you likely want a **custom domain** rather than a code export. See [Connect a Custom Domain](/custom-domains/connect-a-custom-domain).
+## Other ways to get your code
 
-## How to request your site or its code
-
-1. Decide what you actually need — your live site at your own domain, or a copy of the underlying code.
-2. If you need a code copy, **contact the support team** and ask about exporting or downloading your site.
-3. Include your account email and the name of the site you're asking about.
-4. The team will let you know what's available and walk you through next steps. You may be routed to talk to them directly rather than getting an instant download. <!-- TODO: verify current export availability and process -->
-
-:::tip Just want it at your own address?
-If you don't actually need the raw code and only want your site reachable at your own domain, connecting a custom domain is usually the simpler path. See [Connect a Custom Domain](/custom-domains/connect-a-custom-domain).
-:::
+- **Sync to GitHub.** Connect a repository from the Integrations page and Kite keeps it in sync with your site both ways. See [Integrations](/forms-integrations/integrations).
+- **Just want your own web address?** You do not need to export anything for that. Connect a custom domain and keep your site hosted on Kite. See [Connect a Custom Domain](/custom-domains/connect-a-custom-domain).
 
 ## Troubleshooting
 
-### I don't see a download or export button
+**The download did not start.** Check your browser's download bar and pop-up settings, then click **Export code** again.
 
-That's expected for now — code export/download isn't a one-click self-serve feature yet. Request it by contacting support with your account email and site name. <!-- TODO: verify current export availability and process -->
-
-### I'm leaving Kite and want my content
-
-Contact the team to ask what they can provide for your site, and save anything you can before making account changes. If you're also planning to delete your account, get your copy **first** — see [Delete Your Account & Data](/account/delete-account).
-
-### I just want my site at my own domain
-
-You don't need to export anything for that. Connect a custom domain and keep your site hosted on Kite. See [Connect a Custom Domain](/custom-domains/connect-a-custom-domain).
+**I'm leaving Kite and want my content.** Export each site you want to keep before you delete your account. See [Delete Your Account & Data](/account/delete-account).
 
 ## Related help
 
-- [Custom Domains](/custom-domains/) — point your own address at your Kite site.
-- [Delete Your Account & Data](/account/delete-account) — save a copy before you delete.
-- [Account & Settings](/account/) — overview of your account and data options.
+- [Custom Domains](/custom-domains/)
+- [Integrations](/forms-integrations/integrations)
+- [Delete Your Account & Data](/account/delete-account)

@@ -8,7 +8,7 @@ description: Find your DNS settings at popular domain registrars so you can poin
 It doesn't matter where you bought your domain. What matters is that its DNS points to Kite. This article shows you where the DNS settings live at the most common registrars so you can add the records Kite needs.
 
 :::note Registrar vs. DNS
-Your **registrar** is the company you bought the domain from. **DNS** is the set of records that tell browsers where to send visitors. You don't move the domain anywhere — you just edit its DNS records to point at Kite.
+Your **registrar** is the company you bought the domain from. **DNS** is the set of records that tell browsers where to send visitors. You don't move the domain anywhere. You just edit its DNS records to point at Kite.
 :::
 
 ## The general process
@@ -18,7 +18,7 @@ No matter which registrar you use, the steps are the same:
 1. Connect your domain in Kite first. See [Connect a custom domain](/custom-domains/connect-a-custom-domain).
 2. If the one-click **Entri** flow supports your provider, sign in and let it do the work.
 3. If you're doing it manually, log in to your registrar, open its DNS settings, and add the records Entri shows you.
-4. Save, then return to Kite and **republish** if prompted.
+4. Save. Kite republishes your site for you once the connection succeeds.
 
 :::tip Use Entri's one-click flow when you can
 Most of the registrars below are supported in Entri, which adds the records for you. Only dig into the menus below if your provider isn't listed or someone else manages your DNS.
@@ -64,7 +64,7 @@ Google Domains was migrated to **Squarespace**, so if you bought a domain throug
 3. Add the records from Entri.
 
 :::caution Common mistake: editing the wrong place when Cloudflare is in the middle
-If your domain's **nameservers** are pointed (delegated) to Cloudflare, then Cloudflare is in charge of your DNS — not the registrar you originally bought the domain from. In that case you must edit the records **inside Cloudflare**, not at the original registrar. Records added at the old registrar will be ignored.
+If your domain's **nameservers** are pointed (delegated) to Cloudflare, then Cloudflare is in charge of your DNS, not the registrar you originally bought the domain from. In that case you must edit the records **inside Cloudflare**, not at the original registrar. Records added at the old registrar will be ignored.
 
 A **nameserver** is the server that answers DNS questions for your domain. Whichever service your nameservers point to is the one you edit.
 :::
@@ -75,7 +75,7 @@ If you're not sure, look at your domain's nameservers at your registrar. If they
 
 ## My registrar isn't listed
 
-You can still connect manually. Log in to your registrar, find its DNS or "DNS zone" settings, and add the records that Entri shows you. The record types are standard (`A` and `CNAME`), so any registrar can host them. See the record reference in [Connect a custom domain](/custom-domains/connect-a-custom-domain#dns-records-youll-typically-add).
+You can still connect manually. Log in to your registrar, find its DNS or "DNS zone" settings, and add the records that Entri shows you. The record types are standard (`A`, `CNAME`, `MX`, and `TXT`), so any registrar can host them. See the record reference in [Connect a custom domain](/custom-domains/connect-a-custom-domain#the-records-you-will-see).
 
 ## Troubleshooting
 

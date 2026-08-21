@@ -1,54 +1,48 @@
 ---
-title: Plans & Free Trial
-description: A feature-level overview of Kite's plan tiers and how the free trial works.
+title: Plans & Pricing
+description: Kite's Free, Growth, and Business plans, what each includes, how the automatic 5-day trial works and what happens when it ends, and the launch offer.
 ---
 
-# Plans & Free Trial
+# Plans & Pricing
 
-Kite offers a free option to get started plus paid plans that unlock more features. This page describes the tiers at a feature level so you can pick what fits — without getting lost in the details.
+Kite has three plans: Free, Growth, and Business. Every plan gives your whole team access, includes the Slack integration, and uses credits for the work Kite does. The current, authoritative pricing is always at [kite.ai/pricing](https://kite.ai/pricing). This page summarises it as of August 2026.
 
-## The plan tiers
+## The plans
 
-Kite has a small set of plans, from a free option up to plans built for businesses. <!-- TODO: verify plan names and contents -->
+- **Free ($0).** Access to the complete product, the Slack integration, and connections to more than 3,000 integrations. Each new team receives a one-time grant of $15 in credits. There is no subscription and no credit card required. When the credits are used, you upgrade to keep going.
+- **Growth ($100 per month, or $1,020 per year).** Everything in Free, plus $100 in credits every month. Monthly credits reset each billing cycle and do not roll over. Paid yearly, Growth works out to $85 per month and still grants $100 in credits each month. Growth unlocks custom domains and badge removal.
+- **Business (custom pricing).** Everything in Growth, with usage limits scaled to your needs and help from the Kite team designing, building, and running your workflows.
 
-- **Free** — A no-cost way to build and explore Kite. Great for trying things out. Some features are reserved for paid plans (see below). <!-- TODO: verify -->
-- **Creator** — A paid plan aimed at individuals and freelancers who want to publish a real site with their own branding. <!-- TODO: verify name/contents -->
-- **Business** — A paid plan for businesses that need the most capacity and features. <!-- TODO: verify name/contents -->
+## The 5-day trial
 
-:::info
-Plan names, what each includes, and prices can change. Check your current options in your billing settings before deciding. <!-- TODO: verify with product -->
-:::
+Every new team starts a 5-day Growth trial automatically on first sign-in. During the trial you have the paid features of Growth, such as connecting a custom domain, and the usage meter shows your plan as **Growth Trial**. The trial unlocks features; it does not add credits.
 
-## Features that need a paid plan
+When the trial ends, Kite shows a short downgrade wizard. You choose which of your websites to keep on the Free plan. The others are locked until you upgrade, any custom domains are disconnected and sites return to their `kite.space` address, the Kite badge appears on your sites, and you cannot buy extra credits until you are on a paid plan. Upgrading to Growth at any point skips all of that.
 
-Some features become available once you're on a paid plan. Typically these include:
+## What is the same on every plan
 
-- **Connecting a custom domain** so your site uses your own web address. See [Custom Domains](/custom-domains/). <!-- TODO: verify which plans include custom domains -->
-- **Removing the "Built with Kite" badge** from your published site. See [Remove the "Built with Kite" Badge](/pricing-credits/remove-kite-badge). <!-- TODO: verify which plan -->
-- **A larger monthly credit allowance** for AI building and editing. See [How Credits Work](/pricing-credits/how-credits-work).
+- **Your whole team can use Kite.** There is no per-seat charge. See [Team access](/slack/team-access).
+- **Credits power the work.** Every conversation and every task Kite runs draws from your credits. See [How credits work](/pricing-credits/how-credits-work).
+- **Your live site keeps running.** When credits run out, Kite pauses new work, but hosting, analytics, and leads keep working.
 
-## How the free trial works
+## Features that need Growth or Business
 
-A trial lets you experience paid features before committing. <!-- TODO: verify whether a trial exists and its length; do not quote a length without verifying -->
+- **Connecting a custom domain.** Moving to Free disconnects custom domains automatically. See [Custom domains](/custom-domains/).
+- **Removing the "Built with Kite" badge.** See [Remove the badge](/pricing-credits/remove-kite-badge).
+- **Buying extra credits.** Top-ups are available on paid plans only. See [Buy more credits](/pricing-credits/buy-credits).
+- **Full site analytics.** Free shows a visitor count; paid plans show the full picture. See [Site analytics](/forms-integrations/analytics).
+- **Automatic Google Search Console submission** after publish. See [Sitemap & robots.txt](/seo/sitemap-and-robots).
 
-1. Start the trial from your billing or upgrade screen.
-2. Use the paid features included in the trial just as you would on a paid plan.
-3. When the trial ends, you'll either move to a paid plan (if you've added payment) or back to the free option.
+## Launch offer
 
-:::warning
-When a trial ends and you don't continue on a paid plan, paid-only features stop working. For example, a connected custom domain or a removed badge may revert. Make sure anything important to your live site is covered by an active paid plan. <!-- TODO: verify exact end-of-trial behavior -->
-:::
+The first 100 subscribers get five times their plan's usage for the first month.
 
 ## Common questions
 
-**Do I have to pay to try Kite?**
-No. You can use the free option without a trial, and start a trial or paid plan whenever you're ready.
+**Do I have to pay to try Kite?** No. The Free plan and the automatic trial let you use the complete product with no credit card.
 
-**What happens to my site if I stay on the free plan?**
-Your site keeps working, but paid-only features (like a custom domain or badge removal) won't be available. <!-- TODO: verify -->
+**What happens when my Free credits run out?** Kite pauses new work until you upgrade to Growth. Your live site keeps working.
 
-**How do I change or cancel my plan?**
-See [Manage, Cancel, or Downgrade Your Subscription](/pricing-credits/manage-subscription).
+**How do I change or cancel my plan?** See [Manage, cancel, or downgrade your subscription](/pricing-credits/manage-subscription).
 
-**What if I run out of credits but don't want a higher plan?**
-You can buy top-up credits. See [Buy More Credits](/pricing-credits/buy-credits).
+**What if I run out of credits on Growth?** Buy a credit pack, or talk to the Kite team about Business. See [Buy more credits](/pricing-credits/buy-credits).

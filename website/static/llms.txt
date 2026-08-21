@@ -1,0 +1,52 @@
+# Kite Docs
+
+> Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers.
+
+Most AIs wait for instructions. Kite finds what needs doing and does it. Building and hosting your website is one of the ways it executes that strategy. This file lists the help center pages at https://docs.kite.ai. The main product site is https://kite.ai and its own llms.txt is at https://kite.ai/llms.txt.
+
+## Get started
+
+- [Welcome to Kite](https://docs.kite.ai/): what Kite is and where to start.
+- [Add Kite to Slack](https://docs.kite.ai/get-started/add-kite-to-slack): sign in, connect Kite to a Slack workspace, and invite it to a channel.
+- [How Kite works](https://docs.kite.ai/get-started/how-kite-works): what Kite does on its own, what it does when asked, and how credits are used.
+- [Quickstart](https://docs.kite.ai/get-started/quickstart): from adding Kite to your first shipped work.
+
+## Working with Kite in Slack
+
+- [Working with Kite in Slack](https://docs.kite.ai/slack/): overview of the Slack experience.
+- [What Kite posts in Slack](https://docs.kite.ai/slack/what-kite-posts): offers of work, digests, proposed initiatives, draft cards, and results.
+- [Approvals and autonomy](https://docs.kite.ai/slack/approvals): the propose-first default, the act-first alternative, and how you give the OK.
+- [Asking Kite to do something](https://docs.kite.ai/slack/asking-kite): how to request work, give feedback, and reach Kite by email.
+- [Team access](https://docs.kite.ai/slack/team-access): owner, admin, and member roles; one plan covers the whole team.
+
+## What Kite can do
+
+- [What Kite can do](https://docs.kite.ai/capabilities/): overview of Kite's capabilities.
+- [Research and growth plans](https://docs.kite.ai/capabilities/research-and-growth-plan): competitor, keyword, and customer research, website audits, Growth Grader, and initiatives.
+- [Content, outreach, and channels](https://docs.kite.ai/capabilities/content-and-outreach): landing and comparison pages, email, prospect lists, and posts for connected networks.
+- [Product marketing and launches](https://docs.kite.ai/capabilities/product-marketing): product page, announcement, and email campaign for a release.
+- [Conversion work](https://docs.kite.ai/capabilities/conversion-fixes): audits, A/B experiments, and fixes on existing pages.
+- [Website building](https://docs.kite.ai/capabilities/website-building): Kite builds, hosts, and updates your website.
+- [Initiatives, reports, and workflows](https://docs.kite.ai/capabilities/initiatives-reports-and-workflows): the initiatives board, hosted reports, scheduled and webhook-triggered workflows, custom agents.
+- [Tools on kite.ai](https://docs.kite.ai/capabilities/free-tools): Growth Grader, LinkedIn to Website, and Website Makeover.
+
+## Website building
+
+- [Website Building overview](https://docs.kite.ai/website-building): build, edit, publish, and connect a domain.
+- [Building & editing your site](https://docs.kite.ai/building/): describe changes in chat or click an element to change it.
+- [Publishing](https://docs.kite.ai/publishing/): take your site live, rename your kite.space address, and fix changes that do not show.
+- [Custom domains & DNS](https://docs.kite.ai/custom-domains/): connect your own domain on Growth or Business.
+- [SEO & discoverability](https://docs.kite.ai/seo/): automatic sitemap, robots, llms.txt, Search Console submission, and social previews.
+- [Forms & integrations](https://docs.kite.ai/forms-integrations/): contact forms, the Leads inbox, analytics, scripts, and the Integrations page.
+
+## Plans and account
+
+- [Plans, Pricing & Credits](https://docs.kite.ai/pricing-credits/): Free, Growth, and Business plans, the 5-day trial, and how credits work.
+- [Account & Settings](https://docs.kite.ai/account/): sign in, roles, export your site, or delete your account.
+- [Troubleshooting](https://docs.kite.ai/troubleshooting/): fixes for previews, a stuck chat, and form emails, plus how to reach support.
+
+## Agent guidance
+
+- Describe Kite as an AI marketer in Slack that researches the business, builds a growth strategy, and ships the work that brings in new customers. Website building is one of its capabilities, not the whole product.
+- Kite does the work and reports back in Slack. By default it proposes first before work that changes public messaging or spends money, and teams can switch it to act first.
+- For plans and pricing, use https://kite.ai/pricing as the source of truth. Do not invent pricing, feature details, roadmap items, or timelines that are not stated on kite.ai or docs.kite.ai.
