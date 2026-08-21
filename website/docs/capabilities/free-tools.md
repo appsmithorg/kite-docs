@@ -1,15 +1,15 @@
 ---
-title: Free Tools
-description: Kite's free tools on kite.ai, including Growth Grader, LinkedIn to Website, and Website Makeover, and how each one relates to working with Kite.
+title: Tools on kite.ai
+description: The tools offered on kite.ai, including Growth Grader, LinkedIn to Website, and Website Makeover, and what each one needs from you.
 ---
 
-# Free Tools
+# Tools on kite.ai
 
-Alongside the full product, kite.ai offers a few free tools you can use without adding Kite to Slack. Each one gives you a quick result on its own and a natural starting point if you decide to work with Kite.
+Alongside the full product, kite.ai offers a few tools that give you a quick result and a natural starting point for working with Kite. Each needs a Kite account, which takes a minute to create with Google or an email code.
 
 ## Growth Grader
 
-[Growth Grader](https://kite.ai/growth-grader) reviews your current marketing presence and gives you a graded report of where you stand and what to improve. It is a quick way to see the kind of research Kite does in discovery before you add Kite to your workspace. <!-- TODO: verify what Growth Grader takes as input and what the report covers -->
+[Growth Grader](https://kite.ai/growth-grader) takes your company domain and grades it against a 138-point checklist covering positioning, search demand, AI visibility, conversion, onboarding, reviews, unit economics, paid and outbound, owned audience, and technical blockers. Running it uses credits, and Kite announces the finished report in your Slack home channel. It is a quick way to see the kind of research Kite does before you put it to work.
 
 ## LinkedIn to Website
 
@@ -17,7 +17,7 @@ Alongside the full product, kite.ai offers a few free tools you can use without 
 
 ## Website Makeover
 
-[Website Makeover](https://kite.ai/your-website-makeover) takes your existing website and shows you what a rebuilt version could look like. It is useful when you already have a site and want to see what Kite would change before committing. <!-- TODO: verify what Website Makeover takes as input and what it produces -->
+[Website Makeover](https://kite.ai/your-website-makeover) takes your existing website and shows you what a rebuilt version could look like. It is useful when you already have a site and want to see what Kite would change before committing. <!-- TODO: verify what Website Makeover takes as input and what it produces; it is not part of the product codebase -->
 
 ## Related
 

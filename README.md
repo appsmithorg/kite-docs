@@ -2,7 +2,7 @@
 
 Documentation site for [Kite](https://kite.ai), built with [Docusaurus](https://docusaurus.io/).
 
-Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers. Building and hosting your website is one of the ways it executes that strategy, and nothing goes live without your approval.
+Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers. Most AIs wait for instructions. Kite finds what needs doing and does it. Building and hosting your website is one of the ways it executes that strategy.
 
 ## Development
 

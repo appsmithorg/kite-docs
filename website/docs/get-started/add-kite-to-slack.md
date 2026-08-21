@@ -1,43 +1,45 @@
 ---
 title: Add Kite to Slack
-description: Connect Kite to your Slack workspace, invite it to a marketing channel, and confirm it is ready to start researching your business.
+description: Sign in to Kite, connect it to your Slack workspace, invite it to a channel, and watch it read your website and offer its first piece of work.
 ---
 
 # Add Kite to Slack
 
-Kite works inside your Slack workspace, so adding it to Slack is the first step. This page covers what happens when you add Kite, what to do right after, and how to confirm it is working.
+Kite works inside your Slack workspace, so adding it to Slack is the first step. This page covers what you need before you start, what the install asks for, and what Kite does the moment it joins a channel.
 
 ## Before you start
 
-- You need a Slack workspace where you are allowed to install apps, or a workspace admin who can approve the installation for you. <!-- TODO: verify the exact Slack permission scopes Kite requests and whether admin approval is required -->
-- Kite's Free plan includes the Slack integration, so you do not need a paid plan or a credit card to get started. See [Plans & Pricing](/pricing-credits/plans-and-trial).
-- Decide which channel Kite should work in. Many teams use their existing marketing channel or create a dedicated one such as `#growth` or `#product-marketing`.
+- **A Kite account.** The Slack install is done by a signed-in Kite team member. Sign in at [kite.ai](https://kite.ai) with Google or with a one-time code sent to your email. See [Login & Sign Up](/account/login-and-signup).
+- **A Slack workspace where you can install apps.** Whether an admin has to approve the install depends on your workspace's Slack policy, not on Kite.
+- **A channel for Kite to work in.** Many teams use their existing marketing channel or create one such as `#growth`. Kite works in any channel you invite it to, and it also answers direct messages.
+
+Kite's Free plan includes the Slack integration, so you do not need a paid plan or a credit card to get started. See [Plans & Pricing](/pricing-credits/plans-and-trial).
 
 ## Add Kite to your workspace
 
-1. Go to [kite.ai](https://kite.ai) and click **Add me to Slack**.
-2. Sign in to Slack if prompted, and choose the workspace you want to add Kite to.
-3. Review the permissions Slack shows you and allow them. <!-- TODO: verify the permission list shown during install -->
-4. Once Kite is installed, invite it to the channel where you want it to work, the same way you would invite a teammate. <!-- TODO: verify whether Kite joins a channel automatically or must be invited -->
+1. Sign in to Kite, then click **Add me to Slack** on [kite.ai](https://kite.ai) or in your Kite workspace.
+2. Choose the Slack workspace you want to add Kite to.
+3. Review the permissions and allow them. Kite asks to read messages in the channels, groups, and direct messages it is part of, to be mentioned, to post messages, to manage and join channels, to add reactions, to read user names and emails, to work with files, and to search.
+4. Invite Kite to a channel the same way you would invite a teammate, for example `/invite @Kite`. Kite never joins a channel on its own.
 
-## What happens next
+## What Kite does when it joins
 
-After Kite joins your workspace, it starts discovery. It researches your product, your customers, your competitors, and what AI answer engines currently say about you. It then posts a proposed growth strategy in your channel for your team to review. See [Quickstart: Your first week with Kite](/get-started/quickstart) for what that first week looks like.
+As soon as Kite is added to a channel it says hello, reads your company's website, and replies with one or two offers of work it can start on right away. Accept one in the thread and Kite gets going. You can also skip the offers and ask for something else. See [Quickstart](/get-started/quickstart).
 
-:::info Nothing goes live without your approval
-Kite posts its research and recommendations in Slack first. It only ships work after someone on your team approves it. See [How approvals work](/slack/approvals).
-:::
+## Bring in your teammates
 
-## Who on your team can use Kite
+Anyone in the channel can talk to Kite and give it the OK. To link a teammate's Slack identity to your Kite team so they can also use the browser workspace, they click the **Connect Kite account** button Kite offers, or a team owner or admin adds them. See [Team access](/slack/team-access).
 
-One Kite plan covers your whole team, with no per-seat limit. Anyone in the channel can read Kite's updates, ask it questions, and approve work. See [Team access](/slack/team-access). <!-- TODO: verify whether approval rights can be limited to specific people -->
+## Channel settings
+
+For each channel, your team can choose how Kite replies: follow threads automatically (the default), respond only when tagged, or retire from the channel. Kite treats the first channel your team engaged it in as its home channel, which is where digests and report announcements land. <!-- TODO: verify where the per-channel reply mode is set in the UI -->
 
 ## The browser workspace
 
-Kite also has a browser-based workspace where you sign in to manage billing, open the website editor, and review your account. Slack is where Kite brings you its research and its work. The browser is where you manage your account and make hands-on edits to your site. See [Login & Sign Up](/account/login-and-signup).
+Kite also has a browser workspace at [kite.ai](https://kite.ai), where you open the website editor, browse integrations, view analytics and leads, and manage billing. Slack is where Kite brings you its work. The browser is where you make hands-on edits and manage the account. See [Login & Sign Up](/account/login-and-signup).
 
 ## Troubleshooting
 
-- **The Add to Slack button asks for an admin.** Your workspace restricts app installs. Ask a Slack admin to approve Kite, then try again.
-- **Kite installed but is not posting.** Make sure Kite has been invited to the channel you expect, then mention it directly with a question to confirm it responds.
-- **You want Kite in more than one channel.** Invite it to each channel where you want it to work. <!-- TODO: verify how Kite behaves across multiple channels -->
+- **The install asks for an admin.** Your workspace restricts app installs. Ask a Slack admin to approve Kite, then try again.
+- **Kite is in the channel but quiet.** Mention it directly with a question. If the channel is set to respond only when tagged, Kite waits to be tagged.
+- **A teammate cannot open the browser workspace.** They need to connect their Kite account from Slack, or be added by an owner or admin. See [Team access](/slack/team-access).

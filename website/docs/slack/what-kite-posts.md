@@ -1,43 +1,40 @@
 ---
 title: What Kite Posts in Slack
-description: The kinds of messages Kite brings to your channel, from discovery summaries and growth plans to drafts awaiting approval and weekly results.
+description: The kinds of messages Kite brings to your channel on its own and in reply, from its first offers of work to digests, proposed initiatives, draft cards, and results.
 ---
 
 # What Kite Posts in Slack
 
-Once Kite is in your channel, it posts on its own when it has something worth your attention. This page describes the kinds of posts to expect so your team knows what each one is asking of you.
+Kite posts in two situations: when you ask it something, and when it has found something worth doing. This page describes the kinds of posts to expect so your team knows what each one is asking of you.
 
-## Discovery summaries
+## Offers of work
 
-When Kite first joins, and again when it learns something new, it posts a summary of its research: what your product does, who your customers are, who you compete with, and what AI answer engines currently say about you. These posts are for context. Reply in the thread if Kite missed something or got something wrong.
+When Kite first joins a channel it reads your company's website and replies with one or two offers of work it can start on right away. Reply to accept one and Kite begins. Reply with something else and it does that instead.
 
-## Growth plans
+## Digests
 
-Kite turns its research into a growth strategy and posts it for review. The plan explains what Kite proposes to do, why, and what it expects the work to achieve. It posts a fresh plan at the start of each week based on the previous week's results. See [Research and growth plans](/capabilities/research-and-growth-plan).
+Every hour Kite scans the Slack channels it is in for new messages from your team and matches them against your active initiatives. When it finds a move worth making it posts a digest in its home channel, at most three a day. A digest is Kite saying "here is what I noticed and here is what I would do next."
 
-## Drafts awaiting approval
+## Proposed initiatives
 
-These are the posts that need a decision. Each one contains the work itself (a page, a reply, an email, a site change) plus a preview where that makes sense. Kite waits for approval before shipping any of them. See [How approvals work](/slack/approvals).
+When Kite proposes a larger piece of work, it posts it as an initiative with an **Approve** button. Clicking Approve tells Kite to break the initiative into tasks and start. See [Initiatives, reports, and workflows](/capabilities/initiatives-reports-and-workflows).
 
-Examples of drafts Kite brings:
+## Draft cards and results
 
-- A comparison page against a competitor your prospects mention.
-- Replies to conversations it found on Reddit, social media, or email where your product is relevant. See [Content, outreach, and channels](/capabilities/content-and-outreach).
-- A proposed edit to a page that gets traffic but does not convert, with a preview of the change. See [Conversion fixes](/capabilities/conversion-fixes).
-- Launch assets prepared from a pull request that is still in review. See [Product marketing and launches](/capabilities/product-marketing).
+When Kite finishes a task it posts the result in the thread where the work was asked for. Website work arrives as a card with a **Preview** button (see the draft) and a **Review** button (open the editor, where you merge and publish). Research, copy, lists, and plans arrive in the thread itself or as a hosted report.
 
-## Results and reports
+## Report announcements
 
-Kite tracks how its shipped work performs and reports back: traffic to new pages, replies to outreach, the effect of a conversion change. These reports feed the next plan.
+When Kite finishes a Growth Grader report for a team that signed up on the website, it announces the report in the home channel. See [Research and growth plans](/capabilities/research-and-growth-plan).
 
 ## Answers to your questions
 
-You can ask Kite questions directly in the channel, and it replies in a thread. See [Asking Kite to do something](/slack/asking-kite).
+Mention Kite or send it a direct message and it replies in a thread. See [Asking Kite to do something](/slack/asking-kite).
 
 ## Which channels Kite uses
 
-Kite works in the channels you invite it to. Teams commonly use a general marketing or growth channel for most work and a dedicated `#product-marketing` channel for launches. <!-- TODO: verify whether Kite supports per-channel roles, direct messages, or a default channel -->
+Kite works in every channel you invite it to. Its **home channel** is the first one your team engaged it in; digests and report announcements land there. For each channel your team can set a reply mode: follow threads automatically (the default), respond only when tagged, or retired.
 
 :::tip Keep Kite in a channel your team reads
-Kite moves at the speed of your approvals. If its drafts sit unread, nothing ships. Put Kite in a channel people check daily.
+Kite moves at the speed of your replies. Put it in a channel people check daily.
 :::

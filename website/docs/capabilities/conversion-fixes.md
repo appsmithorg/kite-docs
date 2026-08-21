@@ -1,24 +1,25 @@
 ---
-title: Conversion Fixes
-description: How Kite monitors your existing pages, spots traffic that is not converting, and proposes specific edits with previews for your approval.
+title: Conversion Work
+description: Ask Kite why a page is not converting and it audits the page, proposes the fix, builds it, and can run an A/B experiment to prove it.
 ---
 
-# Conversion Fixes
+# Conversion Work
 
-Traffic you already have is the cheapest growth available. Kite watches how your existing pages perform, finds the places where visitors arrive but do not act, and proposes a specific fix with a preview.
+Traffic you already have is the cheapest growth available. Ask Kite why a page is not converting and it audits the page, finds the gap, builds the fix as a draft, and can test it against the original.
 
-## What Kite looks for
+## What to ask for
 
-- Pages with steady traffic and no clear next step, such as a pricing page without a sign-up prompt.
-- Pages where visitors leave without reaching the call to action.
-- Pages that rank for a search but do not answer the question the searcher asked.
+- "Why isn't the pricing page converting?" Kite reviews the page, the analytics, and the path visitors take, then proposes a specific change with a preview.
+- "Audit the site for conversion problems." Kite checks every page for missing calls to action, weak headlines, slow load times, and pages that rank but do not answer the searcher's question.
+- "Run an experiment on the homepage headline." Kite sets up an A/B experiment on your Kite-hosted site with two versions and a traffic split. Starting the experiment is the one step a signed-in team member does, and the results page shows which version won.
 
-## How a fix reaches you
+## Scheduling a recurring check
 
-1. Kite posts the opportunity in Slack: which page, what it noticed, and what it proposes to change.
-2. Kite includes a preview of the edited page.
-3. Your team approves, asks for changes, or declines. The change is not live until you say so. See [How approvals work](/slack/approvals).
-4. Kite publishes the approved change and tracks the effect in its next report.
+If you want this to happen without asking, set up a workflow that runs a conversion check every week and posts what it finds. See [Initiatives, reports, and workflows](/capabilities/initiatives-reports-and-workflows).
+
+## Where the data comes from
+
+Every Kite-hosted site has built-in analytics with pageviews, top pages, referrers, devices, events, and funnels on paid plans, plus a Leads inbox for form submissions and a Discoverability tab with speed scores and a **Review and fix** button. See [Site analytics](/forms-integrations/analytics).
 
 ## Making the change yourself
 
@@ -27,5 +28,4 @@ Every conversion fix is a website change, so you can also make it by hand in the
 ## Related
 
 - [Research and growth plans](/capabilities/research-and-growth-plan)
-- [Site analytics](/forms-integrations/analytics)
 - [Website building](/capabilities/website-building)

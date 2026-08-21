@@ -1,39 +1,36 @@
 ---
 title: Research and Growth Plans
-description: How Kite researches your product, customers, competitors, and AI answer engines, and turns what it finds into a weekly growth strategy for your team to approve.
+description: How Kite researches your product, customers, competitors, and search demand, what the Growth Grader report covers, and how initiatives turn research into a plan.
 ---
 
 # Research and Growth Plans
 
-Everything Kite ships starts with research. Before it proposes any work, Kite studies your business and the market around it, then turns what it finds into a growth strategy that your team reviews in Slack.
+Kite's work rests on research. Ask it to look at a competitor, a keyword, a customer segment, or your own site, and it comes back with evidence and a recommended move. Larger plans live on the initiatives board.
 
-## What Kite researches
+## Research you can ask for
 
-Kite's discovery covers four areas:
+- **Competitor research.** How a competitor positions itself, what it charges, where it shows up, and where you can beat it.
+- **Keyword and search demand research.** What your prospects search for and which pages could win those searches.
+- **Customer research.** Who buys, what they say, and what they are trying to get done.
+- **Website audits.** Where your own site is weak on positioning, speed, conversion, or discoverability.
+- **AI visibility.** How AI answer engines currently describe your company and your category, and where you are missing.
 
-- **Your product.** What it does, who it is for, and how you describe it today.
-- **Your customers.** Who buys, what they say, and what they are trying to get done.
-- **Your competitors.** Who you are compared against and how they position themselves.
-- **What AI says about you.** How AI answer engines currently describe your company and your category, and where you are missing from their answers.
+Every recommendation comes with the evidence behind it: the competitor page Kite read, the search volumes it found, the thread it spotted. Kite finds what needs doing. You see why.
 
-Kite runs discovery as soon as it joins your workspace and keeps it current as it learns from shipped work. See [Quickstart: Your first week with Kite](/get-started/quickstart).
+## The Growth Grader report
 
-## The growth plan
+Growth Grader takes a company domain and grades it against a 138-point checklist covering positioning, search demand, AI visibility, conversion, onboarding, reviews, unit economics, paid and outbound, owned audience, and technical blockers. Running it from inside Kite needs a signed-in team member and uses credits. For teams that sign up on the website, Kite announces the finished report in the home Slack channel. See [Tools on kite.ai](/capabilities/free-tools).
 
-Kite turns its research into a plan and posts it in your channel. The plan explains what Kite proposes to do, why it believes that work matters, and what it expects the result to be. Typical proposals include a comparison page against a specific competitor, an outreach plan for a channel where your prospects already gather, or a fix to a page that gets traffic but does not convert.
+## Initiatives: research turned into a plan
 
-Your team reviews the plan and approves it or redirects it. Kite then starts on the first project. At the end of each week, Kite reports results and proposes the next plan. See [How approvals work](/slack/approvals).
-
-## Evidence comes with every recommendation
-
-When Kite recommends something, it shows its reasoning: the competitor page it looked at, the traffic pattern it noticed, the conversation thread it found. This lets your team make the decision with the same evidence Kite used.
+An initiative is a goal with tasks under it, for example "Win the comparison searches against Acme" or "Launch the clinic-network tier." Kite proposes initiatives in Slack with an **Approve** button; click it and Kite breaks the initiative into tasks and starts. You can also create initiatives yourself on the initiatives board. Kite's hourly scan of your team's Slack messages is matched against active initiatives, which is how it spots the next move and posts a digest. See [Initiatives, reports, and workflows](/capabilities/initiatives-reports-and-workflows).
 
 ## Correcting Kite's research
 
-If a discovery summary gets something wrong, reply in the thread and say so. Kite updates its understanding and its plan. Early corrections save credits later, because every plan builds on that research.
+If Kite has something wrong about your business, say so in the thread. Kite updates its understanding, and every plan that builds on it gets better. Early corrections save credits later.
 
 ## Related
 
 - [What Kite posts in Slack](/slack/what-kite-posts)
 - [Content, outreach, and channels](/capabilities/content-and-outreach)
-- [Conversion fixes](/capabilities/conversion-fixes)
+- [Conversion work](/capabilities/conversion-fixes)

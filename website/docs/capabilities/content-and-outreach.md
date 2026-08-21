@@ -1,39 +1,30 @@
 ---
 title: Content, Outreach, and Channels
-description: How Kite finds the channels where your prospects already talk, brings those conversations to Slack, and drafts replies, posts, and emails for your approval.
+description: The content Kite writes and ships, including landing and comparison pages, email sequences, prospect lists, and posts for the social networks your team connects.
 ---
 
 # Content, Outreach, and Channels
 
-Kite does not wait for prospects to find you. It finds where they already talk, across Reddit, social media, and email, and brings those conversations to your Slack channel with a drafted reply ready for approval.
+Ask Kite for the asset and it writes it, builds it, and lines it up. Give the OK and it publishes that too.
 
-## How it works
+## Content Kite drafts and ships
 
-1. **Kite identifies the channels that matter.** Based on its research, Kite works out where your prospects ask questions and compare options.
-2. **Kite brings you the conversations already happening there.** It posts the thread or the opportunity in Slack, with context on why it is relevant.
-3. **Kite drafts your part.** A reply, a post, or an email, written for that channel and that audience.
-4. **Your team approves.** Nothing is posted or sent until someone approves it. See [How approvals work](/slack/approvals).
-5. **Kite ships it and tracks the response.**
+- **Landing pages and comparison pages**, built directly on your Kite-hosted site as drafts.
+- **Buyer guides and content briefs**, delivered in the thread or as a hosted report.
+- **Email sequences and campaigns**, sent from your team's `teamslug@kite.space` address or through an email service you connect.
+- **Prospect lists**, researched to your criteria.
+- **Social posts**, drafted for any network and published through the networks your team has connected on the Integrations page.
 
-## Channels Kite works in
+## Where Kite publishes
 
-- **Reddit**, where Kite finds threads in which your product is a relevant answer.
-- **Social media**, where Kite drafts posts and replies. <!-- TODO: verify which social platforms Kite supports today -->
-- **Email**, including outreach plans and prospect lists, and broadcast campaigns sent through Resend. See [Integrations](/forms-integrations/integrations).
-
-## Content Kite drafts
-
-Beyond replies, Kite drafts longer assets as part of its growth plan: comparison pages, landing page drafts, buyer guides, content briefs, email sequences, and prospect lists. Each arrives in Slack for review before it is used.
+Kite publishes to the channels you have connected: your Kite-hosted website, email, and any social network linked on the Integrations page in your browser workspace. It drafts for channels it is not connected to, and you post those yourself. Kite researches public forums through ordinary web search but does not post replies in them. See [Integrations](/forms-integrations/integrations).
 
 ## Keeping your voice
 
 Kite writes from its research into how you describe your product. If a draft sounds wrong, say how in the thread: "more direct," "less formal," "lead with the outcome." Kite revises and learns your voice over time. See [Asking Kite to do something](/slack/asking-kite).
 
-:::tip Be a good citizen in communities
-Kite drafts replies that add value to the conversation first. Approve the ones that help the person asking; decline the ones that read as advertising. That keeps your brand welcome in the places your prospects gather.
-:::
-
 ## Related
 
 - [Research and growth plans](/capabilities/research-and-growth-plan)
 - [Product marketing and launches](/capabilities/product-marketing)
+- [Approvals and autonomy](/slack/approvals)

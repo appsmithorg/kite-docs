@@ -1,35 +1,34 @@
 ---
 title: Team Access
-description: One Kite plan covers your whole team. Learn who can see Kite's work, who can approve it, and how to bring new teammates in.
+description: One Kite plan covers your whole team. Learn the owner, admin, and member roles, who can approve work in Slack, and how Slack membership relates to your Kite team.
 ---
 
 # Team Access
 
-Kite is built for teams. One plan covers everyone in your workspace, and there is no per-seat charge. This page explains who can do what.
+Kite is built for teams. One plan covers everyone, with no per-seat charge. This page explains who can do what.
 
-## One plan, the whole team
+## Slack membership and Kite team membership
 
-Kite's pricing page states that as many people as you like can use a single subscription. Anyone in a channel where Kite works can:
+Anyone in a Slack channel where Kite works can ask it for work, reply to its drafts, and give it the OK. That includes Slack guests and external users in shared channels.
 
-- Read Kite's research, plans, drafts, and reports.
-- Ask Kite questions and request work. See [Asking Kite to do something](/slack/asking-kite).
-- Approve, revise, or decline drafts. See [How approvals work](/slack/approvals).
+Being in the channel does not by itself make someone a member of your Kite team. To use the browser workspace (the editor, integrations, analytics, billing), a teammate links their Slack identity by clicking the **Connect Kite account** button Kite offers, or a team owner or admin adds them.
 
-<!-- TODO: verify whether Kite offers roles or limits on who can approve work, and whether billing access is separate from Slack access -->
+## Roles
 
-## Bringing in a teammate
+Your Kite team has three roles:
 
-Because Kite works in Slack, adding a teammate is as simple as adding them to the channel where Kite works. They see Kite's posts right away and can take part in approvals.
+- **Owner.** Everything, including billing: plan changes, buying credits, and invoices. A team can have several owners, and an owner can promote others.
+- **Admin.** Everything except billing. Admins can add members and move sites between teams.
+- **Member.** Full use of Kite in Slack and the website editor.
 
-## Billing and account access
-
-Billing, plan changes, and the website editor live in the browser workspace, not in Slack. The person who set up Kite's account manages those. See [Manage your subscription](/pricing-credits/manage-subscription) and [Login & Sign Up](/account/login-and-signup). <!-- TODO: verify whether more than one person can access billing and the editor -->
+The person who installed Kite in Slack does not have to be an owner. Installing Slack and managing billing can be different people.
 
 ## Kite and your first marketing hire
 
-Kite is designed to give a founder or a lean team marketing capacity before there is a dedicated marketer on staff, and to work alongside that person once there is. When you make your first marketing hire, add them to the channel. Kite's research, plans, and history of shipped work are there for them from day one.
+Kite gives a founder or a lean team marketing capacity before there is a dedicated marketer on staff, and it works alongside that person once there is. When you make your first marketing hire, add them to the channel and to the team. Kite's research, initiatives, and history of shipped work are there for them from day one.
 
 ## Related
 
 - [Add Kite to Slack](/get-started/add-kite-to-slack)
 - [Plans & Pricing](/pricing-credits/plans-and-trial)
+- [Manage your subscription](/pricing-credits/manage-subscription)

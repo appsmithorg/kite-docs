@@ -1,55 +1,50 @@
 ---
-title: "Quickstart: Your First Week with Kite"
-description: A day-by-day look at what Kite does in its first week in your Slack workspace, from discovery and a growth plan to the first shipped work and results.
+title: "Quickstart: From Adding Kite to Your First Shipped Work"
+description: Add Kite to a channel, take it up on its first offer, review the draft in the thread, and publish. A short walkthrough of the first conversation.
 ---
 
-# Quickstart: Your First Week with Kite
+# Quickstart: From Adding Kite to Your First Shipped Work
 
-This guide walks through what a typical first week with Kite looks like, so your team knows what to expect and what Kite needs from you. The only setup step is **[adding Kite to Slack](/get-started/add-kite-to-slack)**. Kite does the rest and checks in with you at each decision point.
+This guide follows a team through its first session with Kite, from the install to a published piece of work. The only setup step is **[adding Kite to Slack](/get-started/add-kite-to-slack)**.
 
 :::note The example team
 The examples below follow a three-person startup that sells scheduling software to clinics. They have no marketing hire yet, and their founder, a designer, and an engineer share a `#growth` channel in Slack.
 :::
 
-## Day 1, morning: discovery
+## 1. Kite joins and offers work
 
-As soon as Kite joins the workspace, it starts researching. It looks at the team's product, their customers, their competitors, and what AI answer engines currently say about them. It posts a summary of what it found in `#growth`, followed by a proposed growth strategy for the team to review.
+The founder invites Kite to `#growth`. Kite says hello, reads the company website, and replies with two offers: a comparison page against the competitor the site mentions most, and a rewrite of the pricing page headline. It does not recite the company's profile back at them. It offers work.
 
-**What you do:** read the plan, react or reply in the thread, and approve it or tell Kite what to change.
+## 2. Take Kite up on an offer, or ask for something else
 
-## Day 1, afternoon: the first project
+The founder replies in the thread: "Do the comparison page." That reply is all Kite needs. It researches the competitor, drafts the page, and builds it on the site as a draft. If the team wanted something else, they would say so in the same thread: "Skip those. Pull a list of 50 multi-location clinics in Texas with a contact at each."
 
-Kite ships its first piece of work the same day. Depending on what discovery found, that might be a comparison page against a competitor, an outreach plan, or a fix on the website. For the example team, Kite drafts a comparison page against the competitor their prospects mention most.
+## 3. Review the draft
 
-**What you do:** review the draft in Slack. Nothing goes live until someone on the team approves it. See [How approvals work](/slack/approvals).
+Kite posts the result in the thread with a **Preview** button to see the draft page and a **Review** button that opens the website editor. The designer previews it and replies: "Lead with the time saved at the front desk, not the feature list." Kite revises and posts again.
 
-## Day 2: channels and conversations
+## 4. Publish
 
-Kite finds where the team's prospects already talk, across Reddit, social, and email, and brings those conversations to the channel along with drafted replies and posts.
+The founder replies "Publish it." Kite merges the draft and deploys it to the live site, then posts the live link. (The team could also have clicked **Review** and pressed **Publish** in the editor themselves.)
 
-**What you do:** approve the drafts you want to send, edit the ones that need a different voice, and skip the rest.
+## 5. Keep going
 
-## Day 3: conversion opportunities
+From here the team asks for work as it comes up, and Kite brings work to them:
 
-Kite looks at the team's existing pages for traffic that is not converting. It spots a pricing page with steady visits and no sign-up prompt, and proposes an edit with a preview.
+- It posts a digest when it spots something in the team's Slack conversations that lines up with an active initiative.
+- It proposes initiatives, each with an **Approve** button that tells Kite to break the initiative into tasks and start.
+- Results of every task land in the thread where it was asked for.
 
-**What you do:** approve the change. Kite publishes it to the live site only after approval. See [Website Building](/website-building) for how site changes work.
+## Tips for a strong start
 
-## Day 5: results and the next plan
-
-Kite reports what happened: traffic to the new comparison page, replies to outreach, and the effect of the conversion fix. It uses those results to propose the next week's plan.
-
-**What you do:** approve next week's plan or redirect it.
-
-## Tips for a strong first week
-
-- **Give Kite context early.** The more Kite knows about your product, your customers, and your goals, the better its first plan. Reply to its discovery summary with anything it missed.
-- **Decide quickly on small things.** Kite moves at the pace of your approvals. Small drafts (a reply, a page tweak) are safe to approve fast.
-- **Be specific when you ask for changes.** "Make the headline about saving front-desk time, not about features" gets a better revision than "make it better."
+- **Give Kite context early.** Reply to its first message with anything the website does not say: who your best customers are, what you are launching next, which competitor matters most.
+- **Be specific when you ask for changes.** "Make the headline about saving front-desk time" gets a better revision than "make it better."
+- **Keep each piece of work in its own thread.** It keeps drafts, feedback, and results easy to follow.
 - **Keep an eye on credits.** Every conversation and task uses credits. See [How credits work](/pricing-credits/how-credits-work).
 
 ## What's next
 
-- **[How Kite works](/get-started/how-kite-works)**: the full research, plan, draft, approve, ship loop.
-- **[What Kite can do](/capabilities/)**: the kinds of work to expect beyond the first week.
+- **[How Kite works](/get-started/how-kite-works)**: what Kite does on its own and what it does when asked.
+- **[Approvals and autonomy](/slack/approvals)**: the propose-first default and how to change it.
+- **[What Kite can do](/capabilities/)**: the kinds of work to ask for.
 - **[Website Building](/website-building)**: build and edit the website Kite hosts for you.
