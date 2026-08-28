@@ -118,6 +118,51 @@ function flattenSidebar(items, out = []) {
   return out;
 }
 
+// Fails the build when static/llms.txt and the docs disagree, so the index
+// cannot drift when pages are added, renamed, or removed. Two checks:
+//   1. Every docs page (and every generated category index) is listed.
+//   2. Every docs.kite.ai URL mentioned in llms.txt points at a real page.
+// The summary lines in llms.txt stay hand-written; this only checks coverage.
+function checkLlmsIndex(siteDir, mustBeListed, routes) {
+  const llmsPath = path.join(siteDir, 'static', 'llms.txt');
+  const llmsText = fs.readFileSync(llmsPath, 'utf8');
+
+  // Normalizes a docs.kite.ai URL down to the page route it refers to,
+  // e.g. "https://docs.kite.ai/slack/approvals.md." -> "/slack/approvals".
+  // Returns null for URLs that are fine but are not pages (llms.txt itself).
+  const toRoute = (url) => {
+    let p = url.replace(SITE_URL, '').replace(/[).,]+$/, '');
+    if (p === '/llms.txt' || p === '/llms-full.txt') return null;
+    if (p.endsWith('.md')) p = p.slice(0, -3);
+    if (p !== '/') p = p.replace(/\/$/, '');
+    return p === '' || p === '/index' ? '/' : p;
+  };
+
+  const listedRoutes = new Set(
+    (llmsText.match(/https:\/\/docs\.kite\.ai[^\s)]*/g) || []).map(toRoute).filter(Boolean)
+  );
+
+  const problems = [];
+  for (const { route, source } of mustBeListed) {
+    if (!listedRoutes.has(route)) {
+      problems.push(`The page ${source} exists in the docs but is not listed in static/llms.txt (expected ${SITE_URL}${route === '/' ? '/' : route}).`);
+    }
+  }
+  for (const listed of listedRoutes) {
+    if (!routes.has(listed)) {
+      problems.push(`static/llms.txt mentions ${SITE_URL}${listed}, but no page exists at that URL.`);
+    }
+  }
+
+  if (problems.length > 0) {
+    throw new Error(
+      'raw-markdown plugin: static/llms.txt is out of date with the docs.\n' +
+        problems.map((p) => `  - ${p}`).join('\n') +
+        '\nUpdate static/llms.txt to match the docs (add, rename, or remove the entries above), then rebuild.'
+    );
+  }
+}
+
 module.exports = function rawMarkdownPlugin(context) {
   return {
     name: 'raw-markdown',
@@ -157,7 +202,8 @@ module.exports = function rawMarkdownPlugin(context) {
 
       // 2. A synthesized .md file for each auto-generated category index page,
       // so appending .md works for those URLs too.
-      for (const generated of collectGeneratedIndexes(sidebars.docsSidebar)) {
+      const generatedIndexes = collectGeneratedIndexes(sidebars.docsSidebar);
+      for (const generated of generatedIndexes) {
         if (!routes.has(generated.slug)) {
           throw new Error(`raw-markdown plugin: generated index slug "${generated.slug}" is not a built route.`);
         }
@@ -173,7 +219,17 @@ module.exports = function rawMarkdownPlugin(context) {
         fs.writeFileSync(outPath, body);
       }
 
-      // 3. llms-full.txt: every page in sidebar order, in one file.
+      // 3. Fail the build if llms.txt no longer matches the pages that exist.
+      const mustBeListed = [
+        ...pages.map((p) => ({ route: p.route, source: `docs/${p.relPath}` })),
+        ...generatedIndexes.map((g) => ({
+          route: g.slug,
+          source: `the generated "${g.title}" index in sidebars.js`,
+        })),
+      ];
+      checkLlmsIndex(context.siteDir, mustBeListed, routes);
+
+      // 4. llms-full.txt: every page in sidebar order, in one file.
       const orderedIds = flattenSidebar(sidebars.docsSidebar);
       const orderedPages = orderedIds.map((id) => {
         const page = byId.get(id);
