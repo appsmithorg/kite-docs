@@ -25,6 +25,12 @@ const config = {
     mermaid: true,
   },
 
+  plugins: [
+    // Serves a raw Markdown copy of every page (page URL + ".md") and
+    // llms-full.txt, so AI agents can read the docs without parsing HTML.
+    require.resolve('./plugins/raw-markdown'),
+  ],
+
   themes: [
     '@docusaurus/theme-mermaid',
     [
