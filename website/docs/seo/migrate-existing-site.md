@@ -21,8 +21,8 @@ Google ranks individual pages by their web address (URL). If your URLs change or
 
 Kite can import an existing website directly, or you can ask it to rebuild your key pages. Either way, give Kite your URL list and ask it to keep every page at the same address, for example: "Keep /about-us, /our-services, and /contact-us exactly as they are."
 
-:::caution Kite cannot add redirects yet
-Kite does not currently set up 301 redirects (the "this page has moved" instruction). That makes keeping your URLs identical the important step. If you must change a page's address, expect the old address to stop working, and update any links you control. Kite will tell you plainly when a change would need a redirect it cannot provide.
+:::tip Ask Kite for a redirect
+Keeping your URLs identical is still the simplest path. If a page's address must change, ask Kite in chat to redirect the old address to the new one, for example: "Redirect /old-services to /services." Kite sets up a permanent (301) redirect by default that points straight at the final page. Redirects take effect when you publish your site, and after publishing Kite can check what the old address does on your live site.
 :::
 
 ## Step 2: Point your domain at Kite
