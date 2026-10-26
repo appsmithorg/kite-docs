@@ -6,6 +6,8 @@ Kite is your AI marketer in Slack. It researches your business, builds a growth 
 
 ## Development
 
+Requires Node.js 24. CI and Vercel both build on Node 24.
+
 ```bash
 cd website
 npm install

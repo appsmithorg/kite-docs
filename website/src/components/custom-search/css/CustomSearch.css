@@ -31,6 +31,29 @@
   background-color: transparent;
 }
 
+/* In the blue navbar, use kite.ai's dark glass pill instead of the
+   theme's gray border. */
+.navbar .kite-segmented-search {
+  border-color: var(--kite-glass-border);
+  border-radius: 12px;
+  background-color: var(--kite-glass-bg);
+}
+
+.navbar .kite-segmented-search .kite-ask-ai-option {
+  border-right-color: var(--kite-glass-border);
+}
+
+.navbar .kite-ask-ai-option:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Translucent badge so it matches the glass pill. Keep the white tint
+   light: more tint lowers white-text contrast (0.12 gives about 5.3:1). */
+.navbar .kite-ask-ai-badge {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
 /* Keep the two halves visually divided. */
 .kite-segmented-search .kite-ask-ai-option {
   border-right: 1px solid var(--ifm-color-emphasis-300);
