@@ -1,6 +1,6 @@
 ---
 title: Editing Your Site
-description: Make changes to your Kite site by describing them in chat or using Point & Edit to click an element directly — plus prompt tips and what to do when an edit doesn't show up.
+description: Make changes to your Kite site by describing them in chat or using Point & Edit to click an element directly, plus prompt tips and what to do when an edit doesn't show up.
 ---
 
 # Editing Your Site
@@ -20,7 +20,7 @@ Tell Kite what to change in plain language. The more specific you are, the more 
 > Make the heading bigger and change the color.
 
 **Specific (better):**
-> On the **Home** page, in the hero section, change the heading to "Fresh Bread, Baked Daily" and make it dark brown (#3B2417).
+> On the **Home** page, in the hero section, change the heading to "Scheduling that saves your front desk an hour a day" and make it navy (#1B2A4A).
 
 ## Option 2: Point & Edit
 
@@ -44,7 +44,7 @@ Use **Point & Edit** when an element is hard to describe in words, or when there
 - **Say what to keep.** If you only want one thing changed, you can add "leave everything else the same."
 
 :::note
-If a change comes out wrong, you can ask Kite to undo or revert it. You can also review earlier states of your site in [Version History](/troubleshooting/version-history).
+If a change comes out wrong, restore an earlier version with **Restore to this point** beneath Kite's earlier response. See [Version History](/troubleshooting/version-history).
 :::
 
 ## "Kite said it's done, but I don't see the change"
@@ -53,7 +53,7 @@ This is one of the most common frustrations, and it's usually one of a few thing
 
 1. **You're looking at the live site, not the latest edit.** Edits in the editor don't appear on your published site until you publish again. Check that you've published.
 2. **Your browser is showing a cached version.** Refresh the page, or do a hard refresh, and try again.
-3. **Kite changed a different page or section than you expected.** Ask Kite to confirm exactly which page, section, or file it changed — for example, "Which page and section did you just edit?" If it edited the wrong place, point it to the right one (using **Point & Edit** helps here).
+3. **Kite changed a different page or section than you expected.** Ask Kite to confirm exactly which page, section, or file it changed, for example, "Which page and section did you just edit?" If it edited the wrong place, point it to the right one (using **Point & Edit** helps here).
 
 :::caution
 If you keep editing without publishing, your changes pile up in the editor but never reach visitors. When something looks "stuck," confirming publish status is almost always the first thing to check.
@@ -64,4 +64,4 @@ If you keep editing without publishing, your changes pile up in the editor but n
 - **Edit reported done but not visible on the live site:** Publish again, then refresh your browser. See [Changes Not Showing](/publishing/changes-not-showing).
 - **Kite edited the wrong section:** Ask it which page/section it changed, then redirect it with **Point & Edit**.
 - **You want to go back to an earlier version:** See [Version History](/troubleshooting/version-history).
-- **The editor seems frozen or unresponsive:** See [Editor Frozen](/troubleshooting/editor-frozen).
+- **A chat turn is stuck:** Press **Stop**, then see [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen).

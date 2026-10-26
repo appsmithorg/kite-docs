@@ -5,7 +5,7 @@ description: See how your Kite site adapts to phones and tablets, preview the mo
 
 # Mobile & Responsive Design
 
-Most of your visitors will see your site on a phone, so it needs to look great at every size. Kite builds responsive sites that adapt to phones, tablets, and desktops automatically — and when something doesn't look right on one size, you can ask Kite to fix just that.
+Most of your visitors will see your site on a phone, so it needs to look great at every size. Kite builds responsive sites that adapt to phones, tablets, and desktops automatically, and when something doesn't look right on one size, you can ask Kite to fix just that.
 
 ## How your site adapts
 
@@ -18,7 +18,7 @@ You don't have to design three separate sites. You design once, and Kite adapts 
 Before you publish, check how your site looks on a phone.
 
 1. Open the preview.
-2. Switch to the mobile (or tablet) view to see how the layout changes. <!-- TODO: verify exact location/label of the mobile preview toggle -->
+2. Click the viewport button in the preview bar. It cycles through Desktop, Tablet (768 px wide), and Mobile (375 px wide).
 3. Scroll through every page and check headings, images, buttons, and the menu.
 
 :::tip
@@ -47,5 +47,5 @@ When you report a mobile issue, name the screen size (mobile, tablet, or desktop
 - **Images crop or cut off on mobile:** Ask Kite to show the full image on mobile, or to change how the image fits on small screens.
 - **Hamburger menu appears on desktop:** Ask Kite to show the full menu on desktop and only collapse to a hamburger on mobile.
 - **Text overflows or buttons run off the edge on phones:** Tell Kite which page and section, and that it's happening on mobile.
-- **Mobile looks fine in preview but wrong when published:** Publish again and refresh on your phone — see [Changes Not Showing](/publishing/changes-not-showing).
-- **The preview itself won't load:** See [Preview Not Loading](/troubleshooting/preview-not-loading).
+- **Mobile looks fine in preview but wrong when published:** Publish again and refresh on your phone. See [Changes Not Showing](/publishing/changes-not-showing).
+- **The preview itself won't load:** See [Preview Won't Start](/troubleshooting/preview-not-loading).

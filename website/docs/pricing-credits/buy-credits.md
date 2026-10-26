@@ -1,46 +1,39 @@
 ---
 title: Buy More Credits
-description: How to top up your Kite credits when you run low, and how purchased credits differ from your monthly allowance.
+description: The $20, $50, and $100 credit packs, who can buy them (team owners on Growth or Business), and how purchased credits behave.
 ---
 
 # Buy More Credits
 
-If you've used up your monthly credits and still have work to do, you can buy more without changing your plan. This page covers how to top up and how top-up credits behave.
+If you have used your monthly credits and still have work to do, you can buy a credit pack without changing your plan. Credit packs are available on Growth and Business, and only a team owner can buy them.
 
-## Monthly credits vs. top-up credits
+## The credit packs
 
-- **Monthly credits** come with your plan and refresh each billing cycle.
-- **Top-up credits** are extra credits you purchase on demand when you need more.
+Kite sells three packs: **$20, $50, and $100**, at one credit per dollar. Purchased credits do not expire, and Kite spends them last, after your signup and monthly credits. See [How credits work](/pricing-credits/how-credits-work).
 
-:::info
-Top-up credits are meant to keep you moving between billing cycles — buy them once and use them when you need them. Unlike monthly credits, top-up credits don't expire at the end of the cycle. <!-- TODO: verify with product -->
-:::
+## How to buy a pack
 
-## How to buy more credits
+1. As a team owner, open **Billing** in your browser workspace.
+2. Click **Add usage**. A dialog titled **Select one of our credits packs** opens.
+3. Choose a pack and click **Purchase**. Payment goes through Stripe.
+4. Your credits are available right away.
 
-1. Open your billing settings at **Billing** (`/billing`). <!-- TODO: verify exact path -->
-2. Look for the **credits** section or a **Buy Credits** / **Top Up** option. <!-- TODO: verify exact button label -->
-3. Choose the amount of credits you'd like to add. <!-- TODO: verify available top-up amounts; do not quote figures -->
-4. Confirm your purchase. Your new credits should be available right away.
+## Who can buy credits
+
+- **Paid plan required.** On the Free plan or during the trial, **Add usage** takes you to the upgrade card instead. The message reads "An active paid plan is required to purchase additional usage."
+- **Owner role required.** Team members and admins see "Only the team owner can add credits." See [Team access](/slack/team-access).
 
 :::tip
-If you regularly run out before the end of your cycle, it may be more economical to move up a plan than to keep buying top-ups. See [Plans & Free Trial](/pricing-credits/plans-and-trial).
+If you buy packs most months, talk to the Kite team about the Business plan, which has usage limits scaled to your needs, or switch Growth to yearly billing. See [Plans & Pricing](/pricing-credits/plans-and-trial).
 :::
-
-## Can free-plan users buy credits?
-
-Whether top-up purchases are available on the free plan depends on your account. <!-- TODO: verify whether free-plan users can purchase top-up credits --> If you're on the free plan and don't see a buy option, you may need to start a paid plan first. See [Plans & Free Trial](/pricing-credits/plans-and-trial).
 
 ## Common questions
 
 **Will buying credits change my plan?**
-No. Top-ups add credits to your existing account without changing your plan or billing cycle.
-
-**Do top-up credits get used before or after my monthly credits?**
-This depends on how your account applies credits. <!-- TODO: verify ordering of credit consumption --> If you want to be sure, contact support.
+No. A pack adds credits to your existing account without changing your plan or billing cycle.
 
 **Where do I see how many credits I have left?**
-Check your billing or account area. See [Manage, Cancel, or Downgrade Your Subscription](/pricing-credits/manage-subscription).
+The usage meter on your Billing page.
 
-**I bought credits but they're not showing up.**
-Refresh the page first. If they still don't appear after a few minutes, contact support.
+**I bought credits but they are not showing up.**
+Refresh the page first. If they still do not appear after a few minutes, open **Chat with us** in Kite.

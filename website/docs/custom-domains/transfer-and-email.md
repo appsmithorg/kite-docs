@@ -1,48 +1,48 @@
 ---
-title: Transferring a Domain & Keeping Your Email
-description: How connecting a domain to Kite affects your registrar and your domain-linked email — and what stays exactly the same.
+title: Connecting a Domain & Keeping Your Email
+description: How connecting a domain to Kite affects your registrar and your domain-linked email, which records Kite adds, and what stays exactly the same.
 ---
 
-# Transferring a Domain & Keeping Your Email
+# Connecting a Domain & Keeping Your Email
 
-A common worry when connecting a domain is "Will I lose my email?" or "Do I have to move my whole domain to Kite?" The short answer: you keep your domain where it is, and your email keeps working. This article explains exactly what changes and what doesn't.
+A common worry when connecting a domain is "Will I lose my email?" or "Do I have to move my whole domain to Kite?" The short answer: you keep your domain where it is, and your email keeps working. This article explains exactly what changes and what does not.
 
-## Kite doesn't take over your domain
+## Kite does not take over your domain
 
-Kite does **not** take over full registration or management of your domain from your registrar. <!-- TODO: verify -->  Your domain stays registered exactly where it is today (GoDaddy, Squarespace, Namecheap, and so on). To connect it to your site, you only **point its DNS** at Kite — you don't transfer ownership.
+Kite does not take over registration or management of your domain from your registrar. Your domain stays registered where it is today (GoDaddy, Squarespace, Namecheap, and so on). To connect it to your site, you point its DNS at Kite. You do not transfer ownership.
 
-:::note What this means in plain terms
-You're not handing your domain to Kite. You're leaving it where you bought it and just changing a couple of DNS records so your website loads from Kite.
-:::
+## Your existing email is not affected
 
-## Your email is not affected
+Your domain-linked email (for example, `you@yourcompany.com`) keeps working. Email is controlled by **MX records**, and Kite does not change the MX records for your domain's root.
 
-Your domain-linked email (for example, `you@yourbusiness.com`) keeps working. Here's why: email is controlled by different DNS records (called **MX records**) than your website. When you connect to Kite, only the **website** records change — your **mail** records stay exactly as they are.
+## Which records Kite adds
 
-:::note What is an MX record?
-An **MX record** tells the internet which server handles email for your domain. Your website uses `A` and `CNAME` records; your email uses `MX` records. They live side by side and don't interfere with each other.
-:::
+The DNS setup shows more than the two website records:
 
-:::caution Don't delete records you don't recognize
-When you add the Kite website records, **leave your existing MX records (and any other mail-related records) in place**. The mistake that causes email problems is deleting mail records, not connecting a website. If you only add the `A` and `CNAME` records Kite asks for, your email is untouched.
+- **A and CNAME records** point your domain at your Kite site.
+- **MX and TXT records on their own labels** let Kite send email on your domain's behalf (for example, outreach and campaigns from your team's address). Because they live on separate labels, they sit alongside your existing mail records without interfering.
+- **A TXT record for Google Search Console**, on paid plans, so Kite can verify your domain and submit your sitemap.
+
+:::caution Add records; do not delete the ones you have
+The mistake that causes email problems is deleting your existing MX records, not adding Kite's. Add what Entri shows and leave everything else in place.
 :::
 
 ## Answering the common worries
 
 **Do I have to stop paying my current registrar?**
-No. Your domain registration stays with them, so you keep renewing it there as usual. Connecting to Kite doesn't cancel or move that.
+No. Your domain registration stays with them, so you keep renewing it there as usual.
 
 **Does connecting cost extra on top of my domain?**
-Connecting a custom domain is part of a Kite paid plan. <!-- TODO: verify -->  You still pay your registrar separately for the domain itself, just like before. See [Plans & trial](/pricing-credits/plans-and-trial).
+Custom domains are included in Growth and Business. You still pay your registrar separately for the domain itself. See [Plans & Pricing](/pricing-credits/plans-and-trial).
 
 **Will my email go down during the change?**
-It shouldn't. Because you're only changing website records and leaving mail records alone, your inbox keeps receiving mail throughout. The only thing that "switches over" is which site loads when someone visits your domain.
+No. Your mail records are left alone, so your inbox keeps receiving mail throughout.
 
-**What if I'm using a separate email provider (like Google Workspace or Microsoft 365)?**
-That's fine — those services rely on your MX records, which you're not changing. Keep them as they are and only add the website records Kite asks for.
+**I use Google Workspace or Microsoft 365.**
+That is fine. Those services rely on your existing MX records, which you are not changing.
 
 ## Troubleshooting
 
-- **Worried email stopped after connecting.** Check that your `MX` records are still present at your DNS provider. If they were removed, re-add them from your mail provider's instructions. See also [Email sending issues](/troubleshooting/email-sending).
+- **Worried email stopped after connecting.** Check that your original `MX` records are still present at your DNS provider. If they were removed, re-add them from your mail provider's instructions.
 - **Not sure where your DNS is managed.** See [Connect a domain from your registrar](/custom-domains/registrar-guides), including the note about Cloudflare nameservers.
-- **Website connected but not loading.** That's a website issue, not an email one. See [Troubleshoot a connected domain](/custom-domains/troubleshooting).
+- **Website connected but not loading.** See [Troubleshoot a connected domain](/custom-domains/troubleshooting).

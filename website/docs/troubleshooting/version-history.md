@@ -1,46 +1,40 @@
 ---
 title: Undo Changes & Version History
-description: Recover your Kite site after an edit you didn't want by previewing and reverting to an earlier checkpoint.
+description: Preview any earlier version of your Kite site and restore to it, and learn what restoring does and costs.
 ---
 
 # Undo Changes & Version History
 
-Made a change you regret? Kite keeps **checkpoints** of your project as you work, so you can preview an earlier version and roll back to it. This page shows you where to find those controls and what to do if you can't.
+Made a change you regret? Kite saves a version of your site after each change, so you can preview an earlier version and restore to it.
 
-## Symptom
+## Where the versions are
 
-- An edit changed your site in a way you didn't want.
-- You'd like to go back to how things looked before a recent request.
+In the website editor, each of Kite's responses in the chat corresponds to a change it made, and each has version controls beneath it:
 
-## Cause
+- **Preview this version** shows you the site as it was at that point, without changing anything.
+- **Restore to this point** rolls the site back. A confirmation box asks **Revert to this version?** before it does.
 
-Each time Kite makes a change for you, it can save a checkpoint — a snapshot of your project at that moment. That's what lets you undo a bad edit by returning to an earlier point.
+## What restoring does
 
-## Fix — preview and revert to a checkpoint
+- Kite creates a new version labelled **Restored:** rather than deleting the versions in between, so you can always go forward again.
+- Restoring the main site runs like a chat turn, so it **uses credits**.
+- The preview restarts to show the restored version.
 
-1. **Open the chat or highlights view** where you've been giving Kite instructions. Each of the assistant's responses corresponds to a change it made.
-2. **Look below the assistant's responses** for the **checkpoint preview** and **revert** controls. <!-- TODO: verify with product -->
-3. **Use checkpoint preview** to see what your site looked like at that earlier point — before you commit to anything.
-4. **Use revert** to roll your project back to that checkpoint once you've found the version you want.
-5. **Review your site** in the preview pane to confirm it's back the way you want it.
-
-:::tip Preview before you revert
-Use the checkpoint preview first so you can confirm you're rolling back to the right version. That way there are no surprises.
+:::tip Preview before you restore
+Use **Preview this version** first so you can confirm you are rolling back to the right point.
 :::
 
 ## Known limitation
 
-Version history and revert rely on the checkpoints feature. For sites whose changes were made **before checkpoints existed**, earlier versions may not be available to preview or revert to. <!-- TODO: verify with product -->
+Sites whose changes were made before versions existed may not have earlier versions to preview or restore.
 
-## Can't find the checkpoint controls?
+## Can't find the version controls?
 
-If you don't see the checkpoint preview or revert options, or the version you need isn't there:
-
-1. **Refresh the page** and reopen the chat or highlights view — the controls may not have loaded.
+1. **Refresh the page** and look beneath Kite's earlier responses in the chat.
 2. **Reopen the project** for a fresh session.
-3. **Contact support.** [Reach out](/troubleshooting/) with your **app URL** and a description of the version you're trying to get back to. The more detail you can give about when the change happened, the better we can help.
+3. **Contact support.** Open **Chat with us** with your site URL and a description of the version you are trying to get back to.
 
 ## Related
 
-- [Editor Frozen or White Screen](/troubleshooting/editor-frozen)
-- [Preview Won't Load](/troubleshooting/preview-not-loading)
+- [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen)
+- [Preview Won't Start](/troubleshooting/preview-not-loading)

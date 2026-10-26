@@ -4,7 +4,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kite',
-  tagline: 'Kite Documentation',
+  tagline: 'Help center for Kite, your AI marketer in Slack',
   favicon: 'img/favicon.png',
 
   url: 'https://docs.kite.ai',
@@ -24,6 +24,12 @@ const config = {
   markdown: {
     mermaid: true,
   },
+
+  plugins: [
+    // Serves a raw Markdown copy of every page (page URL + ".md") and
+    // llms-full.txt, so AI agents can read the docs without parsing HTML.
+    require.resolve('./plugins/raw-markdown'),
+  ],
 
   themes: [
     '@docusaurus/theme-mermaid',
@@ -64,6 +70,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Site-wide metadata. Page-level frontmatter `description` overrides the
+      // description tag on individual docs pages; this is the default for every
+      // page and the value crawlers see on the homepage.
+      metadata: [
+        {
+          name: 'description',
+          content:
+            'Kite is your AI marketer in Slack. It researches your business, builds a growth strategy, and ships the work that brings you new customers.',
+        },
+      ],
       image: 'img/social-card.png',
       navbar: {
         logo: {
@@ -77,7 +93,7 @@ const config = {
           },
           {
             href: 'https://kite.ai',
-            label: 'Go to Kite',
+            label: 'Try Kite',
             position: 'right',
             className: 'kite-nav-cta',
           },

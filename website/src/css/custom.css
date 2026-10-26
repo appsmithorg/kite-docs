@@ -125,7 +125,11 @@ h3,
 }
 
 /* "Go to Kite" link styled as kite.ai's white Get Started button. */
+/* order: 1 places the CTA after the color-mode toggle, which Docusaurus
+   renders inside .navbar__items--right. */
 .navbar__link.kite-nav-cta {
+  order: 1;
+  white-space: nowrap;
   margin-left: 0.5rem;
   padding: 0.45rem 1.1rem;
   border-radius: 12px;

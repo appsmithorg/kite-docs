@@ -1,32 +1,27 @@
 ---
 title: Forms & Integrations
-description: Add forms to capture leads and connect your Kite site to the third-party tools you already use.
+description: Add contact forms that feed a Leads inbox, read your site's analytics, add third-party scripts, and connect Kite to GitHub, social networks, email services, and more than 3,000 integrations.
 ---
 
 # Forms & Integrations
 
-Your website does more than look good — it can collect messages, grow your mailing list, chat with visitors, and plug into the tools you already use. This section covers how to add forms and connect outside services to your Kite site.
+Your website does more than look good. It collects leads, tracks visitors, and plugs into the services your team already uses. This section covers forms, analytics, scripts, and the Integrations page.
 
 ## What you can do here
 
-- **Add contact forms and newsletter signups** so visitors can reach you or subscribe.
-- **Add a chat widget** (like Tawk.to) and other embed scripts (like HubSpot).
-- **Track visitors** with Kite's built-in analytics or an external tool like Google Analytics.
-- **Connect other tools** through integrations.
+- **Add contact forms and newsletter signups.** Submissions are emailed to your site's contact address and saved in the Leads inbox.
+- **Read your analytics.** Every site has built-in analytics with a Leads inbox, a Discoverability tab, and an Errors tab.
+- **Add third-party scripts** such as a chat widget or a tracking snippet.
+- **Connect services** from the Integrations page: GitHub, social networks, email services, an external CMS, and a catalog of more than 3,000 integrations.
 
 ## In this section
 
-- [Contact Forms & Lead Capture](/forms-integrations/contact-forms) — add a form and decide where submissions go.
-- [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts) — add live chat and third-party embed scripts.
-- [Site Analytics](/forms-integrations/analytics) — see who visits and connect external analytics.
-- [Integrations](/forms-integrations/integrations) — connect tools like GitHub to your site or app.
-
-:::tip Publish first
-Many of these features only work on your live, published site — not in the editor preview. If something looks broken, [publish your site](/publishing/how-to-publish) and test again.
-:::
+- [Contact Forms & Lead Capture](/forms-integrations/contact-forms): add a form, set the contact email, and find submissions in the Leads inbox.
+- [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts): add live chat and third-party embed scripts.
+- [Site Analytics](/forms-integrations/analytics): the four tabs and what each plan sees.
+- [Integrations](/forms-integrations/integrations): the Integrations page, GitHub sync, social networks, email, and CMS connections.
 
 ## Related
 
 - [Publishing your site](/publishing/)
-- [Email sending issues](/troubleshooting/email-sending)
-- [Custom domains](/custom-domains/)
+- [What Kite can do](/capabilities/)
