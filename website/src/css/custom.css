@@ -1,10 +1,12 @@
 /**
  * Kite Documentation - Brand Theme
- * Matches the kite.ai "sky" look: a blue gradient nav and footer, white
- * wordmark, Inter Display-style headings, and a warm off-white page.
+ * Matches the kite.ai "sky" look: the whole page sits on a blue gradient,
+ * with a white wordmark and Inter Display-style headings. The sidebar,
+ * table of contents and footer are white text on the sky. The article
+ * itself is a white card, so long pages stay easy to read.
  *
- * Text and link colors are a little darker than kite.ai so they pass
- * WCAG AA contrast on the docs background.
+ * The sky is a little deeper than kite.ai's so white text passes WCAG AA
+ * everywhere on it. Text and link colors in the card also pass AA.
  */
 
 /* Inter with the optical-size axis, so large headings render like
@@ -35,10 +37,14 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  /* Sky gradients taken from kite.ai, darkened slightly so white nav
-     text keeps AA contrast. */
-  --kite-sky-nav: linear-gradient(90deg, #2c6bb5 0%, #3274bf 100%);
-  --kite-sky-footer: linear-gradient(180deg, #2f6fb9 0%, #4a6f99 100%);
+  /* Sky gradient based on kite.ai, darkened so white text keeps AA
+     contrast (at least 5.1:1) at every stop. The navbar matches the top
+     stop and is nearly opaque, so white nav text stays readable when the
+     white card scrolls under it. */
+  --kite-sky-page: linear-gradient(180deg, #2c6bb5 0%, #3470b0 55%, #456f9b 100%);
+  --kite-sky-nav: rgba(44, 107, 181, 0.95);
+  --kite-card-bg: #ffffff;
+  --kite-card-shadow: 0 24px 60px rgba(15, 35, 70, 0.22);
   --kite-glass-bg: rgba(0, 0, 0, 0.22);
   --kite-glass-border: rgba(255, 255, 255, 0.22);
 
@@ -68,8 +74,11 @@ html[data-theme='dark'] {
   --ifm-heading-color: #f3f6fb;
   --ifm-font-color-secondary: #9aa6bb;
 
-  --kite-sky-nav: linear-gradient(90deg, #173a63 0%, #1d4777 100%);
-  --kite-sky-footer: linear-gradient(180deg, #173a63 0%, #1f3550 100%);
+  /* Night sky. */
+  --kite-sky-page: linear-gradient(180deg, #16325a 0%, #111a2c 55%, #0f111a 100%);
+  --kite-sky-nav: rgba(22, 50, 90, 0.95);
+  --kite-card-bg: #161a26;
+  --kite-card-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 
   /* Keyboard-selected search result sits on the light-blue primary, so
      it needs dark text. */
@@ -93,7 +102,52 @@ h3,
   letter-spacing: -0.025em;
 }
 
-/* Navbar: sky gradient with white text. */
+/* Page: the sky sits behind everything. */
+html {
+  background: var(--kite-sky-page) fixed;
+  background-color: #2c6bb5;
+}
+
+html[data-theme='dark'] {
+  background-color: #0f111a;
+}
+
+/* Article card. Uses stable markup only, not Docusaurus's hashed module
+   classes:
+   - Doc pages: the first column of the docs row. It holds the article
+     whether or not the page has a table of contents.
+   - Generated category index pages: the block that replaces that row.
+   - Search and 404 pages: they put their content straight in
+     .main-wrapper. */
+.main-wrapper main > .container > .row > .col:first-child,
+.main-wrapper main > .container > :not(.row),
+.main-wrapper > .container {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  background-color: var(--kite-card-bg);
+  box-shadow: var(--kite-card-shadow);
+}
+
+@media (max-width: 996px) {
+  /* Keep a strip of sky on each side, like kite.ai's cards. */
+  .main-wrapper main > .container > .row > .col:first-child,
+  .main-wrapper main > .container > :not(.row),
+  .main-wrapper > .container {
+    margin: 0.75rem 0.75rem 1.5rem;
+    /* Both elements are full width on mobile, so subtract the side
+       margins or the page scrolls sideways. */
+    max-width: calc(100% - 1.5rem);
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+}
+
+/* Navbar: matches the top of the sky, with white text. Do not add
+   backdrop-filter here: it makes .navbar the containing block for the
+   fixed mobile drawer inside it, which then clips to the navbar's
+   height. */
 .navbar {
   background: var(--kite-sky-nav);
   border-bottom: 0;
@@ -118,8 +172,17 @@ h3,
   text-underline-offset: 4px;
 }
 
-.navbar__link.kite-nav-cta:focus-visible,
-.navbar .kite-ask-ai-option:focus-visible {
+/* White focus rings for everything on the sky. Some browsers draw a blue
+   default ring, which disappears on the blue background. */
+.navbar__inner a:focus-visible,
+.navbar__inner button:focus-visible,
+.navbar__inner input:focus-visible,
+.navbar-sidebar__brand a:focus-visible,
+.navbar-sidebar__brand button:focus-visible,
+.theme-doc-sidebar-container a:focus-visible,
+.theme-doc-sidebar-container button:focus-visible,
+.theme-doc-toc-desktop a:focus-visible,
+.footer a:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
@@ -158,8 +221,9 @@ h3,
   color: #ffffff;
 }
 
-/* Mobile drawer: keep the blue header strip, but use the page color for
-   the menu so menu text stays readable. */
+/* Mobile drawer: keep the blue header strip, but put the menu on the
+   off-white --ifm-background-color, not the sky. The drawer's menu uses
+   the default dark menu colors. */
 .navbar-sidebar {
   background-color: var(--ifm-background-color);
 }
@@ -173,15 +237,18 @@ h3,
   stroke: #ffffff;
 }
 
-/* Footer: sky gradient with white text. */
+/* Footer: transparent so the sky continues behind it. */
 .footer,
 .footer--dark {
-  background: var(--kite-sky-footer);
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-link-hover-color: #ffffff;
+  background: transparent;
   border-top: 0;
   color: #ffffff;
 }
 
-/* Sidebar: rounded items with a soft blue active state. */
+/* Sidebar menu: rounded items. In the mobile drawer (light page
+   background) the active item gets a soft blue tint. */
 .menu__link {
   border-radius: 8px;
 }
@@ -193,6 +260,68 @@ h3,
 
 [data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
   background-color: rgba(107, 166, 234, 0.14);
+}
+
+/* Desktop sidebar sits on the sky: white text, and a dark glass highlight
+   like kite.ai's nav pill. A white highlight would drop white text below
+   AA. */
+.theme-doc-sidebar-container {
+  --ifm-toc-border-color: transparent;
+}
+
+.theme-doc-sidebar-container .menu {
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-hover: rgba(0, 0, 0, 0.1);
+  --ifm-menu-color-background-active: rgba(0, 0, 0, 0.18);
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+}
+
+html .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+/* On the night sky a dark highlight is invisible, so use a light one. */
+html[data-theme='dark'] .theme-doc-sidebar-container .menu {
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.06);
+  --ifm-menu-color-background-active: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Infima inverts the caret in dark mode, which would turn the white caret
+   black. */
+html .theme-doc-sidebar-container .menu__caret::before,
+html .theme-doc-sidebar-container .menu__link--sublist-caret::after {
+  filter: none;
+}
+
+/* Table of contents sits on the sky too. */
+.theme-doc-toc-desktop {
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.3);
+  --ifm-toc-link-color: #ffffff;
+  --ifm-color-primary: #ffffff;
+}
+
+/* Current section: bold plus the same glass pill as the sidebar, so it
+   does not rely on font weight alone. */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  margin-left: -0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.18);
+  font-weight: 600;
+}
+
+html[data-theme='dark'] .theme-doc-toc-desktop .table-of-contents__link--active {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Doc screenshots: center and never upscale past native size.
