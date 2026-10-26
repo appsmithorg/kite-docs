@@ -66,10 +66,9 @@ const config = {
     ({
       image: 'img/social-card.png',
       navbar: {
-        title: 'Kite',
         logo: {
-          alt: 'Kite Logo',
-          src: 'img/logo.png',
+          alt: 'Kite',
+          src: 'img/logo-wordmark.png',
         },
         items: [
           {
@@ -78,8 +77,9 @@ const config = {
           },
           {
             href: 'https://kite.ai',
-            label: 'Kite',
+            label: 'Go to Kite',
             position: 'right',
+            className: 'kite-nav-cta',
           },
         ],
       },
@@ -92,7 +92,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: 'light',
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },

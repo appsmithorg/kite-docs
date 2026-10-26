@@ -97,6 +97,11 @@
   color: #fff;
 }
 
+/* Dark mode's primary is a light blue, so white text fails contrast. */
+html[data-theme='dark'] .kite-ask-ai-modal-close {
+  color: #0f111a;
+}
+
 .kite-ask-ai-modal-close:hover {
   background-color: var(--ifm-color-primary-dark);
 }
