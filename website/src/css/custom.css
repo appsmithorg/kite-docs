@@ -69,6 +69,9 @@
   --kite-glass-active: rgba(0, 0, 0, 0.2);
   --kite-glass-hover: rgba(0, 0, 0, 0.15);
 
+  /* Expand and collapse caret for menus on the sky. */
+  --kite-white-caret: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+
   /* Search pill in the navbar: the same 0.3 black as kite.ai's nav pill.
      Keeps the placeholder (4.96:1) and Coming soon badge (5.08:1) above
      AA on the navbar blue. */
@@ -180,8 +183,8 @@ html {
 .navbar__inner a:focus-visible,
 .navbar__inner button:focus-visible,
 .navbar__inner input:focus-visible,
-.navbar-sidebar__brand a:focus-visible,
-.navbar-sidebar__brand button:focus-visible,
+.navbar-sidebar a:focus-visible,
+.navbar-sidebar button:focus-visible,
 .theme-doc-sidebar-container a:focus-visible,
 .theme-doc-sidebar-container button:focus-visible,
 .theme-doc-toc-desktop a:focus-visible,
@@ -215,21 +218,81 @@ html {
   display: none;
 }
 
-/* Hamburger and drawer close icons sit on the blue bar. Scope to the bar
-   and the drawer header only: the mobile drawer's "Back to main menu"
-   button is also a .clean-btn inside .navbar, and it sits on the light
-   page background. */
+/* Hamburger and drawer close icons sit on the blue bar. The drawer's
+   "Back to main menu" button is also a .clean-btn; it has its own rule
+   below. */
 .navbar__inner .clean-btn,
 .navbar-sidebar__brand .clean-btn,
 .navbar__toggle {
   color: #ffffff;
 }
 
-/* Mobile drawer: keep the blue header strip, but put the menu on the
-   off-white --ifm-background-color, not the sky. The drawer's menu uses
-   the default dark menu colors. */
+/* Mobile drawer: the same sky as the page, with the menu on a navy glass
+   panel like the desktop sidebar. The glass goes on the list inside each
+   panel, not on the panels: the panels slide sideways by their own width
+   when the docs menu opens, so they must keep that width. */
 .navbar-sidebar {
-  background-color: var(--ifm-background-color);
+  background: var(--kite-sky-page);
+  background-size: 100% 3300px;
+  background-repeat: no-repeat;
+  background-color: rgb(116, 157, 193);
+}
+
+.navbar-sidebar .menu {
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-hover: var(--kite-glass-hover);
+  --ifm-menu-color-background-active: var(--kite-glass-active);
+  --ifm-menu-link-sublist-icon: var(--kite-white-caret);
+}
+
+/* Glass on the docs menu only. The main-menu panel holds just the
+   "Try Kite" button, which needs no panel around it. */
+.navbar-sidebar .theme-doc-sidebar-menu {
+  padding: 0.5rem;
+  border-radius: 20px;
+  background-color: var(--kite-text-glass);
+  backdrop-filter: blur(12px);
+}
+
+html .navbar-sidebar .menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--kite-glass-active);
+}
+
+/* "Back to main menu": a glass bar above the docs menu, in place of
+   Infima's gray strip. */
+.navbar-sidebar .navbar-sidebar__back {
+  top: 0;
+  width: 100%;
+  margin: 0 0 0.5rem;
+  /* Lines the label up with the menu item text below: the list's 0.5rem
+     padding plus the links' 0.75rem padding. */
+  padding: 0.6rem 1.25rem;
+  border-radius: 12px;
+  background-color: var(--kite-text-glass);
+  backdrop-filter: blur(12px);
+  color: #ffffff;
+}
+
+.navbar-sidebar .navbar-sidebar__back:hover {
+  background-color: rgba(12, 38, 72, 0.65);
+}
+
+/* "Try Kite" in the drawer: the same white button as in the navbar. */
+.navbar-sidebar .menu__link.kite-nav-cta {
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #18190f;
+  font-weight: 600;
+}
+
+.navbar-sidebar .menu__link.kite-nav-cta:hover {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.navbar-sidebar .menu__link.kite-nav-cta svg {
+  display: none;
 }
 
 .navbar-sidebar__brand {
@@ -260,14 +323,12 @@ html {
   background-color: var(--kite-text-glass);
 }
 
-/* Sidebar menu: rounded items. In the mobile drawer (light page
-   background) the active item gets a soft blue tint. */
+/* Sidebar menus: rounded items, bold current page. */
 .menu__link {
   border-radius: 8px;
 }
 
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: rgba(47, 114, 192, 0.1);
   font-weight: 600;
 }
 
@@ -281,7 +342,7 @@ html {
   --ifm-menu-color-active: #ffffff;
   --ifm-menu-color-background-hover: var(--kite-glass-hover);
   --ifm-menu-color-background-active: var(--kite-glass-active);
-  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  --ifm-menu-link-sublist-icon: var(--kite-white-caret);
   /* Overrides Docusaurus's announcement-bar bottom margin. Revisit if an
      announcement bar is added. */
   margin: 1.5rem 0.75rem 1.5rem 1rem;
@@ -324,6 +385,37 @@ html .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) 
 .theme-doc-toc-desktop .table-of-contents__link:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+/* Back-to-top button: brand blue with a white arrow, in place of
+   Docusaurus's gray circle. Blue, not white, so it stands out on the white
+   card as well as on the sky. The html prefix beats the theme's own
+   module rule. */
+html .theme-back-to-top-button {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(15, 35, 70, 0.3);
+}
+
+/* A white ring with a navy edge, so it shows on both the sky and the
+   white card. */
+html .theme-back-to-top-button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #17223b;
+}
+
+html .theme-back-to-top-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* The arrow is drawn through a mask. Infima's default caret is 50%
+   transparent, which would make the arrow faint, so use the solid white
+   caret. */
+html .theme-back-to-top-button::after {
+  -webkit-mask-image: var(--kite-white-caret);
+  mask-image: var(--kite-white-caret);
+  background-color: #ffffff;
 }
 
 /* Doc screenshots: center and never upscale past native size.
