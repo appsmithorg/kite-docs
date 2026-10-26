@@ -1,10 +1,17 @@
 /**
  * Kite Documentation - Brand Theme
- * Matches the kite.ai "sky" look: a blue gradient nav and footer, white
- * wordmark, Inter Display-style headings, and a warm off-white page.
+ * Matches the kite.ai "sky" look: the whole page sits on kite.ai's blue
+ * gradient, with a white wordmark and Inter Display-style headings. The
+ * article is a white card, so long pages stay easy to read.
  *
- * Text and link colors are a little darker than kite.ai so they pass
- * WCAG AA contrast on the docs background.
+ * The site is light only, like kite.ai (colorMode.disableSwitch in
+ * docusaurus.config.js).
+ *
+ * kite.ai's sky is too light for white text on its own (as low as 2:1
+ * under the cloud glows). So the sidebar, table of contents and footer
+ * text sit on dark glass panels, like kite.ai's nav pill. White text on
+ * that glass is at least 4.9:1 everywhere on the sky (WCAG AA). Do not
+ * put backdrop-filter on .navbar (see the navbar rule).
  */
 
 /* Inter with the optical-size axis, so large headings render like
@@ -16,7 +23,7 @@
   --ifm-heading-font-family: 'Inter', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-weight: 600;
 
-  /* Kite sky blue */
+  /* Link and button blue, used on the white card. */
   --ifm-color-primary: #2f72c0;
   --ifm-color-primary-dark: #2a67ad;
   --ifm-color-primary-darker: #2861a3;
@@ -35,11 +42,37 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  /* Sky gradients taken from kite.ai, darkened slightly so white nav
-     text keeps AA contrast. */
-  --kite-sky-nav: linear-gradient(90deg, #2c6bb5 0%, #3274bf 100%);
-  --kite-sky-footer: linear-gradient(180deg, #2f6fb9 0%, #4a6f99 100%);
-  --kite-glass-bg: rgba(0, 0, 0, 0.22);
+  /* kite.ai's sky, exactly (its .sky-bg layer): four soft white cloud
+     glows over a blue gradient that runs light, dark, light down the
+     page. */
+  --kite-sky-top: rgb(57, 135, 210);
+  --kite-sky-page:
+    radial-gradient(55% 14% at 1% 34%, rgba(255, 255, 255, 0.34), rgba(0, 0, 0, 0) 72%),
+    radial-gradient(58% 14% at 99% 29%, rgba(255, 255, 255, 0.28), rgba(0, 0, 0, 0) 70%),
+    radial-gradient(70% 12% at 5% 74%, rgba(255, 255, 255, 0.23), rgba(0, 0, 0, 0) 72%),
+    radial-gradient(45% 9% at 97% 88%, rgba(255, 255, 255, 0.22), rgba(0, 0, 0, 0) 74%),
+    linear-gradient(
+      rgb(57, 135, 210) 0%,
+      rgb(116, 157, 193) 50%,
+      rgb(57, 135, 210) 77%,
+      rgb(116, 157, 193) 100%
+    );
+  --kite-card-bg: #ffffff;
+  --kite-card-shadow: 0 24px 60px rgba(15, 35, 70, 0.18);
+
+  /* Navy glass behind white text on the sky. Navy, not black, so the
+     panels stay blue instead of turning the sky gray. The cloud glows sit
+     behind the sidebar and table of contents, so it needs 0.5 to keep
+     white text at 4.9:1 or better. */
+  --kite-text-glass: rgba(12, 38, 72, 0.5);
+  /* Highlight for the current item, on top of the text glass. */
+  --kite-glass-active: rgba(0, 0, 0, 0.2);
+  --kite-glass-hover: rgba(0, 0, 0, 0.15);
+
+  /* Search pill in the navbar: the same 0.3 black as kite.ai's nav pill.
+     Keeps the placeholder (4.96:1) and Coming soon badge (5.08:1) above
+     AA on the navbar blue. */
+  --kite-glass-bg: rgba(0, 0, 0, 0.3);
   --kite-glass-border: rgba(255, 255, 255, 0.22);
 
   --ifm-navbar-background-color: var(--ifm-background-color);
@@ -51,31 +84,6 @@
   --ifm-navbar-search-input-color: #ffffff;
   --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.8);
   --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="white" height="16px" viewBox="0 0 16 16" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
-}
-
-html[data-theme='dark'] {
-  --ifm-color-primary: #6ba6ea;
-  --ifm-color-primary-dark: #5096e5;
-  --ifm-color-primary-darker: #428ee3;
-  --ifm-color-primary-darkest: #2076d9;
-  --ifm-color-primary-light: #86b6ef;
-  --ifm-color-primary-lighter: #94bef1;
-  --ifm-color-primary-lightest: #bcd6f6;
-
-  --ifm-background-color: #0f111a;
-  --ifm-background-surface-color: #161a26;
-  --ifm-font-color-base: #d5dbe6;
-  --ifm-heading-color: #f3f6fb;
-  --ifm-font-color-secondary: #9aa6bb;
-
-  --kite-sky-nav: linear-gradient(90deg, #173a63 0%, #1d4777 100%);
-  --kite-sky-footer: linear-gradient(180deg, #173a63 0%, #1f3550 100%);
-
-  /* Keyboard-selected search result sits on the light-blue primary, so
-     it needs dark text. */
-  --search-local-hit-active-color: #0f111a;
-
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* Headings: tight tracking like kite.ai's display type. */
@@ -93,9 +101,58 @@ h3,
   letter-spacing: -0.025em;
 }
 
-/* Navbar: sky gradient with white text. */
+/* Page: the sky sits behind everything. It is 3300px tall, the height of
+   kite.ai's pricing page, so the cloud glows keep kite.ai's proportions
+   on every page. Below that, long pages continue in the sky's last color.
+   min-height stops the sky repeating on short pages. */
+html {
+  min-height: 100%;
+  background: var(--kite-sky-page);
+  background-size: 100% 3300px;
+  background-repeat: no-repeat;
+  background-color: rgb(116, 157, 193);
+}
+
+/* Article card. Uses stable markup only, not Docusaurus's hashed module
+   classes:
+   - Doc pages: the first column of the docs row. It holds the article
+     whether or not the page has a table of contents.
+   - Generated category index pages: the block that replaces that row.
+   - Search and 404 pages: they put their content straight in
+     .main-wrapper. */
+.main-wrapper main > .container > .row > .col:first-child,
+.main-wrapper main > .container > :not(.row),
+.main-wrapper > .container {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  background-color: var(--kite-card-bg);
+  box-shadow: var(--kite-card-shadow);
+}
+
+@media (max-width: 996px) {
+  /* Keep a strip of sky on each side, like kite.ai's cards. */
+  .main-wrapper main > .container > .row > .col:first-child,
+  .main-wrapper main > .container > :not(.row),
+  .main-wrapper > .container {
+    margin: 0.75rem 0.75rem 1.5rem;
+    /* Both elements are full width on mobile, so subtract the side
+       margins or the page scrolls sideways. */
+    max-width: calc(100% - 1.5rem);
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+}
+
+/* Navbar: the top color of the sky, solid so the card does not show
+   through when it scrolls under. The bar holds no plain white text, only
+   the logo, the glass search pill, the white button and icons (3.8:1,
+   above the 3:1 needed for icons). Do not add backdrop-filter here: it
+   makes .navbar the containing block for the fixed mobile drawer inside
+   it, which then clips to the navbar's height. */
 .navbar {
-  background: var(--kite-sky-nav);
+  background: var(--kite-sky-top);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -118,16 +175,26 @@ h3,
   text-underline-offset: 4px;
 }
 
-.navbar__link.kite-nav-cta:focus-visible,
-.navbar .kite-ask-ai-option:focus-visible {
+/* White focus rings for everything on the sky. Some browsers draw a blue
+   default ring, which disappears on the blue background. */
+.navbar__inner a:focus-visible,
+.navbar__inner button:focus-visible,
+.navbar__inner input:focus-visible,
+.navbar-sidebar__brand a:focus-visible,
+.navbar-sidebar__brand button:focus-visible,
+.theme-doc-sidebar-container a:focus-visible,
+.theme-doc-sidebar-container button:focus-visible,
+.theme-doc-toc-desktop a:focus-visible,
+.footer a:focus-visible {
   outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
 
-/* "Go to Kite" link styled as kite.ai's white Get Started button. */
-/* order: 1 places the CTA after the color-mode toggle, which Docusaurus
-   renders inside .navbar__items--right. */
-.navbar__link.kite-nav-cta {
+/* "Try Kite" link styled as kite.ai's white Get Started button.
+   order: 1 keeps it last among the right-hand navbar items. The extra
+   .navbar beats Infima's `.navbar__items--right > :last-child` rule,
+   which removes right padding from the last item. */
+.navbar .navbar__link.kite-nav-cta {
   order: 1;
   white-space: nowrap;
   margin-left: 0.5rem;
@@ -148,24 +215,25 @@ h3,
   display: none;
 }
 
-/* Theme toggle, hamburger and drawer close icons sit on the blue bar.
-   Scope to the bar and the drawer header only: the mobile drawer's
-   "Back to main menu" button is also a .clean-btn inside .navbar, and
-   it sits on the light page background. */
+/* Hamburger and drawer close icons sit on the blue bar. Scope to the bar
+   and the drawer header only: the mobile drawer's "Back to main menu"
+   button is also a .clean-btn inside .navbar, and it sits on the light
+   page background. */
 .navbar__inner .clean-btn,
 .navbar-sidebar__brand .clean-btn,
 .navbar__toggle {
   color: #ffffff;
 }
 
-/* Mobile drawer: keep the blue header strip, but use the page color for
-   the menu so menu text stays readable. */
+/* Mobile drawer: keep the blue header strip, but put the menu on the
+   off-white --ifm-background-color, not the sky. The drawer's menu uses
+   the default dark menu colors. */
 .navbar-sidebar {
   background-color: var(--ifm-background-color);
 }
 
 .navbar-sidebar__brand {
-  background: var(--kite-sky-nav);
+  background: var(--kite-sky-top);
 }
 
 /* The close icon hard-codes a gray stroke on its SVG. */
@@ -173,15 +241,27 @@ h3,
   stroke: #ffffff;
 }
 
-/* Footer: sky gradient with white text. */
+/* Footer: transparent so the sky continues behind it. The copyright sits
+   on a glass pill, because white text on the light bottom of the sky is
+   only 2.9:1. */
 .footer,
 .footer--dark {
-  background: var(--kite-sky-footer);
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-link-hover-color: #ffffff;
+  background: transparent;
   border-top: 0;
   color: #ffffff;
 }
 
-/* Sidebar: rounded items with a soft blue active state. */
+.footer__copyright {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background-color: var(--kite-text-glass);
+}
+
+/* Sidebar menu: rounded items. In the mobile drawer (light page
+   background) the active item gets a soft blue tint. */
 .menu__link {
   border-radius: 8px;
 }
@@ -191,8 +271,59 @@ h3,
   font-weight: 600;
 }
 
-[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
-  background-color: rgba(107, 166, 234, 0.14);
+/* Desktop sidebar: a dark glass panel on the sky with white text. */
+.theme-doc-sidebar-container {
+  --ifm-toc-border-color: transparent;
+}
+
+.theme-doc-sidebar-container .menu {
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-hover: var(--kite-glass-hover);
+  --ifm-menu-color-background-active: var(--kite-glass-active);
+  --ifm-menu-link-sublist-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"><path fill="white" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>');
+  /* Overrides Docusaurus's announcement-bar bottom margin. Revisit if an
+     announcement bar is added. */
+  margin: 1.5rem 0.75rem 1.5rem 1rem;
+  border-radius: 20px;
+  background-color: var(--kite-text-glass);
+  backdrop-filter: blur(12px);
+}
+
+html .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--kite-glass-active);
+}
+
+/* Table of contents: the same dark glass panel. */
+.theme-doc-toc-desktop {
+  --ifm-toc-border-color: transparent;
+  --ifm-toc-link-color: #ffffff;
+  --ifm-color-primary: #ffffff;
+  padding: 0.75rem 0.5rem;
+  border-radius: 20px;
+  background-color: var(--kite-text-glass);
+  backdrop-filter: blur(12px);
+}
+
+/* Current section: bold plus the same highlight as the sidebar, so it
+   does not rely on font weight alone. */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  margin-left: -0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 6px;
+  background-color: var(--kite-glass-active);
+  font-weight: 600;
+}
+
+/* Draw the focus ring inside the link. The active link reaches the
+   panel edge, so an outside ring would land on the bare sky. */
+.theme-doc-toc-desktop a:focus-visible {
+  outline-offset: -2px;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Doc screenshots: center and never upscale past native size.
@@ -214,9 +345,4 @@ h3,
 
 .theme-doc-markdown img[src*='publish-button'] {
   max-width: min(100%, 196px);
-}
-
-[data-theme='dark'] .theme-doc-markdown img {
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }

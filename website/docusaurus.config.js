@@ -107,10 +107,12 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      // Light only, like kite.ai. With the switch disabled, Docusaurus also
+      // clears any dark-mode choice a visitor saved earlier.
       colorMode: {
         defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };

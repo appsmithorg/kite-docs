@@ -48,10 +48,17 @@
 }
 
 /* Translucent badge so it matches the glass pill. Keep the white tint
-   light: more tint lowers white-text contrast (0.12 gives about 5.3:1). */
+   light: more tint lowers white-text contrast (0.12 gives about 5.1:1). */
 .navbar .kite-ask-ai-badge {
   background-color: rgba(255, 255, 255, 0.12);
   color: #ffffff;
+}
+
+/* On hover the option already gets a white tint. Drop the badge's own
+   tint so the two do not stack (stacked gives about 4:1, below AA). */
+.navbar .kite-ask-ai-option:hover .kite-ask-ai-badge {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 /* Keep the two halves visually divided. */
