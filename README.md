@@ -4,6 +4,8 @@ Documentation site for [Kite](https://kite.ai), built with [Docusaurus](https://
 
 ## Development
 
+Requires Node.js 24. CI and Vercel both build on Node 24.
+
 ```bash
 cd website
 npm install
