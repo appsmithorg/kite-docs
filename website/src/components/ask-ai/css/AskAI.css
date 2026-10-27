@@ -14,8 +14,9 @@
   cursor: pointer;
 }
 
+/* One step darker than the search pill (emphasis-200), so the hover shows. */
 .kite-ask-ai-option:hover {
-  background-color: var(--ifm-color-emphasis-200);
+  background-color: var(--ifm-color-emphasis-300);
 }
 
 .kite-ask-ai-icon {
@@ -33,8 +34,9 @@
   padding: 3px 6px;
   border-radius: 999px;
   /* Muted neutral so it reads as "not yet available" (not a feature
-     highlight) and clears WCAG AA contrast in both color modes. */
-  background-color: var(--ifm-color-emphasis-200);
+     highlight). White, not gray, so the pill shows on the gray search
+     box. Gray-700 text on white clears WCAG AA. */
+  background-color: var(--ifm-color-emphasis-0);
   color: var(--ifm-color-emphasis-700);
 }
 
