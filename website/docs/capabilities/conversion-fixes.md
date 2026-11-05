@@ -19,7 +19,7 @@ If you want this to happen without asking, set up a workflow that runs a convers
 
 ## Where the data comes from
 
-Every Kite-hosted site has built-in analytics with pageviews, top pages, referrers, devices, events, and funnels on paid plans, plus a Leads inbox for form submissions and a Discoverability tab with speed scores and a **Review and fix** button. See [Site analytics](/forms-integrations/analytics).
+Every Kite-hosted site has built-in analytics: pageviews, top pages, where visitors came from, and devices on paid plans, plus funnels when you ask Kite. Form submissions are in **Growth**, under **Leads**. **Site health** checks your site after every publish and has a **Have Kite fix this** button for each problem it finds. See [Site analytics](/forms-integrations/analytics) and [SEO & discoverability](/seo/).
 
 ## Making the change yourself
 

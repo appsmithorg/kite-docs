@@ -25,7 +25,7 @@ When you paste your website link into WhatsApp, LinkedIn, X, or Facebook, a prev
 
 ## Check the result
 
-Open the **Discoverability** tab on your site's Analytics page to see how your pages present to search engines and social apps. See [Site analytics](/forms-integrations/analytics).
+Open **Insights**, then **Site health**. If any page is missing its preview, Kite lists **Pages have no link-preview details** under **What needs attention**. Click **Have Kite fix this** to add them. The **Search preview** section shows how a page's title and description look in search results. To see the social card itself, paste your page's address into the social app's own preview or sharing tool. See [SEO & discoverability](/seo/).
 
 :::tip Choose a good preview image
 A clear, landscape image (your logo on a clean background or a strong photo of your product) reads best in preview cards. See [Images & logos](/building/images-and-logos).

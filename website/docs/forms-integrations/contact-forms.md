@@ -1,6 +1,6 @@
 ---
 title: Contact Forms & Lead Capture
-description: Add a contact form or newsletter signup to your Kite site, set the contact email submissions go to, and find every submission in the Leads inbox.
+description: Add a contact form or newsletter signup to your Kite site, set the contact email submissions go to, and find every submission in Growth, under Leads.
 ---
 
 # Contact Forms & Lead Capture
@@ -23,13 +23,13 @@ The fewer fields you ask for, the more people will fill out your form. Name and 
 Every submission goes to two places:
 
 - **Your site's contact email.** Set it by asking Kite: "Set the contact email for this site to hello@northstar.com and ops@northstar.com." More than one address is allowed. If none is set, notifications go to the site owner's login email. Notifications come from `notifications@kite.space`, so no email setup is needed on your side.
-- **The Leads inbox.** Open your site's **Analytics** page and choose the **Leads inbox** tab to see every submission. Free-plan teams see the count; paid plans see the submissions themselves.
+- **Leads.** Choose **Growth** in the main left-hand menu, then **Leads**. Use **Show leads from** to pick one site or **All sites**. From a site, you can also open **Insights**, find the **Leads from this site** card, and click **Open in Growth**. On the Free plan you see the total number of leads and still get every lead by email. Paid plans see each submission and can follow up from there.
 
 ## Test your form
 
 1. Open your live site and submit the form with real-looking details.
 2. Confirm you see a success message on the page.
-3. Check the Leads inbox, then the contact email (look in spam if it does not arrive).
+3. Check **Leads** in **Growth**, then the contact email (look in spam if it does not arrive).
 
 :::tip Test from a different account
 Send your test from an email address that is not the contact address, so you can clearly see it arrive.
@@ -37,7 +37,7 @@ Send your test from an email address that is not the contact address, so you can
 
 ## Using a newsletter service
 
-If you use a dedicated email marketing service, you can either let Kite's form collect addresses into the Leads inbox, or embed the service's own signup form as a script. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts). Kite can also send campaigns for you from your team's own address. See [Content, outreach, and channels](/capabilities/content-and-outreach).
+If you use a dedicated email marketing service, you can either let Kite's form collect addresses into **Leads**, or embed the service's own signup form as a script. See [Chat Widgets & Custom Scripts](/forms-integrations/chat-and-scripts). Kite can also send campaigns for you from your team's own address. See [Content, outreach, and channels](/capabilities/content-and-outreach).
 
 ## Troubleshooting
 
@@ -48,7 +48,7 @@ If you use a dedicated email marketing service, you can either let Kite's form c
 4. Ask Kite: "The contact form on the live site isn't submitting. Check it."
 
 **The form submits, but no email arrives.**
-Check the Leads inbox first. If the submission is there, the form works. Then see [Form emails aren't arriving](/troubleshooting/email-sending).
+Check **Leads** in **Growth** first. If the submission is there, the form works. Then see [Form emails aren't arriving](/troubleshooting/email-sending).
 
 ## Related
 

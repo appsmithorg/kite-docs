@@ -19,7 +19,7 @@ There are two ways site work gets done, and most teams use both:
 - **Building.** Kite writes the pages, layout, copy, and styling from a description of what you need, and shows you three design options to start from.
 - **Hosting and deploys.** Every published site gets a free `your-site.kite.space` address, which you can rename. On the Growth or Business plan you can connect your own domain. See [Custom domains](/custom-domains/).
 - **Search groundwork.** Kite generates page titles, a live sitemap, a robots file that welcomes AI crawlers, an `llms.txt`, and structured data, and on paid plans it verifies your domain with Google Search Console and submits the sitemap after publish. See [SEO & discoverability](/seo/).
-- **Analytics and leads.** Built-in analytics, a Leads inbox for form submissions, and a Discoverability tab. See [Site analytics](/forms-integrations/analytics).
+- **Analytics and leads.** Built-in analytics, a **Site health** check after every publish, and every form submission in **Growth**, under **Leads**. See [Site analytics](/forms-integrations/analytics).
 - **Updates.** Ask for changes in Slack or the editor and Kite makes them.
 
 ## Bringing an existing site
