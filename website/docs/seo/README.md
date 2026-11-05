@@ -18,9 +18,19 @@ When you build and publish a site with Kite, the technical groundwork is done fo
 - **Google Search Console verification and sitemap submission** after publish, on paid plans, with the status shown in the publish panel.
 - **Mobile-friendly, responsive layouts.** See [Responsive design](/building/responsive-design).
 
-## The Discoverability tab
+## Site health
 
-Your site's Analytics page has a **Discoverability** tab with page speed scores, an AI analysis of how well your site can be found, and a **Review and fix** button that hands the findings to Kite. See [Site analytics](/forms-integrations/analytics).
+Open your site, choose **Insights** in the left-hand menu, then **Site health**. Kite runs 34 checks after every publish and shows:
+
+- Scores for **AI readiness** and **On-page clarity**, each rated **Good**, **Needs work**, or **Not enough measured**.
+- **What needs attention**: the problems Kite found, such as pages with no link-preview details.
+- **Google's view**: how your pages do on Google's own checks, for mobile and desktop.
+- **Search preview**: how a page's title and description look in search results.
+- **Errors**: where your live site broke for visitors in the last 7 days.
+
+Click **Have Kite fix this** on any issue, or the button at the top to fix them all at once. Kite opens a conversation and fixes them. To check again, click **Re-run check**.
+
+To see how often AI assistants mention your site, open **AI answers**. For clicks and keywords from Google search, open **Google**. See [Site analytics](/forms-integrations/analytics).
 
 ## What you can ask Kite for
 

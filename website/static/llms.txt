@@ -64,8 +64,8 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
   - [Sitemap & robots.txt](https://docs.kite.ai/seo/sitemap-and-robots): Kite generates both automatically and submits the sitemap to Google Search Console on paid plans.
   - [Social Link Previews (Open Graph)](https://docs.kite.ai/seo/social-previews): set the title, description, and image a shared link shows.
   - [Migrate an Existing Site to Kite](https://docs.kite.ai/seo/migrate-existing-site): move from WordPress, Wix, or elsewhere without losing Google rankings.
-- [Forms & integrations](https://docs.kite.ai/forms-integrations): contact forms, the Leads inbox, analytics, scripts, and the Integrations page.
-  - [Contact Forms & Lead Capture](https://docs.kite.ai/forms-integrations/contact-forms): add a form or newsletter signup and find submissions in the Leads inbox.
+- [Forms & integrations](https://docs.kite.ai/forms-integrations): contact forms, leads, analytics, scripts, and the Integrations page.
+  - [Contact Forms & Lead Capture](https://docs.kite.ai/forms-integrations/contact-forms): add a form or newsletter signup and find submissions in Growth, under Leads.
   - [Chat Widgets & Custom Scripts](https://docs.kite.ai/forms-integrations/chat-and-scripts): add a live chat widget or an embed script, and remove one cleanly.
   - [Site Analytics](https://docs.kite.ai/forms-integrations/analytics): built-in analytics on every site, what each plan sees, what is tracked automatically, funnels, PostHog, and connecting an external tool.
   - [Integrations](https://docs.kite.ai/forms-integrations/integrations): GitHub sync, social networks, email services, external CMS connections, and bringing your own MCP server.
