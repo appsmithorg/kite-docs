@@ -18,7 +18,7 @@ Kite for ChatGPT is new, and we're adding to it. If ChatGPT says your team isn't
 
 ## Connect Kite
 
-1. In ChatGPT, open the app directory and search for **kite.ai**.
+1. In ChatGPT, open the app directory and search for **Kite**. Look for the app from **Appsmith, Inc.**, described as "Your AI marketing teammate."
 2. Select the app and connect it.
 3. ChatGPT opens Kite's sign-in page. Sign in with the account you use for Kite and allow access. You don't share your password with ChatGPT.
 4. Ask ChatGPT something like "What is Kite working on for my team?" to check it works.

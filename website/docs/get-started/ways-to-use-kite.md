@@ -37,7 +37,7 @@ Kite reads each email and decides what it needs. It might reply, forward it, sta
 
 ## ChatGPT
 
-Connect the **kite.ai** app in ChatGPT to check on Kite's work, read your site's analytics, and request, merge, and publish website changes. ChatGPT asks you to confirm before it changes anything. See [Kite for ChatGPT](/get-started/kite-for-chatgpt).
+Connect the **Kite** app in ChatGPT to check on Kite's work, read your site's analytics, and request, merge, and publish website changes. ChatGPT asks you to confirm before it changes anything. See [Kite for ChatGPT](/get-started/kite-for-chatgpt).
 
 ## What you can do where
 
