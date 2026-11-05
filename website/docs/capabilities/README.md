@@ -12,7 +12,8 @@ Kite is your AI marketer in Slack. It researches your business, builds a growth 
 - [Research and growth plans](/capabilities/research-and-growth-plan): competitor, keyword, and customer research, website audits, the Growth Grader report, and initiatives.
 - [Content, outreach, and channels](/capabilities/content-and-outreach): landing pages, comparison pages, email sequences, prospect lists, and posts for the networks you connect.
 - [Product marketing and launches](/capabilities/product-marketing): the product page, announcement, and email campaign for your next release.
-- [Conversion work](/capabilities/conversion-fixes): audits, A/B experiments, and fixes on the pages you already have.
+- [Conversion work](/capabilities/conversion-fixes): audits and fixes on the pages you already have.
+- [A/B experiments](/capabilities/ab-experiments): test a headline, button, or section against your current page and keep the winner.
 - [Website building](/capabilities/website-building): Kite builds, hosts, and updates your website, and you can edit it yourself in the browser editor.
 - [Initiatives, reports, and workflows](/capabilities/initiatives-reports-and-workflows): the initiatives board, hosted reports and dashboards, scheduled and webhook-triggered workflows, and custom agents.
 - [Tools on kite.ai](/capabilities/free-tools): Growth Grader, LinkedIn to Website, and Website Makeover.

@@ -24,7 +24,7 @@ Each team has an autonomy setting. The default, **propose first**, tells Kite to
 
 ## Slack and the browser editor
 
-Kite has two places where you interact with it:
+Kite has two main places where you work with it. You can also email Kite. See [Ways to work with Kite](/get-started/ways-to-use-kite).
 
 - **Slack** is where Kite brings you research, drafts, digests, and results, and where you reply to keep things moving.
 - **The browser workspace** is where you make hands-on changes to your website (describe an edit in chat or click an element to change it, preview, publish), browse integrations, read analytics and leads, and manage billing. See **[Website Building](/website-building)**.
@@ -46,7 +46,7 @@ Every published site gets a free `your-site.kite.space` address, which you can r
 
 ## Credits
 
-Every conversation you have with Kite and every task it runs uses **credits**. One credit is one US dollar of usage. Research, drafting, site edits, restores, and retries all draw from the same pool. Bigger or more complex work uses more. See **[How credits work](/pricing-credits/how-credits-work)**.
+Every conversation you have with Kite and every task it runs uses **credits**. One credit is one US dollar of usage. Research, drafting, site edits, and retries all draw from the same pool. Bigger or more complex work uses more. See **[How credits work](/pricing-credits/how-credits-work)**.
 
 ## Undo and version history
 

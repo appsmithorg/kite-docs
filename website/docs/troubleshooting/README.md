@@ -11,7 +11,7 @@ Something not working? Most Kite hiccups are temporary and easy to fix. This sec
 
 - [Preview Won't Start](/troubleshooting/preview-not-loading): the preview shows "Preview couldn't start" or stays blank.
 - [Chat Stuck or Page Crashed](/troubleshooting/editor-frozen): a turn that never finishes, a stream error, or the "Something went wrong" screen.
-- [Undo Changes & Version History](/troubleshooting/version-history): restore your site to an earlier version.
+- [Undo, Restore & Roll Back Your Site](/troubleshooting/version-history): undo a change, restore an earlier version, or take the live site back.
 - [Form Emails Aren't Arriving](/troubleshooting/email-sending): contact form notifications do not reach you.
 
 ## Problems in Slack

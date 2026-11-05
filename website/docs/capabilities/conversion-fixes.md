@@ -11,7 +11,7 @@ Traffic you already have is the cheapest growth available. Ask Kite why a page i
 
 - "Why isn't the pricing page converting?" Kite reviews the page, the analytics, and the path visitors take, then proposes a specific change with a preview.
 - "Audit the site for conversion problems." Kite checks every page for missing calls to action, weak headlines, slow load times, and pages that rank but do not answer the searcher's question.
-- "Run an experiment on the homepage headline." Kite sets up an A/B experiment on your Kite-hosted site with two versions and a traffic split. Starting the experiment is the one step a signed-in team member does, and the results page shows which version won.
+- "Run an experiment on the homepage headline." Kite sets up an A/B experiment that shows the original to some visitors and the new version to others. A person on your team starts it, Kite reports how it's going, and you keep the version that wins. See [A/B experiments](/capabilities/ab-experiments).
 
 ## Scheduling a recurring check
 
@@ -27,5 +27,6 @@ Every conversion fix is a website change, so you can also make it by hand in the
 
 ## Related
 
+- [A/B experiments](/capabilities/ab-experiments)
 - [Research and growth plans](/capabilities/research-and-growth-plan)
 - [Website building](/capabilities/website-building)

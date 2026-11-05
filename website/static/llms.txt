@@ -12,6 +12,8 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
 - [Get Started](https://docs.kite.ai/get-started): sign in, add Kite to Slack, and ship your first piece of work.
 - [Add Kite to Slack](https://docs.kite.ai/get-started/add-kite-to-slack): sign in, connect Kite to a Slack workspace, and invite it to a channel.
 - [How Kite works](https://docs.kite.ai/get-started/how-kite-works): what Kite does on its own, what it does when asked, and how credits are used.
+- [Ways to work with Kite](https://docs.kite.ai/get-started/ways-to-use-kite): Slack, the browser workspace, email, and ChatGPT, and what you can do from each.
+- [Kite for ChatGPT](https://docs.kite.ai/get-started/kite-for-chatgpt): connect the Kite app (by Appsmith, Inc.) in ChatGPT to check on Kite's work, read site analytics, and request, merge, and publish website changes.
 - [Quickstart](https://docs.kite.ai/get-started/quickstart): from adding Kite to your first shipped work.
 
 ## Working with Kite in Slack
@@ -28,7 +30,8 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
 - [Research and growth plans](https://docs.kite.ai/capabilities/research-and-growth-plan): competitor, keyword, and customer research, website audits, Growth Grader, and initiatives.
 - [Content, outreach, and channels](https://docs.kite.ai/capabilities/content-and-outreach): landing and comparison pages, email, prospect lists, and posts for connected networks.
 - [Product marketing and launches](https://docs.kite.ai/capabilities/product-marketing): product page, announcement, and email campaign for a release.
-- [Conversion work](https://docs.kite.ai/capabilities/conversion-fixes): audits, A/B experiments, and fixes on existing pages.
+- [Conversion work](https://docs.kite.ai/capabilities/conversion-fixes): audits and fixes on existing pages.
+- [A/B experiments](https://docs.kite.ai/capabilities/ab-experiments): test a headline, button, or section against the current page, read the results, and keep the winner.
 - [Website building](https://docs.kite.ai/capabilities/website-building): Kite builds, hosts, and updates your website.
 - [Initiatives, reports, and workflows](https://docs.kite.ai/capabilities/initiatives-reports-and-workflows): the initiatives board, hosted reports, scheduled and webhook-triggered workflows, custom agents.
 - [Tools on kite.ai](https://docs.kite.ai/capabilities/free-tools): Growth Grader, LinkedIn to Website, and Website Makeover.
@@ -64,7 +67,7 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
 - [Forms & integrations](https://docs.kite.ai/forms-integrations): contact forms, the Leads inbox, analytics, scripts, and the Integrations page.
   - [Contact Forms & Lead Capture](https://docs.kite.ai/forms-integrations/contact-forms): add a form or newsletter signup and find submissions in the Leads inbox.
   - [Chat Widgets & Custom Scripts](https://docs.kite.ai/forms-integrations/chat-and-scripts): add a live chat widget or an embed script, and remove one cleanly.
-  - [Site Analytics](https://docs.kite.ai/forms-integrations/analytics): built-in analytics on every site, what each plan sees, and connecting an external tool.
+  - [Site Analytics](https://docs.kite.ai/forms-integrations/analytics): built-in analytics on every site, what each plan sees, what is tracked automatically, funnels, PostHog, and connecting an external tool.
   - [Integrations](https://docs.kite.ai/forms-integrations/integrations): GitHub sync, social networks, email services, external CMS connections, and bringing your own MCP server.
 
 ## Plans and account
@@ -82,7 +85,7 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
 - [Troubleshooting](https://docs.kite.ai/troubleshooting): fixes for previews, a stuck chat, and form emails, plus how to reach support.
   - [Preview Won't Start](https://docs.kite.ai/troubleshooting/preview-not-loading): fix a preview that shows an error, stays blank, or stops updating.
   - [Chat Stuck or Page Crashed](https://docs.kite.ai/troubleshooting/editor-frozen): what to do when a chat turn never finishes or the page shows an error.
-  - [Undo Changes & Version History](https://docs.kite.ai/troubleshooting/version-history): preview any earlier version of your site and restore to it.
+  - [Undo, Restore & Roll Back Your Site](https://docs.kite.ai/troubleshooting/version-history): undo one change, restore an earlier version, or take the live site back, from the browser or Slack. Restoring changes the draft; publishing makes it live.
   - [Form Emails Aren't Arriving](https://docs.kite.ai/troubleshooting/email-sending): where to look when a contact form notification does not arrive.
 
 ## Agent guidance
