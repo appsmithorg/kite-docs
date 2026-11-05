@@ -10,6 +10,7 @@ const sidebars = {
       items: [
         'get-started/add-kite-to-slack',
         'get-started/how-kite-works',
+        'get-started/ways-to-use-kite',
         'get-started/quickstart',
       ],
     },
@@ -33,6 +34,7 @@ const sidebars = {
         'capabilities/content-and-outreach',
         'capabilities/product-marketing',
         'capabilities/conversion-fixes',
+        'capabilities/ab-experiments',
         'capabilities/website-building',
         'capabilities/initiatives-reports-and-workflows',
         'capabilities/free-tools',
@@ -74,6 +76,7 @@ const sidebars = {
             'publishing/changes-not-showing',
             'publishing/unpublish',
             'publishing/publish-failures',
+            'troubleshooting/version-history',
           ],
         },
         {
@@ -142,7 +145,6 @@ const sidebars = {
       items: [
         'troubleshooting/preview-not-loading',
         'troubleshooting/editor-frozen',
-        'troubleshooting/version-history',
         'troubleshooting/email-sending',
       ],
     },

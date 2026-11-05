@@ -44,7 +44,7 @@ Use **Point & Edit** when an element is hard to describe in words, or when there
 - **Say what to keep.** If you only want one thing changed, you can add "leave everything else the same."
 
 :::note
-If a change comes out wrong, restore an earlier version with **Restore to this point** beneath Kite's earlier response. See [Version History](/troubleshooting/version-history).
+If a change comes out wrong, use **Undo** on that change, or ask Kite to show earlier versions and click **Restore to this point**. Then publish to update the live site. See [Undo, restore & roll back](/troubleshooting/version-history).
 :::
 
 ## "Kite said it's done, but I don't see the change"

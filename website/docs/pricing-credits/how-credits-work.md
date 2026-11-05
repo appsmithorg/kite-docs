@@ -10,7 +10,7 @@ Kite uses credits to pay for the work it does. Every conversation you have with 
 ## What uses credits
 
 - **Conversations** in Slack, by email, or in the editor use credits each time Kite responds.
-- **Tasks** use credits: research, drafting a page or an email, building or editing your website, running a Growth Grader report, restoring an earlier version of your site.
+- **Tasks** use credits: research, drafting a page or an email, building or editing your website, running a Growth Grader report. Asking Kite to undo or go back to an earlier version counts too. Clicking **Restore** or **Undo** on a version usually does not. See [Undo, restore & roll back](/troubleshooting/version-history).
 - **Complex work** (a full initiative, a multi-page build, a large rewrite) uses more than a small change.
 - **Retries** use credits too. If Kite has to try something again or fix an error, that is additional work.
 

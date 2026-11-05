@@ -11,7 +11,7 @@ Kite pricing has two parts: a **plan** (Free, Growth, or Business) and **credits
 
 - **Plans.** Free includes the complete product, the Slack integration, and a one-time grant of credits. Growth is $100 per month and includes $100 in credits each month. Business has custom usage limits and hands-on help from the Kite team. Every plan covers your whole team. See [Plans & Pricing](/pricing-credits/plans-and-trial).
 - **The trial.** Every new team starts a 5-day Growth trial automatically. It unlocks paid features such as custom domains; it does not add credits. See [Plans & Pricing](/pricing-credits/plans-and-trial).
-- **Credits.** Research, drafting, outreach, site edits, restores, and retries all use credits. One credit is one US dollar of usage. Bigger or more complex work uses more. See [How credits work](/pricing-credits/how-credits-work).
+- **Credits.** Research, drafting, outreach, site edits, and retries all use credits. One credit is one US dollar of usage. Bigger or more complex work uses more. See [How credits work](/pricing-credits/how-credits-work).
 
 :::tip
 Think of your **plan** as the size of your monthly budget and your **credits** as the budget itself. Kite spends credits on the conversations you have with it and the work it does.
