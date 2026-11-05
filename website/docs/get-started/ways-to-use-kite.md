@@ -1,17 +1,18 @@
 ---
 title: Ways to Work with Kite
-description: Work with Kite in Slack, in the browser workspace, or by email. See what each one is best for and what you can do from each.
+description: Work with Kite in Slack, in the browser workspace, by email, or in ChatGPT. See what each one is best for and what you can do from each.
 ---
 
 # Ways to Work with Kite
 
-You can reach Kite in three places. They all talk to the same Kite, with the same knowledge of your business, the same work in progress, and the same credits.
+You can reach Kite in four places. They all talk to the same Kite, with the same knowledge of your business, the same work in progress, and the same credits.
 
 | Where | Best for |
 |---|---|
 | **Slack** | Day-to-day requests, reviewing drafts, approvals, and Kite's updates and digests |
 | **Browser workspace** | Hands-on website editing, publishing, analytics, experiments, integrations, and billing |
 | **Email** | Forwarding things to Kite, and working with Kite when you're away from Slack |
+| **ChatGPT** | Checking on Kite's work, your site's numbers, and quick website changes without leaving ChatGPT |
 
 ## Slack
 
@@ -34,17 +35,23 @@ Email Kite to:
 
 Kite reads each email and decides what it needs. It might reply, forward it, start the work, or post a note to your team. It doesn't send an automatic reply to every message. Email uses credits like any other request. If your team is out of credits, Kite tells you by email instead of doing the work.
 
+## ChatGPT
+
+Connect the **kite.ai** app in ChatGPT to check on Kite's work, read your site's analytics, and request, merge, and publish website changes. ChatGPT asks you to confirm before it changes anything. See [Kite for ChatGPT](/get-started/kite-for-chatgpt).
+
 ## What you can do where
 
-| Task | Slack | Browser | Email |
-|---|---|---|---|
-| Ask for research, content, or site changes | ✓ | ✓ | ✓ |
-| Approve or revise Kite's drafts | ✓ | ✓ | |
-| Publish your website | ✓ | ✓ | |
-| Undo a change or restore a version | ✓ | ✓ | |
-| Read analytics | Ask Kite | ✓ | Ask Kite |
-| Start or end an A/B experiment | | ✓ | |
-| Manage billing, team, and integrations | | ✓ | |
+| Task | Slack | Browser | Email | ChatGPT |
+|---|---|---|---|---|
+| Ask for research or content | ✓ | ✓ | ✓ | |
+| Ask for a website change | ✓ | ✓ | ✓ | ✓ |
+| Check on Kite's work | ✓ | ✓ | | ✓ |
+| Approve or revise Kite's drafts | ✓ | ✓ | | Merge only |
+| Publish your website | ✓ | ✓ | | ✓ |
+| Undo a change or restore a version | ✓ | ✓ | | See versions only |
+| Read analytics | Ask Kite | ✓ | Ask Kite | ✓ |
+| Start or end an A/B experiment | | ✓ | | |
+| Manage billing, team, and integrations | | ✓ | | |
 
 Starting and ending A/B experiments is browser-only on purpose. It changes what real visitors see, so a signed-in team member does it. See [A/B experiments](/capabilities/ab-experiments).
 

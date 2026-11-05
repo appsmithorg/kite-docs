@@ -11,6 +11,7 @@ const sidebars = {
         'get-started/add-kite-to-slack',
         'get-started/how-kite-works',
         'get-started/ways-to-use-kite',
+        'get-started/kite-for-chatgpt',
         'get-started/quickstart',
       ],
     },

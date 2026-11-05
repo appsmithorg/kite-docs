@@ -12,7 +12,8 @@ Every page below is also served as raw Markdown. Append .md to a page URL to get
 - [Get Started](https://docs.kite.ai/get-started): sign in, add Kite to Slack, and ship your first piece of work.
 - [Add Kite to Slack](https://docs.kite.ai/get-started/add-kite-to-slack): sign in, connect Kite to a Slack workspace, and invite it to a channel.
 - [How Kite works](https://docs.kite.ai/get-started/how-kite-works): what Kite does on its own, what it does when asked, and how credits are used.
-- [Ways to work with Kite](https://docs.kite.ai/get-started/ways-to-use-kite): Slack, the browser workspace, and email, and what you can do from each.
+- [Ways to work with Kite](https://docs.kite.ai/get-started/ways-to-use-kite): Slack, the browser workspace, email, and ChatGPT, and what you can do from each.
+- [Kite for ChatGPT](https://docs.kite.ai/get-started/kite-for-chatgpt): connect the kite.ai app in ChatGPT to check on Kite's work, read site analytics, and request, merge, and publish website changes.
 - [Quickstart](https://docs.kite.ai/get-started/quickstart): from adding Kite to your first shipped work.
 
 ## Working with Kite in Slack
